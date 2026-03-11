@@ -159,10 +159,11 @@
         <p>El proyecto busca abandonar el enfoque de "copia manual" para implementar una <strong>arquitectura de software avanzada</strong> que aporta las siguientes innovaciones:</p>
         <ul>
             <li><strong>Descubrimiento Inteligente:</strong> Auditar el sistema basándose en heurística y el estándar XDG (apoyado en la base de datos de <em>xdg-ninja</em>) para separar la configuración útil de la "basura" o caché.</li>
-            <li><strong>Control de Versiones Local (Zero-Friction):</strong> Implementar una estrategia de <strong>Symlinks Gestionados</strong> que centraliza los archivos de configuración en un repositorio interno (<code>~/.local/state/dotfiles_manager/repo</code>) y crea automáticamente enlaces simbólicos en sus ubicaciones originales. Esta técnica combina la transparencia del enlace con la seguridad de un almacenamiento centralizado, sentando las bases para funcionalidades extendidas como la creación de respaldos estáticos unificados (backups).</li>
+            
+            <li><strong>Control de Versiones Transparente (Técnica Git Bare):</strong> Erradicar el frágil enfoque de los enlaces simbólicos (<em>symlinks</em>) adoptando de forma nativa la estrategia <strong>Git Bare Repository</strong>. Al desacoplar el directorio de control de Git (<code>--git-dir</code>) del árbol de trabajo (asignado dinámicamente a la raíz del <code>$HOME</code>), la herramienta logra rastrear y versionar los <em>dotfiles</em> <em>in situ</em>. Los archivos nunca abandonan su ruta original prescrita por el sistema operativo, garantizando una experiencia sin fricciones (<em>Zero-Friction</em>) y sentando las bases para la automatización de respaldos unificados.</li>
+            
             <li><strong>Resolución Asistida (IA):</strong> Demostrar la viabilidad de una arquitectura distribuida (Cliente/Servidor) integrando un servicio backend que, mediante el uso de Modelos de Lenguaje (LLMs), sea capaz de clasificar dinámicamente aquellos archivos de configuración huérfanos o desconocidos.</li>
         </ul>
-
         <p>En conclusión, este proyecto no solo resuelve un problema operativo real para administradores de sistemas y desarrolladores, sino que sirve como vehículo para aplicar y demostrar competencias avanzadas en programación orientada a objetos (POO), diseño de bases de datos relacionales, creación de interfaces gráficas y desarrollo de APIs RESTful.</p>    </main>
 </div>
 
