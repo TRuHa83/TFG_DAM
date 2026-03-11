@@ -4,78 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memoria - Dotfiles-Manager</title>
-    <style>
-        /* CSS Básico y funcional - Sin florituras */
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            color: #333;
-        }
-
-        /* Encabezado fijo */
-        header {
-            background-color: #1e293b;
-            color: white;
-            padding: 20px 40px;
-            border-bottom: 4px solid #10b981;
-        }
-
-        header h1 { margin: 0; font-size: 24px; }
-        header h2 { margin: 5px 0 0 0; font-size: 16px; font-weight: normal; color: #cbd5e1; }
-
-        /* Contenedor principal (Layout a dos columnas) */
-        .container {
-            display: flex;
-            flex: 1;
-        }
-
-        /* Navegación lateral */
-        nav {
-            width: 250px;
-            background-color: #f1f5f9;
-            padding: 20px;
-            border-right: 1px solid #e2e8f0;
-        }
-
-        nav h3 { margin-top: 0; font-size: 14px; text-transform: uppercase; color: #64748b; }
-        nav ul { list-style: none; padding: 0; margin: 0; }
-        nav li { margin-bottom: 10px; }
-        nav a { text-decoration: none; color: #0f172a; font-weight: 500; }
-        nav a:hover { color: #10b981; }
-
-        .menu_select { color: #10b981; font-weight: bold;}
-
-        /* Área de contenido */
-        main {
-            flex: 1;
-            padding: 40px;
-            max-width: 900px;
-        }
-
-        /* Pie de página fijo al final */
-        footer {
-            background-color: #0f172a;
-            color: #94a3b8;
-            padding: 15px 40px;
-            font-size: 14px;
-            border-top: 1px solid #334155;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* Pie de página */
-        footer { background-color: #0f172a; color: #94a3b8; padding: 15px 40px; font-size: 14px; border-top: 1px solid #334155; display: flex; justify-content: space-between; }
-        footer p { margin: 0; }
-        footer strong { color: #e2e8f0; }
-
-        /* Estilos básicos para el contenido */
-        code { background-color: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
-    </style>
+    <link rel="stylesheet" href="/styles/base.css">
 </head>
 <body>
 
@@ -107,12 +36,12 @@
             <p>Bienvenido a la documentación oficial y técnica del Trabajo de Fin de Grado: <strong>Dotfiles-Manager</strong>. Este documento web interactivo recoge el proceso íntegro de diseño, análisis y desarrollo arquitectónico del sistema.</p>
             <p>Utiliza el menú lateral de navegación para explorar las distintas secciones, desde la motivación inicial hasta los detalles de implementación técnica, diseño de bases de datos y flujos de usuario.</p>
 
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
             <h2>Resumen Ejecutivo</h2>
             <p>La presente memoria detalla la concepción y creación de una herramienta avanzada para la gestión, clasificación y versionado (<em>Zero-Friction</em>) de archivos de configuración en entornos UNIX/Linux, optimizada para proporcionar una experiencia nativa en distribuciones como Arch Linux, Manjaro o Debian.</p>
 
             <p>A través de un enfoque innovador que rompe con las soluciones estáticas tradicionales, el proyecto propone un ecosistema distribuido <strong>Cliente-Servidor</strong>. El cliente local (desarrollado en Python) se encarga de la auditoría integral del sistema de archivos y la persistencia local, mientras que el servidor central (API REST en Java) actúa como "oráculo" de conocimiento, integrándose de forma segura con Modelos de Lenguaje Grande (LLMs) para ofrecer una clasificación inteligente y comunitaria de aquellos <em>dotfiles</em> desconocidos o huérfanos.</p>
-
-            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
 
         </main>
     </div>

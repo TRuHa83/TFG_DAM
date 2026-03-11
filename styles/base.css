@@ -1,0 +1,66 @@
+/* CSS Básico y funcional */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px 40px;
+    border-bottom: 4px solid #10b981;
+}
+
+header h1 { margin: 0; font-size: 24px; }
+header h2 { margin: 5px 0 0 0; font-size: 16px; font-weight: normal; color: #cbd5e1; }
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Navegación lateral */
+nav {
+    width: 250px;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-right: 1px solid #e2e8f0;
+}
+
+nav h3 { margin-top: 0; font-size: 14px; text-transform: uppercase; color: #64748b; }
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav li { margin-bottom: 10px; }
+nav a { text-decoration: none; color: #0f172a; font-weight: 500; }
+nav a:hover { color: #10b981; }
+
+.menu_select { color: #10b981; font-weight: bold;}
+
+/* Área de contenido */
+main {
+    flex: 1;
+    padding: 40px;
+    max-width: 900px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 15px 40px;
+    font-size: 14px;
+    border-top: 1px solid #334155;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p { margin: 0; }
+footer strong { color: #e2e8f0; }
+

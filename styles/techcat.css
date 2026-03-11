@@ -1,0 +1,49 @@
+/* Clases específicas para el Stack */
+.tech-category {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.type_a {
+    border-left: 4px solid #38bdf8;
+}
+
+.type_b {
+    border-left: 4px solid #f59e0b;
+}
+
+.type_c {
+    border-left: 4px solid #8b5cf6;
+}
+
+.tech-category h3 {
+    color: #0f172a;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-item {
+    margin-bottom: 15px;
+}
+
+.tech-item strong {
+    color: #10b981;
+    font-size: 18px;
+}
+
+.view-note {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+}
+
+.view-note p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+    text-align: center;
+}
