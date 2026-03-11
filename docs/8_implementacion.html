@@ -50,32 +50,32 @@
             <h2>8.2. Estructura del Proyecto (Estructura de Directorios)</h2>
             <p>Para mantener la separación de responsabilidades, el ecosistema se organiza de forma estrictamente modular. A continuación se detalla el árbol de directorios actual correspondiente al cliente local (Python), el cual separa de forma clara la lógica central (Core), la persistencia (Database), y las múltiples interfaces (CLI y futura UI):</p>
 
-            <div style="background-color: #0f172a; color: #e2e8f0; padding: 20px; border-radius: 8px; border-left: 4px solid #38bdf8; font-family: 'Fira Code', monospace; font-size: 14px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow-x: auto;">
-<pre style="margin: 0; line-height: 1.5;">
-<span style="color: #10b981;">dotfiles-manager/</span> (Cliente Python)
-├── <span style="color: #38bdf8;">cli/</span>
-│   ├── commands.py      <span style="color: #64748b;"># Comandos de ejecución</span>
-│   ├── console.py       <span style="color: #64748b;"># Sistema de impresion con Rich</span>
-│   ├── create.py        <span style="color: #64748b;"># Creador menu parser</span>
-│   ├── customs.py       <span style="color: #64748b;"># Vista del menu personalizado</span>
-│   └── parser.py        <span style="color: #64748b;"># Parser de comandos</span>
-├── <span style="color: #38bdf8;">core/</span>
-│   ├── context.py       <span style="color: #64748b;"># Estado persistente de los steps</span>
-│   ├── pipelines.py     <span style="color: #64748b;"># Orquestador secuencial del motor</span>
-│   └── steps.py         <span style="color: #64748b;"># Nodos de ejecución del pipeline</span>
-├── <span style="color: #38bdf8;">modules/</span>
-│   ├── <span style="color: #38bdf8;">database/</span>
-│   │   ├── manager.py   <span style="color: #64748b;"># Getters y Setters de la base de datos</span>
-│   │   └── models.py    <span style="color: #64748b;"># Modelos de SQLAlchemy</span>
-│   └── logger.py        <span style="color: #64748b;"># Sistema de trazas y eventos</span>
-├── <span style="color: #38bdf8;">ui/</span>
-├── version.py           <span style="color: #64748b;"># Información del proyecto</span>
-├── config.py            <span style="color: #64748b;"># Configuración global del entorno</span>
-└── main.py              <span style="color: #64748b;"># Punto de entrada (Entry point) de la app</span>
+            <div class="dir-tree">
+<pre>
+<span class="root">dotfiles-manager/</span> (Cliente Python)
+├── <span class="dir">cli/</span>
+│   ├── commands.py      <span class="comment"># Comandos de ejecución</span>
+│   ├── console.py       <span class="comment"># Sistema de impresion con Rich</span>
+│   ├── create.py        <span class="comment"># Creador menu parser</span>
+│   ├── customs.py       <span class="comment"># Vista del menu personalizado</span>
+│   └── parser.py        <span class="comment"># Parser de comandos</span>
+├── <span class="dir">core/</span>
+│   ├── context.py       <span class="comment"># Estado persistente de los steps</span>
+│   ├── pipelines.py     <span class="comment"># Orquestador secuencial del motor</span>
+│   └── steps.py         <span class="comment"># Nodos de ejecución del pipeline</span>
+├── <span class="dir">modules/</span>
+│   ├── <span class="dir">database/</span>
+│   │   ├── manager.py   <span class="comment"># Getters y Setters de la base de datos</span>
+│   │   └── models.py    <span class="comment"># Modelos de SQLAlchemy</span>
+│   └── logger.py        <span class="comment"># Sistema de trazas y eventos</span>
+├── <span class="dir">ui/</span>
+├── version.py           <span class="comment"># Información del proyecto</span>
+├── config.py            <span class="comment"># Configuración global del entorno</span>
+└── main.py              <span class="comment"># Punto de entrada (Entry point) de la app</span>
 </pre>
             </div>
 
-            <p style="margin-top: 15px; font-size: 14px; color: #64748b; font-style: italic;">
+            <p class="dir-note">
                 * Nota: La estructura del repositorio correspondiente al servidor backend (Java API) se definirá y documentará en iteraciones posteriores del desarrollo.
             </p>
 

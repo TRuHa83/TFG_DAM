@@ -40,41 +40,48 @@
             <h1>9. Conclusiones y Trabajo Futuro</h1>
 
             <h2>9.1. Evaluación de los Resultados y Barrera de Entrada</h2>
-            <p>El desarrollo de <strong>Dotfiles-Manager</strong> ha demostrado con éxito la viabilidad de aplicar arquitecturas de software modernas (sistemas distribuidos, APIs REST e integración de Modelos de Lenguaje) a un problema clásico y persistente en la administración de sistemas UNIX/Linux.</p>
+            <p>El desarrollo de <strong>Dotfiles-Manager</strong> ha demostrado con éxito la viabilidad de aplicar
+                arquitecturas de software modernas (sistemas distribuidos, APIs REST e integración de Modelos de
+                Lenguaje) a un problema clásico y persistente en la administración de sistemas UNIX/Linux.</p>
 
-            <div class="conclusion-block">
-                <h3>Rompiendo la Barrera de Entrada</h3>
+            <div class="note">
+                <h3 style="margin-top: 0; color: #065f46;">Rompiendo la Barrera de Entrada</h3>
                 <p>El mayor logro conceptual de este proyecto reside en la <strong>democratización de la gestión de entornos Linux</strong>. Tradicionalmente, la administración de <em>dotfiles</em> ha sido un terreno elitista, reservado para usuarios avanzados con profundos conocimientos de <em>scripting</em> en Bash y control de versiones por terminal.</p>
                 <p>Al dotar a la herramienta de un motor heurístico automatizado, soporte de Inteligencia Artificial para la toma de decisiones y una Interfaz Gráfica (PySide6) amigable, se ha eliminado esta barrera técnica. Ahora, un usuario básico puede auditar, proteger y versionar su entorno de trabajo de manera transparente y segura, evitando los errores catastróficos asociados a la manipulación manual de enlaces simbólicos (<em>symlinks</em>).</p>
             </div>
 
             <h2>9.2. Cumplimiento de Competencias Académicas</h2>
-            <p>A nivel académico, el proyecto ha servido como un vehículo integrador excepcional para consolidar las competencias del ciclo formativo:</p>
+            <p>A nivel académico, el proyecto ha servido como un vehículo integrador excepcional para consolidar las
+                competencias del ciclo formativo:</p>
             <ul>
-                <li><strong>Desarrollo Backend y APIs:</strong> Construcción de un servidor robusto en Java con acceso a datos.</li>
-                <li><strong>Bases de Datos Relacionales:</strong> Implementación y manipulación de SQLite mediante mapeo objeto-relacional (ORM SQLAlchemy).</li>
-                <li><strong>Programación Orientada a Objetos e Interfaces:</strong> Diseño estricto del patrón MVC en Python para la interfaz gráfica.</li>
-                <li><strong>Sistemas Informáticos:</strong> Ejecución nativa de comandos del sistema operativo e implementación de subprocesos y tuberías de datos (<em>Pipelines</em>).</li>
+                <li><strong>Desarrollo Backend y APIs:</strong> Construcción de un servidor robusto en Java con acceso a
+                    datos.</li>
+                <li><strong>Bases de Datos Relacionales:</strong> Implementación y manipulación de SQLite mediante mapeo
+                    objeto-relacional (ORM SQLAlchemy).</li>
+                <li><strong>Programación Orientada a Objetos e Interfaces:</strong> Diseño estricto del patrón MVC en
+                    Python para la interfaz gráfica.</li>
+                <li><strong>Sistemas Informáticos:</strong> Ejecución nativa de comandos del sistema operativo e
+                    implementación de subprocesos y tuberías de datos (<em>Pipelines</em>).</li>
             </ul>
 
             <h2>9.3. Líneas de Trabajo Futuro</h2>
-            <p>Lejos de ser un producto cerrado, la arquitectura modular del proyecto se ha diseñado específicamente para soportar iteraciones y mejoras continuas orientadas a consolidarse como una herramienta nativa indispensable en distribuciones Linux.</p>
+            <p>Lejos de ser un producto cerrado, la arquitectura modular del proyecto se ha diseñado específicamente
+                para soportar iteraciones y mejoras continuas orientadas a consolidarse como una herramienta nativa
+                indispensable en distribuciones Linux.</p>
 
-            <div class="future-work-grid">
-                <div class="future-card">
-                    <h4>🛠️ Backups Unificados</h4>
-                    <p>Implementación del objetivo extra para generar "fotos fijas" del sistema en formato <code>tar.gz</code>. Esto facilitará drásticamente la migración rápida del usuario al cambiar entre diferentes distribuciones (ej. de Arch a Debian) o ante recuperaciones de desastres.</p>
-                </div>
+            <div class="tech-category type_a">
+                <h3>🛠️ Backups Unificados</h3>
+                <p>Implementación del objetivo extra para generar "fotos fijas" del sistema en formato <code>tar.gz</code>. Esto facilitará drásticamente la migración rápida del usuario al cambiar entre diferentes distribuciones (ej. de Arch a Debian) o ante recuperaciones de desastres.</p>
+            </div>
 
-                <div class="future-card">
-                    <h4>🤖 IA Privada (Modelos Locales)</h4>
-                    <p>Aunque actualmente el servidor consume la API de Gemini, una vía de desarrollo futuro es la integración con ecosistemas de ejecución local como <strong>Ollama</strong>. Esto permitiría a los usuarios clasificar sus configuraciones garantizando un aislamiento total de los datos fuera de la red pública.</p>
-                </div>
+            <div class="tech-category type_b">
+                <h3>🤖 IA Privada (Modelos Locales)</h3>
+                <p>Aunque actualmente el servidor consume la API de Gemini, una vía de desarrollo futuro es la integración con ecosistemas de ejecución local como <strong>Ollama</strong>. Esto permitiría a los usuarios clasificar sus configuraciones garantizando un aislamiento total de los datos fuera de la red pública.</p>
+            </div>
 
-                <div class="future-card">
-                    <h4>⏱️ Automatización Silenciosa</h4>
-                    <p>Desarrollo definitivo del modo <em>Headless</em> (CLI) para integrar la herramienta directamente con demonios del sistema como <code>cron</code> o <code>systemd timers</code>, permitiendo que el versionado y los escaneos ocurran de manera invisible en segundo plano.</p>
-                </div>
+            <div class="tech-category type_c">
+                <h3>⏱️ Automatización Silenciosa</h3>
+                <p>Desarrollo definitivo del modo <em>Headless</em> (CLI) para integrar la herramienta directamente con demonios del sistema como <code>cron</code> o <code>systemd timers</code>, permitiendo que el versionado y los escaneos ocurran de manera invisible en segundo plano.</p>
             </div>
         </main>
     </div>
