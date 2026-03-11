@@ -120,26 +120,13 @@
         </svg>
     </button>
 
-    <script>
-        const btnScrollTop = document.getElementById("btnScrollTop");
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                btnScrollTop.classList.add("show");
-            } else {
-                btnScrollTop.classList.remove("show");
-            }
-        });
-        btnScrollTop.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-
     <!-- PIE DE PÁGINA FIJO -->
     <footer>
         <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
         <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
     </footer>
 
+<script src="/scripts/scrolltop.js"></script>
 </body>
 
 </html>
