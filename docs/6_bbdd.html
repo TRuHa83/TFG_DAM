@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria - Dotfiles-Manager</title>
+    <style>
+        /* CSS Básico y funcional - Sin florituras */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Encabezado fijo */
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 40px;
+            border-bottom: 4px solid #10b981;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #cbd5e1;
+        }
+
+        /* Contenedor principal (Layout a dos columnas) */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navegación lateral */
+        nav {
+            width: 250px;
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #64748b;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #10b981;
+        }
+
+        .menu_select {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Área de contenido */
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        /* Pie de página fijo al final */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer strong {
+            color: #e2e8f0;
+        }
+
+        /* Estilos básicos para el contenido */
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Estilos básicos para el contenido */
+        code { background-color: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+
+        #btnScrollTop {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #10b981;
+            color: white;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+        }
+        #btnScrollTop.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        #btnScrollTop:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header>
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+    </header>
+
+    <div class="container">
+        <!-- MENÚ LATERAL -->
+        <nav>
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul>
+                <li><a href="1_introduccion.html">1. Introducción</a></li>
+                <li><a href="2_objetivos.html">2. Objetivos</a></li>
+                <li><a href="3_planificacion.html">3. Planificación (Roadmap)</a></li>
+                <li><a href="4_arquitectura.html">4. Arquitectura</a></li>
+                <li><a href="5_stack.html">5. Stack Tecnológico</a></li>
+                <li class="menu_select">6. Base de Datos</li>
+                <li><a href="7_interfaces.html">7. Interfaces UI/UX</a></li>
+                <li><a href="8_implementacion.html">8. Implementación</a></li>
+                <li><a href="9_conclusiones.html">9. Conclusiones</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>6. Diseño de la Base de Datos</h1>
+            <p>Dada la arquitectura distribuida de <strong>Dotfiles-Manager</strong>, la persistencia de datos se divide en dos dominios separados: un modelo local de alta velocidad para el cliente, y un modelo centralizado relacional para el servidor. Esta separación garantiza que el cliente pueda funcionar de forma autónoma (<em>offline</em>) y que el servidor pueda escalar de forma independiente.</p>
+
+            <h2>6.1. Base de Datos Local (SQLite Cliente)</h2>
+            <p>El cliente Python implementa una base de datos embebida <strong>SQLite</strong> gestionada a través del ORM SQLAlchemy. Su objetivo es actuar como caché inteligente, almacenando el estado del sistema y la configuración del usuario para minimizar las lecturas en disco (operaciones I/O pesadas) durante los escaneos.</p>
+
+            <!-- CONTENEDOR DE LA IMAGEN CENTRAL -->
+            <a href="resources/DiagramaERD.png" target="_blank" style="display: block; text-align: center; margin-bottom: 20px;">
+                <div style="margin: 40px 0; text-align: center; background-color: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <!-- La imagen se asume en la misma carpeta -->
+                    <img src="resources/DiagramaERD.webp" alt="Diagrama Entidad-Relación de la base de datos local SQLite" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    <div style="margin-top: 15px; font-size: 14px; color: #64748b; font-style: italic;">Figura 2: Diseño preliminar del Modelo Entidad-Relación (ERD) para el cliente local.</div>
+                </div>
+            </a>
+
+            <p>El diseño relacional preliminar se estructura en tres grandes bloques funcionales:</p>
+
+            <ul>
+                <li><strong>Bloque de Configuración (Tablas aisladas):</strong>
+                    <ul>
+                        <li><code>ui_preferences</code>: Almacena el estado de la interfaz gráfica (ej. modo oscuro, tamaño de ventana).</li>
+                        <li><code>server_config</code>: Parámetros de conexión a la API REST (URLs, tokens de sesión).</li>
+                        <li><code>os_distros_mapping</code>: Mapeo de rutas específicas según la distribución Linux subyacente (Arch, Debian, etc.).</li>
+                    </ul>
+                </li>
+
+                <li><strong>Bloque Lógico Relacional (El Inventario):</strong>
+                    <ul>
+                        <li><code>categories_apps</code> (1:N): Define la taxonomía del software (ej. Desarrollo, Terminal, Multimedia). Soporta jerarquías mediante <code>parent_id</code>.</li>
+                        <li><code>known_apps_reference</code> (1:N): Catálogo de aplicaciones reconocidas por el sistema (incluyendo su mapeo JSON).</li>
+                        <li><code>local_inventory</code> (N:1): El núcleo de la persistencia. Registra qué dotfiles existen físicamente en la máquina local (rutas, tipo de archivo) y los vincula a su aplicación correspondiente mediante <code>app_id</code>.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Bloque de Rendimiento y Filtrado:</strong>
+                    <ul>
+                        <li><code>global_ignore_rules</code>: Lista de patrones (RegEx, extensiones) que el motor debe omitir, optimizando el rendimiento.</li>
+                        <li><code>system_state_hashes</code>: Implementación técnica clave. Almacena hashes del estado de los directorios para determinar, en un coste de tiempo <em>O(1)</em>, si ha habido modificaciones desde el último escaneo, evitando procesamientos redundantes.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>6.2. Base de Datos Central (Servidor SQLite)</h2>
+            <p>El backend Java implementa un modelo de datos orientado a la agregación y el conocimiento colectivo. A diferencia de la base de datos local, el servidor no almacena rutas de usuarios individuales ni configuraciones privadas.</p>
+
+            <p>A nivel conceptual, este modelo alojará:</p>
+            <ul>
+                <li><strong>Diccionario Heurístico Global:</strong> Tabla principal que vincula <em>Hashes Estructurales</em> unívocos con identificadores de software.</li>
+                <li><strong>Entrenamiento LLM:</strong> Registro de las respuestas generadas por la Inteligencia Artificial para auditar clasificaciones, permitir correcciones manuales y retroalimentar el sistema.</li>
+            </ul>
+        </main>
+    </div>
+
+    <button id="btnScrollTop" title="Volver arriba">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        const btnScrollTop = document.getElementById("btnScrollTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btnScrollTop.classList.add("show");
+            } else {
+                btnScrollTop.classList.remove("show");
+            }
+        });
+        btnScrollTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+        <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+        <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria - Dotfiles-Manager</title>
+    <style>
+        /* CSS Básico y funcional - Sin florituras */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Encabezado fijo */
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 40px;
+            border-bottom: 4px solid #10b981;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #cbd5e1;
+        }
+
+        /* Contenedor principal (Layout a dos columnas) */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navegación lateral */
+        nav {
+            width: 250px;
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #64748b;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #10b981;
+        }
+
+        .menu_select {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Área de contenido */
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .future-work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilos específicos para conclusiones */
+        .conclusion-block {
+            background-color: #f8fafc;
+            border-left: 4px solid #10b981;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .conclusion-block h3 {
+            margin-top: 0;
+            color: #0f172a;
+            font-size: 20px;
+        }
+
+        .future-card {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .future-card h4 {
+            color: #38bdf8;
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Pie de página fijo al final */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer strong {
+            color: #e2e8f0;
+        }
+
+        /* Estilos básicos para el contenido */
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Estilos básicos para el contenido */
+        code { background-color: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+
+        #btnScrollTop {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #10b981;
+            color: white;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+        }
+        #btnScrollTop.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        #btnScrollTop:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header>
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+    </header>
+
+    <div class="container">
+        <!-- MENÚ LATERAL -->
+        <nav>
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul>
+                <li><a href="1_introduccion.html">1. Introducción</a></li>
+                <li><a href="2_objetivos.html">2. Objetivos</a></li>
+                <li><a href="3_planificacion.html">3. Planificación (Roadmap)</a></li>
+                <li><a href="4_arquitectura.html">4. Arquitectura</a></li>
+                <li><a href="5_stack.html">5. Stack Tecnológico</a></li>
+                <li><a href="6_bbdd.html">6. Base de Datos</a></li>
+                <li><a href="7_interfaces.html">7. Interfaces UI/UX</a></li>
+                <li><a href="8_implementacion.html">8. Implementación</a></li>
+                <li class="menu_select">9. Conclusiones</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>9. Conclusiones y Trabajo Futuro</h1>
+
+            <h2>9.1. Evaluación de los Resultados y Barrera de Entrada</h2>
+            <p>El desarrollo de <strong>Dotfiles-Manager</strong> ha demostrado con éxito la viabilidad de aplicar arquitecturas de software modernas (sistemas distribuidos, APIs REST e integración de Modelos de Lenguaje) a un problema clásico y persistente en la administración de sistemas UNIX/Linux.</p>
+
+            <div class="conclusion-block">
+                <h3>Rompiendo la Barrera de Entrada</h3>
+                <p>El mayor logro conceptual de este proyecto reside en la <strong>democratización de la gestión de entornos Linux</strong>. Tradicionalmente, la administración de <em>dotfiles</em> ha sido un terreno elitista, reservado para usuarios avanzados con profundos conocimientos de <em>scripting</em> en Bash y control de versiones por terminal.</p>
+                <p>Al dotar a la herramienta de un motor heurístico automatizado, soporte de Inteligencia Artificial para la toma de decisiones y una Interfaz Gráfica (PySide6) amigable, se ha eliminado esta barrera técnica. Ahora, un usuario básico puede auditar, proteger y versionar su entorno de trabajo de manera transparente y segura, evitando los errores catastróficos asociados a la manipulación manual de enlaces simbólicos (<em>symlinks</em>).</p>
+            </div>
+
+            <h2>9.2. Cumplimiento de Competencias Académicas</h2>
+            <p>A nivel académico, el proyecto ha servido como un vehículo integrador excepcional para consolidar las competencias del ciclo formativo:</p>
+            <ul>
+                <li><strong>Desarrollo Backend y APIs:</strong> Construcción de un servidor robusto en Java con acceso a datos.</li>
+                <li><strong>Bases de Datos Relacionales:</strong> Implementación y manipulación de SQLite mediante mapeo objeto-relacional (ORM SQLAlchemy).</li>
+                <li><strong>Programación Orientada a Objetos e Interfaces:</strong> Diseño estricto del patrón MVC en Python para la interfaz gráfica.</li>
+                <li><strong>Sistemas Informáticos:</strong> Ejecución nativa de comandos del sistema operativo e implementación de subprocesos y tuberías de datos (<em>Pipelines</em>).</li>
+            </ul>
+
+            <h2>9.3. Líneas de Trabajo Futuro</h2>
+            <p>Lejos de ser un producto cerrado, la arquitectura modular del proyecto se ha diseñado específicamente para soportar iteraciones y mejoras continuas orientadas a consolidarse como una herramienta nativa indispensable en distribuciones Linux.</p>
+
+            <div class="future-work-grid">
+                <div class="future-card">
+                    <h4>🛠️ Backups Unificados</h4>
+                    <p>Implementación del objetivo extra para generar "fotos fijas" del sistema en formato <code>tar.gz</code>. Esto facilitará drásticamente la migración rápida del usuario al cambiar entre diferentes distribuciones (ej. de Arch a Debian) o ante recuperaciones de desastres.</p>
+                </div>
+
+                <div class="future-card">
+                    <h4>🤖 IA Privada (Modelos Locales)</h4>
+                    <p>Aunque actualmente el servidor consume la API de Gemini, una vía de desarrollo futuro es la integración con ecosistemas de ejecución local como <strong>Ollama</strong>. Esto permitiría a los usuarios clasificar sus configuraciones garantizando un aislamiento total de los datos fuera de la red pública.</p>
+                </div>
+
+                <div class="future-card">
+                    <h4>⏱️ Automatización Silenciosa</h4>
+                    <p>Desarrollo definitivo del modo <em>Headless</em> (CLI) para integrar la herramienta directamente con demonios del sistema como <code>cron</code> o <code>systemd timers</code>, permitiendo que el versionado y los escaneos ocurran de manera invisible en segundo plano.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <button id="btnScrollTop" title="Volver arriba">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        const btnScrollTop = document.getElementById("btnScrollTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btnScrollTop.classList.add("show");
+            } else {
+                btnScrollTop.classList.remove("show");
+            }
+        });
+        btnScrollTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+        <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+        <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+
+</body>
+
+</html>

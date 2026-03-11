@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria - Dotfiles-Manager</title>
+    <style>
+        /* CSS Básico y funcional - Sin florituras */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Encabezado fijo */
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 40px;
+            border-bottom: 4px solid #10b981;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #cbd5e1;
+        }
+
+        /* Contenedor principal (Layout a dos columnas) */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navegación lateral */
+        nav {
+            width: 250px;
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #64748b;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #10b981;
+        }
+
+        .menu_select {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Área de contenido */
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        /* Pie de página fijo al final */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 15px 40px;
+            font-size: 14px;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer strong {
+            color: #e2e8f0;
+        }
+
+        /* Estilos básicos para el contenido */
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Estilos básicos para el contenido */
+        code { background-color: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+
+        #btnScrollTop {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #10b981;
+            color: white;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+        }
+        #btnScrollTop.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        #btnScrollTop:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header>
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+    </header>
+
+    <div class="container">
+        <!-- MENÚ LATERAL -->
+        <nav>
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul>
+                <li><a href="1_introduccion.html">1. Introducción</a></li>
+                <li><a href="2_objetivos.html">2. Objetivos</a></li>
+                <li><a href="3_planificacion.html">3. Planificación (Roadmap)</a></li>
+                <li><a href="4_arquitectura.html">4. Arquitectura</a></li>
+                <li><a href="5_stack.html">5. Stack Tecnológico</a></li>
+                <li><a href="6_bbdd.html">6. Base de Datos</a></li>
+                <li><a href="7_interfaces.html">7. Interfaces UI/UX</a></li>
+                <li class="menu_select">8. Implementación</a></li>
+                <li><a href="9_conclusiones.html">9. Conclusiones</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>8. Implementación y Desarrollo</h1>
+            <p>Esta sección detalla la traducción del diseño arquitectónico a código fuente funcional, especificando el entorno de trabajo, la organización de los repositorios y los fragmentos clave de la lógica de negocio.</p>
+
+            <h2>8.1. Entorno de Desarrollo y Metodología</h2>
+            <p>El desarrollo completo del sistema se ha llevado a cabo bajo un ecosistema de software libre y multiplataforma, garantizando la máxima compatibilidad nativa con los objetivos del proyecto.</p>
+            <ul>
+                <li><strong>Sistema Operativo Base:</strong> Entornos Linux nativos (Arch Linux / Debian) para la construcción y prueba de las herramientas de auditoría del sistema de archivos.</li>
+                <li><strong>IDEs y Herramientas UI:</strong> Se ha optado por un flujo de trabajo unificado basado en la suite profesional de JetBrains. Se utiliza <em>IntelliJ IDEA</em> para el desarrollo robusto del backend en Java, y <em>PyCharm</em> para el ecosistema del cliente en Python. Para el modelado visual de la interfaz gráfica se emplea <strong>Qt Designer</strong>. En busca de la máxima eficiencia de ejecución y una integración total con el IDE (autocompletado, tipado estricto), los archivos <code>.ui</code> generados son compilados directamente a código fuente nativo de Python (<code>.py</code>) utilizando <code>pyside6-uic</code>. Esto permite diseñar visualmente pero ejecutar código 100% nativo.</li>
+                <li><strong>Control de Versiones:</strong> Todo el código fuente del proyecto se gestiona mediante <strong>Git</strong>, utilizando un flujo de trabajo basado en <em>Feature Branches</em> (creación de ramas independientes para cada nueva funcionalidad antes de unirlas a la rama principal <code>main</code>).</li>
+            </ul>
+
+            <h2>8.2. Estructura del Proyecto (Estructura de Directorios)</h2>
+            <p>Para mantener la separación de responsabilidades, el ecosistema se organiza de forma estrictamente modular. A continuación se detalla el árbol de directorios actual correspondiente al cliente local (Python), el cual separa de forma clara la lógica central (Core), la persistencia (Database), y las múltiples interfaces (CLI y futura UI):</p>
+
+            <div style="background-color: #0f172a; color: #e2e8f0; padding: 20px; border-radius: 8px; border-left: 4px solid #38bdf8; font-family: 'Fira Code', monospace; font-size: 14px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow-x: auto;">
+<pre style="margin: 0; line-height: 1.5;">
+<span style="color: #10b981;">dotfiles-manager/</span> (Cliente Python)
+├── <span style="color: #38bdf8;">cli/</span>
+│   ├── commands.py      <span style="color: #64748b;"># Comandos de ejecución</span>
+│   ├── console.py       <span style="color: #64748b;"># Sistema de impresion con Rich</span>
+│   ├── create.py        <span style="color: #64748b;"># Creador menu parser</span>
+│   ├── customs.py       <span style="color: #64748b;"># Vista del menu personalizado</span>
+│   └── parser.py        <span style="color: #64748b;"># Parser de comandos</span>
+├── <span style="color: #38bdf8;">core/</span>
+│   ├── context.py       <span style="color: #64748b;"># Estado persistente de los steps</span>
+│   ├── pipelines.py     <span style="color: #64748b;"># Orquestador secuencial del motor</span>
+│   └── steps.py         <span style="color: #64748b;"># Nodos de ejecución del pipeline</span>
+├── <span style="color: #38bdf8;">modules/</span>
+│   ├── <span style="color: #38bdf8;">database/</span>
+│   │   ├── manager.py   <span style="color: #64748b;"># Getters y Setters de la base de datos</span>
+│   │   └── models.py    <span style="color: #64748b;"># Modelos de SQLAlchemy</span>
+│   └── logger.py        <span style="color: #64748b;"># Sistema de trazas y eventos</span>
+├── <span style="color: #38bdf8;">ui/</span>
+├── version.py           <span style="color: #64748b;"># Información del proyecto</span>
+├── config.py            <span style="color: #64748b;"># Configuración global del entorno</span>
+└── main.py              <span style="color: #64748b;"># Punto de entrada (Entry point) de la app</span>
+</pre>
+            </div>
+
+            <p style="margin-top: 15px; font-size: 14px; color: #64748b; font-style: italic;">
+                * Nota: La estructura del repositorio correspondiente al servidor backend (Java API) se definirá y documentará en iteraciones posteriores del desarrollo.
+            </p>
+
+            <h2 style="margin-top: 40px;">8.3. Fragmentos Clave de Código (Core Logic)</h2>
+            <p><em>Nota para el documento final: En esta subsección se documentarán y explicarán los algoritmos más críticos desarrollados durante el proyecto.</em></p>
+
+            <p>Se espera incluir, a modo de demostración técnica, la implementación de:</p>
+            <ul>
+                <li><strong>El Patrón Pipeline:</strong> El bucle principal en Python que itera sobre los archivos, aplicando las clases de filtrado (Ignorados) y clasificación heurística.</li>
+                <li><strong>Llamadas a Subprocesos (Git Bare):</strong> La función en Python que interactúa directamente con el binario de Git del sistema operativo, inyectando las variables de entorno <code>--git-dir</code> y <code>--work-tree</code> sin corromper el entorno del usuario.</li>
+                <li><strong>El Controlador REST en Java:</strong> La clase que recibe el Payload JSON, extrae el Hash, consulta la base de datos a través de Hibernate y gestiona las peticiones a la API del Modelo de Lenguaje.</li>
+            </ul>
+
+            <h2>8.4. Estrategia de Pruebas (Testing)</h2>
+            <p>Dado el carácter crítico de la aplicación (que manipulará archivos reales en el disco duro del usuario), la implementación se acompaña de una batería de pruebas unitarias:</p>
+            <ul>
+                <li>Uso de la librería estándar <strong>unittest</strong> en el cliente Python, apoyándose intensivamente en su módulo <code>unittest.mock</code> para simular sistemas de archivos ficticios. Esto permite asegurar que las reglas de exclusión (ignores) y la heurística XDG funcionan con precisión milimétrica sin riesgo de alterar el directorio personal real del usuario.</li>
+                <li>Validación de los <em>Endpoints</em> de la API Java utilizando herramientas de testeo de rutas (como <em>Postman</em> o las anotaciones nativas de pruebas como <em>JUnit</em>).</li>
+            </ul>
+        </main>
+    </div>
+
+    <button id="btnScrollTop" title="Volver arriba">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        const btnScrollTop = document.getElementById("btnScrollTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btnScrollTop.classList.add("show");
+            } else {
+                btnScrollTop.classList.remove("show");
+            }
+        });
+        btnScrollTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+        <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+        <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+
+</body>
+
+</html>
