@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Memoria - Dotfiles-Manager</title>
+  <link href="../../styles/base.css" rel="stylesheet" />
+  <link href="../../styles/scrolltop.css" rel="stylesheet" />
+  <link href="../../styles/techcat.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ENCABEZADO FIJO -->
+  <header>
+    <div class="header-titles">
+      <h1>Dotfiles-Manager</h1>
+      <h2>Memoria de Proyecto</h2>
+    </div>
+
+    <div class="header-nav-btn">
+      <a class="nav-btn prev-btn" href="5_2_entorno_servidor.html">← Anterior</a><a class="nav-btn next-btn"
+        href="../6_bbdd.html">Siguiente →</a>
+    </div>
+  </header>
+  <div class="container">
+    <!-- MENÚ LATERAL -->
+    <nav>
+      <h3><a href="../../index.html">Inicio</a></h3>
+      <ul>
+        <li><a href="../1_introduccion.html">1. Introducción</a></li>
+        <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+        <li>
+          <a href="../3_planificacion.html">3. Planificación</a>
+        </li>
+        <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+        <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+        <ul>
+          <li>
+            <a href="5_1_entorno_local.html">5.1. Entorno del Cliente</a>
+          </li>
+          <li>
+            <a href="5_2_entorno_servidor.html">5.2. Entorno del Servidor</a>
+          </li>
+          <li class="menu_select">5.3. Servicios Externos</li>
+        </ul>
+        <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+        <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+        <li><a href="../8_implementacion.html">8. Implementación</a></li>
+        <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>5.3. Servicios Externos e Integración</h2>
+        <p>
+          El sistema se apoya en servicios en la nube (o locales) para
+          externalizar la carga computacional cognitiva.
+        </p>
+        <div class="tech-item">
+          <strong>Modelos de Lenguaje Grandes (LLMs)</strong>
+          <p>
+            Integración con servicios de Inteligencia Artificial consumidos
+            exclusivamente desde el servidor Java. El proyecto utilizará la
+            API de <strong>Google Gemini</strong> como motor de inferencia
+            principal para procesar heurísticamente la estructura de los
+            archivos desconocidos. No obstante, el sistema se diseñará de
+            forma modular, dejando la puerta abierta para integrar otros
+            modelos de la industria o, de manera ideal para entornos de alta
+            privacidad, modelos de ejecución local como
+            <strong>Ollama</strong>.
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button id="btnScrollTop" title="Volver arriba">
+    <svg fill="none" height="24" stroke="currentColor" viewbox="0 0 24 24" width="24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+    </svg>
+  </button>
+  <footer>
+    <p>
+      <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+      Clasificación de Entornos Linux
+    </p>
+    <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+  </footer>
+  <script src="../../scripts/scrolltop.js"></script>
+</body>
+
+</html>
