@@ -41,6 +41,16 @@ nav li { margin-bottom: 10px; }
 nav a { text-decoration: none; color: #0f172a; font-weight: 500; }
 nav a:hover { color: #10b981; }
 
+nav ul ul {
+    padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border-left: 2px solid #cbd5e1;
+    margin-left: 10px;
+}
+nav ul ul li { margin-bottom: 8px; }
+nav ul ul a { font-weight: 400; font-size: 14px; color: #475569; }
+
 .menu_select { color: #10b981; font-weight: bold;}
 
 /* Área de contenido */
