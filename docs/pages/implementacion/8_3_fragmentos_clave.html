@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a
+          class="nav-btn prev-btn"
+          href="8_2_estructura_proyecto.html"
+          >← Anterior</a
+        ><a
+          class="nav-btn next-btn"
+          href="8_4_estrategia_pruebas.html"
+          >Siguiente →</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <ul>
+            <li>
+              <a href="8_1_entorno_desarrollo.html">8.1. Entorno de Desarrollo</a>
+            </li>
+            <li>
+              <a href="8_2_estructura_proyecto.html">8.2. Estructura del Proyecto</a>
+            </li>
+            <li class="menu_select">
+              8.3. Fragmentos Clave
+            </li>
+            <li>
+              <a href="8_4_estrategia_pruebas.html">8.4. Estrategia de Pruebas</a>
+            </li>
+          </ul>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2 style="margin-top: 40px">
+          8.3. Fragmentos Clave de Código (Core Logic)
+        </h2>
+        <p>
+          <em
+            >Nota para el documento final: En esta subsección se documentarán y
+            explicarán los algoritmos más críticos desarrollados durante el
+            proyecto.</em
+          >
+        </p>
+        <p>
+          Se espera incluir, a modo de demostración técnica, la implementación
+          de:
+        </p>
+        <ul>
+          <li>
+            <strong>El Patrón Pipeline:</strong> El bucle principal en Python
+            que itera sobre los archivos, aplicando las clases de filtrado
+            (Ignorados) y clasificación heurística.
+          </li>
+          <li>
+            <strong>Llamadas a Subprocesos (Git Bare):</strong> La función en
+            Python que interactúa directamente con el binario de Git del sistema
+            operativo, inyectando las variables de entorno
+            <code>--git-dir</code> y <code>--work-tree</code> sin corromper el
+            entorno del usuario.
+          </li>
+          <li>
+            <strong>El Controlador REST en Java:</strong> La clase que recibe el
+            Payload JSON, extrae el Hash, consulta la base de datos a través de
+            Hibernate y gestiona las peticiones a la API del Modelo de Lenguaje.
+          </li>
+        </ul>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <script src="../../scripts/scrolltop.js"></script>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+  </body>
+</html>

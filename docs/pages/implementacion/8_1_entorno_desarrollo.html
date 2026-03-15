@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="../8_implementacion.html"
+          >← Anterior</a
+        ><a
+          class="nav-btn next-btn"
+          href="8_2_estructura_proyecto.html"
+          >Siguiente →</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <ul>
+            <li class="menu_select">
+              8.1. Entorno de Desarrollo
+            </li>
+            <li>
+              <a href="8_2_estructura_proyecto.html">8.2. Estructura del Proyecto</a>
+            </li>
+            <li>
+              <a href="8_3_fragmentos_clave.html">8.3. Fragmentos Clave</a>
+            </li>
+            <li>
+              <a href="8_4_estrategia_pruebas.html">8.4. Estrategia de Pruebas</a>
+            </li>
+          </ul>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>8.1. Entorno de Desarrollo y Metodología</h2>
+        <p>
+          El desarrollo completo del sistema se ha llevado a cabo bajo un
+          ecosistema de software libre y multiplataforma, garantizando la máxima
+          compatibilidad nativa con los objetivos del proyecto.
+        </p>
+        <ul>
+          <li>
+            <strong>Sistema Operativo Base:</strong> Entornos Linux nativos
+            (Arch Linux / Debian) para la construcción y prueba de las
+            herramientas de auditoría del sistema de archivos.
+          </li>
+          <li>
+            <strong>IDEs y Herramientas UI:</strong> Se ha optado por un flujo
+            de trabajo unificado basado en la suite profesional de JetBrains. Se
+            utiliza <em>IntelliJ IDEA</em> para el desarrollo robusto del
+            backend en Java, y <em>PyCharm</em> para el ecosistema del cliente
+            en Python. Para el modelado visual de la interfaz gráfica se emplea
+            <strong>Qt Designer</strong>. En busca de la máxima eficiencia de
+            ejecución y una integración total con el IDE (autocompletado, tipado
+            estricto), los archivos <code>.ui</code> generados son compilados
+            directamente a código fuente nativo de Python (<code>.py</code>)
+            utilizando <code>pyside6-uic</code>. Esto permite diseñar
+            visualmente pero ejecutar código 100% nativo.
+          </li>
+          <li>
+            <strong>Control de Versiones:</strong> Todo el código fuente del
+            proyecto se gestiona mediante <strong>Git</strong>, utilizando un
+            flujo de trabajo basado en <em>Feature Branches</em> (creación de
+            ramas independientes para cada nueva funcionalidad antes de unirlas
+            a la rama principal <code>main</code>).
+          </li>
+        </ul>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <script src="../../scripts/scrolltop.js"></script>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+  </body>
+</html>
