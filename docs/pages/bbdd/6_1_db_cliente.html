@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="../6_bbdd.html">← Anterior</a
+        ><a
+          class="nav-btn next-btn"
+          href="6_2_db_servidor.html"
+          >Siguiente →</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <ul>
+            <li class="menu_select">
+              6.1. Cliente
+            </li>
+            <li>
+              <a href="6_2_db_servidor.html"
+                >6.2. Servidor</a
+              >
+            </li>
+          </ul>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>6.1. Base de Datos Local (SQLite Cliente)</h2>
+        <p>
+          El cliente Python implementa una base de datos embebida
+          <strong>SQLite</strong> gestionada a través del ORM SQLAlchemy. Su
+          objetivo es actuar como caché inteligente, almacenando el estado del
+          sistema y la configuración del usuario para minimizar las lecturas en
+          disco (operaciones I/O pesadas) durante los escaneos.
+        </p>
+        <!-- CONTENEDOR DE LA IMAGEN CENTRAL -->
+        <a
+          href="../../resources/DiagramaERD.webp"
+          style="display: block; text-align: center; margin-bottom: 20px"
+          target="_blank"
+        >
+          <div
+            style="
+              margin: 40px 0;
+              text-align: center;
+              background-color: #f8fafc;
+              padding: 20px;
+              border-radius: 12px;
+              border: 1px solid #e2e8f0;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <!-- La imagen se asume en la misma carpeta -->
+            <img
+              alt="Diagrama Entidad-Relación de la base de datos local SQLite"
+              src="../../resources/DiagramaERD.webp"
+              style="max-width: 100%; height: auto; border-radius: 8px"
+            />
+            <div
+              style="
+                margin-top: 15px;
+                font-size: 14px;
+                color: #64748b;
+                font-style: italic;
+              "
+            >
+              Figura 3: Diseño preliminar del Modelo Entidad-Relación (ERD) para
+              el cliente local.
+            </div>
+          </div>
+        </a>
+        <p>
+          El diseño relacional preliminar se estructura en tres grandes bloques
+          funcionales:
+        </p>
+        <ul>
+          <li>
+            <strong>Bloque de Configuración (Tablas aisladas):</strong>
+            <ul>
+              <li>
+                <code>ui_preferences</code>: Almacena el estado de la interfaz
+                gráfica (ej. modo oscuro, tamaño de ventana).
+              </li>
+              <li>
+                <code>server_config</code>: Parámetros de conexión a la API REST
+                (URLs, tokens de sesión).
+              </li>
+              <li>
+                <code>os_distros_mapping</code>: Mapeo de rutas específicas
+                según la distribución Linux subyacente (Arch, Debian, etc.).
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bloque Lógico Relacional (El Inventario):</strong>
+            <ul>
+              <li>
+                <code>categories_apps</code> (1:N): Define la taxonomía del
+                software (ej. Desarrollo, Terminal, Multimedia). Soporta
+                jerarquías mediante <code>parent_id</code>.
+              </li>
+              <li>
+                <code>known_apps_reference</code> (1:N): Catálogo de
+                aplicaciones reconocidas por el sistema (incluyendo su mapeo
+                JSON).
+              </li>
+              <li>
+                <code>local_inventory</code> (N:1): El núcleo de la
+                persistencia. Registra qué dotfiles existen físicamente en la
+                máquina local (rutas, tipo de archivo) y los vincula a su
+                aplicación correspondiente mediante <code>app_id</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bloque de Rendimiento y Filtrado:</strong>
+            <ul>
+              <li>
+                <code>global_ignore_rules</code>: Lista de patrones (RegEx,
+                extensiones) que el motor debe omitir, optimizando el
+                rendimiento.
+              </li>
+              <li>
+                <code>system_state_hashes</code>: Implementación técnica clave.
+                Almacena hashes del estado de los directorios para determinar,
+                en un coste de tiempo <em>O(1)</em>, si ha habido modificaciones
+                desde el último escaneo, evitando procesamientos redundantes.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>

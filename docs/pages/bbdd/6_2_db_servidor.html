@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a
+          class="nav-btn prev-btn"
+          href="6_1_db_cliente.html"
+          >← Anterior</a
+        ><a class="nav-btn next-btn" href="../7_interfaces.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <ul>
+            <li>
+              <a href="6_1_db_cliente.html"
+                >6.1. Cliente</a
+              >
+            </li>
+            <li class="menu_select">
+              6.2. Servidor
+            </li>
+          </ul>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>6.2. Base de Datos Central (Servidor SQLite)</h2>
+        <p>
+          El backend Java implementa un modelo de datos orientado a la
+          agregación y el conocimiento colectivo. A diferencia de la base de
+          datos local, el servidor no almacena rutas de usuarios individuales ni
+          configuraciones privadas.
+        </p>
+        <p>A nivel conceptual, este modelo alojará:</p>
+        <ul>
+          <li>
+            <strong>Diccionario Heurístico Global:</strong> Tabla principal que
+            vincula <em>Hashes Estructurales</em> unívocos con identificadores
+            de software.
+          </li>
+          <li>
+            <strong>Entrenamiento LLM:</strong> Registro de las respuestas
+            generadas por la Inteligencia Artificial para auditar
+            clasificaciones, permitir correcciones manuales y retroalimentar el
+            sistema.
+          </li>
+        </ul>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>
