@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a
+          class="nav-btn prev-btn"
+          href="4_2_flujo_datos.html"
+          >← Anterior</a
+        ><a class="nav-btn next-btn" href="4_4_flujo_secuencia.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <ul>
+            <li>
+              <a href="4_1_topologia.html">4.1. Topología</a>
+            </li>
+            <li>
+              <a href="4_2_flujo_datos.html">4.2. Flujo de Datos</a>
+            </li>
+            <li class="menu_select">4.3. Patrón de Diseño</li>
+            <li>
+              <a href="4_4_flujo_secuencia.html">4.4 Flujos de Secuencia</a>
+            </li>
+            <li>
+              <a href="4_5_analisis.html">4.5 Análisis</a>
+            </li>
+          </ul>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>4.3. Patrones de Diseño Aplicados</h2>
+        <p>
+          Para asegurar que el código sea mantenible, escalable y cumpla con los
+          estándares de la ingeniería de software, se han implementado los
+          siguientes patrones arquitectónicos:
+        </p>
+        <ul>
+          <li>
+            <strong>Patrón MVC (Modelo-Vista-Controlador):</strong>
+            <p>
+              Utilizado estrictamente en el cliente Python con el framework
+              PySide6. La interfaz gráfica (<em>Vista</em>) es completamente
+              "tonta" e independiente. Los <em>Controladores</em> interceptan
+              las acciones del usuario (ej. pulsar el botón "Escanear") y
+              actualizan los <em>Modelos</em>, que son los encargados de
+              interactuar con la base de datos SQLite.
+            </p>
+          </li>
+          <li>
+            <strong>Patrón Pipeline (Tubería de Datos):</strong>
+            <p>
+              Implementado en el motor de escaneo local. Cada archivo encontrado
+              en el <code>$HOME</code> pasa por una cadena de montaje
+              secuencial:
+              <code
+                >Descubrimiento → Heurística XDG → Filtrado de Ignores →
+                Petición API (si es necesario) → Persistencia</code
+              >.
+            </p>
+            <p>
+              <strong>Decisión Arquitectónica Clave:</strong> Es crucial
+              destacar este orden de ejecución. La heurística local actúa
+              primero para rescatar e identificar archivos legítimos (ej. un
+              <code>.bash_history</code> que el usuario sí desea versionar con
+              el paquete de Bash). Solo a los archivos
+              <em>no identificados (huérfanos)</em> se les aplican
+              posteriormente las reglas de exclusión (ignorando extensiones
+              genéricas de caché o logs). Esto garantiza que no se pierdan datos
+              útiles y, a su vez, evita enviar "basura" al servidor, optimizando
+              drásticamente el uso de la API.
+            </p>
+          </li>
+          <li>
+            <strong
+              >Arquitectura REST (Representational State Transfer):</strong
+            >
+            <p>
+              Define la interfaz de comunicación entre Python y Java. El
+              servidor expone <em>Endpoints</em> semánticos (ej.
+              <code>POST /api/v1/classify</code>) que devuelven códigos de
+              estado HTTP estándar (200 OK, 404 Not Found, 500 Server Error) y
+              respuestas en formato JSON puro, garantizando la interoperabilidad
+              entre ambos lenguajes.
+            </p>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>
