@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/techcat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="7_1_navegacion.html"
+          >← Anterior</a
+        ><a class="nav-btn next-btn" href="../8_implementacion.html"
+          >Siguiente →</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <ul>
+            <li>
+              <a href="7_1_navegacion.html"
+                >7.1. Patrón de Navegación</a
+              >
+            </li>
+            <li class="menu_select">7.2. Concepto de Vistas</li>
+          </ul>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>7.2. Desglose Conceptual de Vistas</h2>
+        <!-- Grupo 1 -->
+        <div class="tech-category type_a">
+          <h3>1. Telemetría y Resumen</h3>
+          <p>
+            Pantalla de aterrizaje principal diseñada para ofrecer una visión
+            global del estado del sistema al iniciar la aplicación.
+          </p>
+          <div class="tech-item">
+            <strong>Dashboard</strong>
+            <ul>
+              <li>
+                <strong>Métricas de escaneo:</strong> Número total de dotfiles
+                detectados en el sistema.
+              </li>
+              <li>
+                <strong>Estado de clasificación:</strong> Ratio exacto de
+                archivos clasificados frente a archivos sin clasificar.
+              </li>
+              <li>
+                <strong>Volumen de software:</strong> Conteo total de
+                aplicaciones soportadas y detectadas en la máquina.
+              </li>
+              <li>
+                <strong>Información del sistema:</strong> Versión actual del
+                software e información básica relevante (ej. fecha del último
+                escaneo).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grupo 2 -->
+        <div class="tech-category type_b">
+          <h3>2. Gestión de Inventario</h3>
+          <p>
+            El núcleo interactivo de la aplicación, donde el usuario audita y
+            manipula las relaciones entre los dotfiles y su software
+            correspondiente.
+          </p>
+          <div class="tech-item">
+            <strong>Aplicaciones Listadas</strong>
+            <p>
+              Catálogo visual del software reconocido, acompañado de sus iconos
+              representativos.
+            </p>
+            <ul>
+              <li>
+                Visualización en detalle de los archivos vinculados a cada
+                aplicación.
+              </li>
+              <li>Capacidad para editar los metadatos de la aplicación.</li>
+              <li>
+                Acciones directas para vincular rutas adicionales o desvincular
+                archivos asignados erróneamente.
+              </li>
+            </ul>
+          </div>
+          <div class="tech-item">
+            <strong>Archivos Desconocidos</strong>
+            <p>
+              Listado de las rutas que el motor heurístico local no ha logrado
+              identificar de forma automática.
+            </p>
+            <ul>
+              <li>
+                Controles para agregar o eliminar estos archivos de las listas
+                de ignorados del sistema.
+              </li>
+              <li>
+                Opción para crear una aplicación nueva manualmente y vincularle
+                estos archivos.
+              </li>
+              <li>
+                Acción específica para marcar archivos y solicitar su
+                identificación vía LLM (activando la conexión con el servidor).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grupo 3 -->
+        <div class="tech-category type_c">
+          <h3>3. Administración y Mantenimiento</h3>
+          <p>
+            Módulo destinado a la configuración del comportamiento interno de la
+            herramienta.
+          </p>
+          <div class="tech-item">
+            <strong>Ajustes</strong>
+            <ul>
+              <li>
+                Configuración de parámetros básicos de la interfaz y la
+                aplicación.
+              </li>
+              <li>
+                Gestor de reglas de ignorados (añadir/eliminar exclusiones
+                personalizadas).
+              </li>
+              <li>
+                Módulo para exportar/importar ajustes globales (facilitando la
+                migración a otros equipos).
+              </li>
+              <li>
+                Opciones de mantenimiento, como el reseteo completo de la base
+                de datos local (DB Wipe).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="view-note">
+          <p>
+            <em
+              >Nota: El resto de funcionalidades avanzadas propuestas en los
+              objetivos (como la configuración de Tareas Cron o la gestión de
+              Backups) se diseñarán e integrarán en el menú lateral de forma
+              progresiva a medida que avance el desarrollo.</em
+            >
+          </p>
+        </div>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>
