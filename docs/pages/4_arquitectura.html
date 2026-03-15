@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../styles/base.css" rel="stylesheet" />
+    <link href="../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../styles/code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="3_planificacion.html">← Anterior</a
+        ><a
+          class="nav-btn next-btn"
+          href="arquitectura/4_1_topologia.html"
+          >Siguiente →</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="1_introduccion.html">1. Introducción</a></li>
+          <li><a href="2_objetivos.html">2. Objetivos</a></li>
+          <li><a href="3_planificacion.html">3. Planificación</a></li>
+          <li class="menu_select">4. Arquitectura</li>
+          <ul>
+            <li>
+              <a href="arquitectura/4_1_topologia.html">4.1. Topología</a>
+            </li>
+            <li>
+              <a href="arquitectura/4_2_flujo_datos.html">4.2. Flujo de Datos</a>
+            </li>
+            <li>
+              <a href="arquitectura/4_3_patrones.html">4.3. Patrón de Diseño</a>
+            </li>
+            <li>
+              <a href="arquitectura/4_4_flujo_secuencia.html">4.4 Flujos de Secuencia</a>
+            </li>
+            <li>
+              <a href="arquitectura/4_5_analisis.html">4.5 Análisis</a>
+            </li>
+          </ul>
+          <li><a href="5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="8_implementacion.html">8. Implementación</a></li>
+          <li><a href="9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>4. Arquitectura del Sistema</h1>
+        <p>
+          El diseño arquitectónico de <strong>Dotfiles-Manager</strong> rompe
+          con el paradigma monolítico tradicional de los gestores de
+          configuración locales. Se ha concebido como un sistema distribuido e
+          híbrido que combina el procesamiento intensivo en la máquina del
+          usuario (<em>Edge Computing</em>) con una capa de conocimiento
+          colectivo en la nube, garantizando en todo momento la integridad y
+          privacidad de los datos.
+        </p>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../scripts/scrolltop.js"></script>
+  </body>
+</html>
