@@ -1,56 +1,86 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoria - Dotfiles-Manager</title>
-    <link rel="stylesheet" href="styles/base.css">
-</head>
-<body>
+<!doctype html>
 
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="styles/base.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- ENCABEZADO FIJO -->
     <header>
+      <div class="header-titles">
         <h1>Dotfiles-Manager</h1>
         <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn next-btn" href="pages/1_introduccion.html"
+          >Siguiente →</a
+        >
+      </div>
     </header>
-
     <div class="container">
-        <!-- MENÚ LATERAL -->
-        <nav>
-            <h3 class="menu_select" >Inicio</h3>
-            <ul>
-                <li><a href="1_introduccion.html">1. Introducción</a></li>
-                <li><a href="2_objetivos.html">2. Objetivos</a></li>
-                <li><a href="3_planificacion.html">3. Planificación (Roadmap)</a></li>
-                <li><a href="4_arquitectura.html">4. Arquitectura</a></li>
-                <li><a href="5_stack.html">5. Stack Tecnológico</a></li>
-                <li><a href="6_bbdd.html">6. Base de Datos</a></li>
-                <li><a href="7_interfaces.html">7. Interfaces UI/UX</a></li>
-                <li><a href="8_implementacion.html">8. Implementación</a></li>
-                <li><a href="9_conclusiones.html">9. Conclusiones</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <h1>Índice General del Proyecto</h1>
-            <p>Bienvenido a la documentación oficial y técnica del Trabajo de Fin de Grado: <strong>Dotfiles-Manager</strong>. Este documento web interactivo recoge el proceso íntegro de diseño, análisis y desarrollo arquitectónico del sistema.</p>
-            <p>Utiliza el menú lateral de navegación para explorar las distintas secciones, desde la motivación inicial hasta los detalles de implementación técnica, diseño de bases de datos y flujos de usuario.</p>
-
-            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
-
-            <h2>Resumen Ejecutivo</h2>
-            <p>La presente memoria detalla la concepción y creación de una herramienta avanzada para la gestión, clasificación y versionado (<em>Zero-Friction</em>) de archivos de configuración en entornos UNIX/Linux, optimizada para proporcionar una experiencia nativa en distribuciones como Arch Linux, Manjaro o Debian.</p>
-
-            <p>A través de un enfoque innovador que rompe con las soluciones estáticas tradicionales, el proyecto propone un ecosistema distribuido <strong>Cliente-Servidor</strong>. El cliente local (desarrollado en Python) se encarga de la auditoría integral del sistema de archivos y la persistencia local, mientras que el servidor central (API REST en Java) actúa como "oráculo" de conocimiento, integrándose de forma segura con Modelos de Lenguaje Grande (LLMs) para ofrecer una clasificación inteligente y comunitaria de aquellos <em>dotfiles</em> desconocidos o huérfanos.</p>
-
-        </main>
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="pages/1_introduccion.html">1. Introducción</a></li>
+          <li><a href="pages/2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="pages/3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="pages/4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="pages/5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="pages/6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="pages/7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="pages/8_implementacion.html">8. Implementación</a></li>
+          <li><a href="pages/9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>Índice General del Proyecto</h1>
+        <p>
+          Bienvenido a la documentación oficial y técnica del Trabajo de Fin de
+          Grado: <strong>Dotfiles-Manager</strong>. Este documento web
+          interactivo recoge el proceso íntegro de diseño, análisis y desarrollo
+          arquitectónico del sistema.
+        </p>
+        <p>
+          Utiliza el menú lateral de navegación para explorar las distintas
+          secciones, desde la motivación inicial hasta los detalles de
+          implementación técnica, diseño de bases de datos y flujos de usuario.
+        </p>
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0" />
+        <h2>Resumen Ejecutivo</h2>
+        <p>
+          La presente memoria detalla la concepción y creación de una
+          herramienta avanzada para la gestión, clasificación y versionado
+          (<em>Zero-Friction</em>) de archivos de configuración en entornos
+          UNIX/Linux, optimizada para proporcionar una experiencia nativa en
+          distribuciones como Arch Linux, Manjaro o Debian.
+        </p>
+        <p>
+          A través de un enfoque innovador que rompe con las soluciones
+          estáticas tradicionales, el proyecto propone un ecosistema distribuido
+          <strong>Cliente-Servidor</strong>. El cliente local (desarrollado en
+          Python) se encarga de la auditoría integral del sistema de archivos y
+          la persistencia local, mientras que el servidor central (API REST en
+          Java) actúa como "oráculo" de conocimiento, integrándose de forma
+          segura con Modelos de Lenguaje Grande (LLMs) para ofrecer una
+          clasificación inteligente y comunitaria de aquellos
+          <em>dotfiles</em> desconocidos o huérfanos.
+        </p>
+      </main>
     </div>
-
     <!-- PIE DE PÁGINA FIJO -->
     <footer>
-        <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
-        <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
     </footer>
-
-</body>
+  </body>
 </html>
