@@ -16,10 +16,35 @@ header {
     color: white;
     padding: 20px 40px;
     border-bottom: 4px solid #10b981;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 { margin: 0; font-size: 24px; }
-header h2 { margin: 5px 0 0 0; font-size: 16px; font-weight: normal; color: #cbd5e1; }
+.header-titles h1 { margin: 0; font-size: 24px; }
+.header-titles h2 { margin: 5px 0 0 0; font-size: 16px; font-weight: normal; color: #cbd5e1; }
+
+.header-nav-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-btn:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+    color: white;
+}
 
 /* Contenedor principal */
 .container {
