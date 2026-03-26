@@ -86,6 +86,83 @@
             </div>
           </a>
         </div>
+
+        <!-- QTHREAD -->
+        <h2>4.4.1 Ejecución en Hilo Independiente (QThread)</h2>
+        <p>
+          Cuando el usuario interactúa con la interfaz gráfica (UI), las
+          operaciones de pipeline pueden implicar lecturas intensivas del sistema
+          de archivos o consultas a la base de datos. Ejecutar estas operaciones
+          directamente en el hilo principal de Qt bloquearía la interfaz,
+          dejándola sin respuesta durante el tiempo de procesamiento.
+        </p>
+        <p>
+          Para evitar este bloqueo, la aplicación implementa el patrón
+          <strong>Worker / QThread</strong>: cada vez que el usuario lanza una
+          operación (por ejemplo, pulsando el botón <em>main_check</em>), el
+          método <code>run_pipeline()</code> de
+          <code>MainWindow</code> instancia un objeto
+          <code>Worker(QThread)</code> y lo inicia en un hilo secundario.
+        </p>
+        <div class="roadmap-container">
+          <div class="roadmap-caption" style="text-align:left; padding: 16px 20px; background: var(--bg-code, #f8fafc); border-radius: 8px; border-left: 4px solid #10b981; font-family: monospace; font-size: 0.9em; line-height: 1.7;">
+            UI (hilo principal) → <strong>Worker(QThread)</strong> (hilo secundario)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Worker.run() → Pipeline → Steps → Reporter<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Reporter → Handler.método(context)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Handler → Signal Qt → MainWindow (hilo principal)
+          </div>
+          <div class="roadmap-caption">
+            Figura 3: Flujo de comunicación entre hilos durante la ejecución de un pipeline desde la UI.
+          </div>
+        </div>
+        <p>
+          Las señales Qt (<code>ui_signal</code>,
+          <code>update_widget_signal</code>) son el mecanismo seguro que provee
+          PySide6 para cruzar datos desde un hilo secundario hacia el hilo
+          principal de la UI. De esta forma, los widgets de la interfaz se
+          actualizan siempre desde el hilo correcto, sin condiciones de carrera.
+        </p>
+
+        <!-- REPORTER -->
+        <h2>4.4.2 El Reporter: Adaptador de Salida Centralizado</h2>
+        <p>
+          Uno de los requerimientos de diseño del proyecto es que la
+          <strong>lógica de negocio (los <em>Steps</em> del Pipeline) sea
+          completamente agnóstica respecto a la interfaz de salida</strong>.
+          El mismo pipeline debe poder ejecutarse desde la CLI, desde la UI
+          gráfica o de forma silenciosa (modo <em>headless</em>/cron) sin
+          modificar ningún paso.
+        </p>
+        <p>
+          Este objetivo se resuelve mediante el componente
+          <strong><code>Reporter</code></strong>, localizado en
+          <code>core/reporter.py</code>. Al instanciar un
+          <code>Reporter</code>, se le inyecta un objeto <em>sender</em> —que
+          puede ser el <code>Handler</code> de la UI o un reportero de CLI—.
+          Cuando un <em>Step</em> del pipeline necesita emitir información,
+          llama a <code>reporter.send("nombre_del_step", context)</code>, y el
+          <code>Reporter</code> invoca dinámicamente el método
+          homónimo del <em>sender</em>:
+        </p>
+        <div class="roadmap-container">
+          <div class="roadmap-caption" style="text-align:left; padding: 16px 20px; background: var(--bg-code, #f8fafc); border-radius: 8px; border-left: 4px solid #3b82f6; font-family: monospace; font-size: 0.9em; line-height: 1.7;">
+            <span style="color: #6b7280"># En el Step:</span><br>
+            context.reporter.send(<span style="color:#10b981">"compare_hashes"</span>, context)<br><br>
+            <span style="color: #6b7280"># Reporter resuelve dinámicamente:</span><br>
+            sender = Handler() &nbsp;<span style="color: #6b7280"># en modo UI</span><br>
+            sender.compare_hashes(context) &nbsp;<span style="color: #6b7280"># → emite Signal Qt</span><br><br>
+            <span style="color: #6b7280"># Si sender no tiene el método → log de error, sin crash.</span>
+          </div>
+          <div class="roadmap-caption">
+            Figura 4: Mecanismo de despacho dinámico del Reporter.
+          </div>
+        </div>
+        <p>
+          Esta arquitectura garantiza que añadir soporte para un nuevo destino
+          de salida (por ejemplo, notificaciones de escritorio o un servidor
+          remoto) solo requiere implementar un nuevo <em>sender</em> con los
+          métodos correspondientes, sin tocar ningún <em>Step</em> del pipeline.
+        </p>
       </main>
     </div>
     <button id="btnScrollTop" title="Volver arriba">
