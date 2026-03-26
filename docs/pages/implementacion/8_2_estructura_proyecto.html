@@ -75,13 +75,14 @@
 <span class="root">dotfiles-manager/</span> (Cliente Python)
 ├── <span class="dir">cli/</span>
 │   ├── commands.py      <span class="comment"># Comandos de ejecución</span>
-│   ├── console.py       <span class="comment"># Sistema de impresion con Rich</span>
-│   ├── create.py        <span class="comment"># Creador menu parser</span>
-│   ├── customs.py       <span class="comment"># Vista del menu personalizado</span>
+│   ├── console.py       <span class="comment"># Sistema de impresión con Rich</span>
+│   ├── create.py        <span class="comment"># Creador menú parser</span>
+│   ├── customs.py       <span class="comment"># Vista del menú personalizado</span>
 │   └── parser.py        <span class="comment"># Parser de comandos</span>
 ├── <span class="dir">core/</span>
 │   ├── context.py       <span class="comment"># Estado persistente de los steps</span>
 │   ├── pipelines.py     <span class="comment"># Orquestador secuencial del motor</span>
+│   ├── reporter.py      <span class="comment"># Despachador de salida (CLI / UI / Headless)</span>
 │   └── steps.py         <span class="comment"># Nodos de ejecución del pipeline</span>
 ├── <span class="dir">modules/</span>
 │   ├── <span class="dir">database/</span>
@@ -89,6 +90,15 @@
 │   │   └── models.py    <span class="comment"># Modelos de SQLAlchemy</span>
 │   └── logger.py        <span class="comment"># Sistema de trazas y eventos</span>
 ├── <span class="dir">ui/</span>
+│   ├── <span class="dir">forms/</span>           <span class="comment"># Archivos .ui de Qt Designer</span>
+│   ├── <span class="dir">interface/</span>       <span class="comment"># Código Python compilado desde Qt Designer</span>
+│   ├── <span class="dir">styles/</span>          <span class="comment"># Hojas de estilo QSS</span>
+│   ├── <span class="dir">widgets/</span>         <span class="comment"># Widgets personalizados de Qt</span>
+│   ├── actions.py       <span class="comment"># Acciones de consulta (hostname, distro, hashes)</span>
+│   ├── handler.py       <span class="comment"># QObject con señales Qt (puente hilo → UI)</span>
+│   ├── main_window.py   <span class="comment"># Ventana principal (QMainWindow)</span>
+│   └── worker.py        <span class="comment"># Trabajador en hilo (QThread + Pipelines)</span>
+├── <span class="dir">resources/</span>           <span class="comment"># Recursos estáticos (iconos, assets)</span>
 ├── version.py           <span class="comment"># Información del proyecto</span>
 ├── config.py            <span class="comment"># Configuración global del entorno</span>
 └── main.py              <span class="comment"># Punto de entrada (Entry point) de la app</span>
