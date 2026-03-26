@@ -1,0 +1,200 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/techcat.css" rel="stylesheet" />
+    <link href="../../styles/interface.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="7_2_vistas.html">← Anterior</a
+        ><a class="nav-btn next-btn" href="7_4_apps.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <ul>
+            <li>
+              <a href="7_1_navegacion.html">7.1. Patrón de Navegación</a>
+            </li>
+            <li>
+              <a href="7_2_vistas.html">7.2. Concepto de Vistas</a>
+            </li>
+            <li class="menu_select">7.3. Dashboard</li>
+            <li>
+              <a href="7_4_apps.html">7.4. Aplicaciones</a>
+            </li>
+            <li>
+              <a href="7_5_desconocidos.html">7.5. Archivos Desconocidos</a>
+            </li>
+            <li>
+              <a href="7_6_ajustes.html">7.6. Ajustes</a>
+            </li>
+          </ul>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>7.3. Vista: Dashboard</h2>
+        <p>
+          El <strong>Dashboard</strong> es la pantalla de aterrizaje principal
+          de la aplicación. Se muestra al iniciar la herramienta y su objetivo
+          es proporcionar una <em>telemetría rápida</em> del estado actual del
+          sistema sin necesidad de ejecutar ningún escaneo adicional: los datos
+          se leen directamente desde la base de datos local (<code>system_state_hashes</code>),
+          mostrando el resultado del último análisis registrado.
+        </p>
+
+        <!-- CAPTURA DE LA VENTANA -->
+        <div class="dash-container">
+          <a href="../../resources/dashboard_1.webp" target="_blank">
+            <img
+                    alt="Dashboard - 1 - Dotfiles-Manager 2026"
+                    src="../../resources/dashboard_1.webp"
+            />
+            <div class="roadmap-caption">
+              Figura 4: Vista Dashboard.
+            </div>
+          </a>
+        </div>
+
+        <h3>Bloques de Telemetría</h3>
+        <p>
+          La vista se organiza en tres bloques de métricas principales, uno por
+          cada categoría de seguimiento del inventario:
+        </p>
+
+        <div class="tech-category type_a">
+          <div class="tech-item">
+            <strong>Todos los Dotfiles</strong>
+            <ul>
+              <li>
+                <strong>Contador:</strong> Número total de archivos de
+                configuración detectados en el <code>$HOME</code>.
+              </li>
+              <li>
+                <strong>Hash estructural:</strong> Los primeros 6 caracteres del
+                hash MD5 actual (el hash completo se muestra en tooltip al
+                pasar el cursor).
+              </li>
+              <li>
+                <strong>Fecha del último análisis:</strong> Timestamp exacto de
+                la última vez que se calculó el hash (<code>last_checked_at</code>).
+              </li>
+              <li>
+                <strong>LED de cambios:</strong> Indicador visual que se
+                activa cuando el hash calculado en tiempo real difiere del
+                almacenado, alertando de que hay novedades pendientes de
+                procesar.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-category type_b">
+          <div class="tech-item">
+            <strong>Aplicaciones Clasificadas</strong>
+            <ul>
+              <li>
+                Conteo de dotfiles que han sido identificados y vinculados a
+                una aplicación conocida en <code>known_apps_reference</code>.
+              </li>
+              <li>Hash y timestamp del último cálculo del subconjunto de conocidos.</li>
+              <li>LED de cambios para el subconjunto <code>KNOWNS</code>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-category type_c">
+          <div class="tech-item">
+            <strong>Archivos Desconocidos</strong>
+            <ul>
+              <li>
+                Conteo de rutas que el motor heurístico no ha logrado
+                identificar automáticamente.
+              </li>
+              <li>Hash y timestamp del subconjunto <code>UNKNOWNS</code>.</li>
+              <li>LED de cambios para el subconjunto <code>UNKNOWNS</code>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Información del Sistema</h3>
+        <p>
+          En la parte inferior del Dashboard se muestra información estática del
+          entorno de ejecución: nombre del equipo (<em>hostname</em>),
+          distribución Linux detectada (<em>os_machine</em>), identificador
+          único de la máquina (<em>machine_id</em>) y la versión actual de
+          <strong>dotmng</strong>.
+        </p>
+
+        <h3>Acciones desde el Dashboard</h3>
+        <p>
+          El Dashboard expone cuatro botones de acción que lanzan los pipelines
+          de comprobación sin necesidad de navegar a otra vista:
+        </p>
+        <ul>
+          <li><code>main_check</code> — Comprobación completa (todos los hashes).</li>
+          <li><code>check_dotfiles</code> — Solo hash de todos los dotfiles.</li>
+          <li><code>check_apps</code> — Solo hash de aplicaciones conocidas.</li>
+          <li><code>check_unknown</code> — Solo hash de desconocidos.</li>
+        </ul>
+        <p>
+          Cada botón lanza un <code>Worker(QThread)</code> independiente para
+          no bloquear la UI durante el procesamiento (<a href="../arquitectura/4_4_flujo_secuencia.html">ver sección 4.4.1</a>).
+        </p>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>

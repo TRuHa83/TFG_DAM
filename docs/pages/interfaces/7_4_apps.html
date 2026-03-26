@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../styles/base.css" rel="stylesheet" />
+    <link href="../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../styles/techcat.css" rel="stylesheet" />
+    <link href="../../styles/interface.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ENCABEZADO FIJO -->
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="7_3_dashboard.html">← Anterior</a
+        ><a class="nav-btn next-btn" href="7_5_desconocidos.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <!-- MENÚ LATERAL -->
+      <nav>
+        <h3><a href="../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li>
+            <a href="../3_planificacion.html">3. Planificación</a>
+          </li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <ul>
+            <li>
+              <a href="7_1_navegacion.html">7.1. Patrón de Navegación</a>
+            </li>
+            <li>
+              <a href="7_2_vistas.html">7.2. Concepto de Vistas</a>
+            </li>
+            <li>
+              <a href="7_3_dashboard.html">7.3. Dashboard</a>
+            </li>
+            <li class="menu_select">7.4. Aplicaciones</li>
+            <li>
+              <a href="7_5_desconocidos.html">7.5. Archivos Desconocidos</a>
+            </li>
+            <li>
+              <a href="7_6_ajustes.html">7.6. Ajustes</a>
+            </li>
+          </ul>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>7.4. Vista: Aplicaciones</h2>
+        <p>
+          La vista de <strong>Aplicaciones</strong> es el núcleo interactivo del
+          inventario. Muestra el catálogo completo del software reconocido por la
+          herramienta: cada aplicación con sus metadatos (nombre, categoría,
+          icono si está disponible) y la lista de rutas de dotfiles que tiene
+          asociadas en el sistema local.
+        </p>
+
+        <!-- CAPTURA DE LA VENTANA -->
+        <div class="dash-container">
+          <a href="../../resources/dashboard_2.webp" target="_blank">
+            <img
+                    alt="Dashboard - 1 - Dotfiles-Manager 2026"
+                    src="../../resources/dashboard_2.webp"
+            />
+            <div class="roadmap-caption">
+              Figura 5: Vista Aplicaciones.
+            </div>
+          </a>
+        </div>
+
+        <h3>Listado de Aplicaciones Clasificadas</h3>
+        <p>
+          El panel principal muestra todas las entradas del inventario local
+          (<code>local_inventory</code>) agrupadas por aplicación. Para cada
+          aplicación se presenta:
+        </p>
+
+        <div class="tech-category type_a">
+          <div class="tech-item">
+            <strong>Información de la Aplicación</strong>
+            <ul>
+              <li>
+                <strong>Nombre legible</strong> y <strong>categoría</strong>
+                extraídos de <code>known_apps_reference</code>.
+              </li>
+              <li>
+                <strong>Icono representativo</strong> cuando esté disponible
+                en los recursos de la aplicación.
+              </li>
+              <li>
+                <strong>Lista de dotfiles vinculados:</strong> rutas absolutas
+                de cada archivo o directorio de configuración asociado a la
+                aplicación en el equipo del usuario.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Acciones Disponibles</h3>
+        <div class="tech-category type_b">
+          <div class="tech-item">
+            <strong>Gestión del inventario</strong>
+            <ul>
+              <li>
+                <strong>Vincular ruta</strong> (<em>bind</em>): permite al
+                usuario asociar manualmente una ruta adicional de su sistema
+                a una aplicación existente.
+              </li>
+              <li>
+                <strong>Desvincular</strong> (<em>unbind</em>): elimina la
+                asociación entre una ruta y su aplicación, devolviéndola al
+                grupo de desconocidos o eliminándola del inventario.
+              </li>
+              <li>
+                <strong>Editar metadatos:</strong> modificar el nombre legible
+                o la categoría de la aplicación en la base de datos local.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="view-note">
+          <p>
+            <em>
+              Nota: Las acciones de gestión del inventario desde esta vista
+              están planificadas para la siguiente iteración del desarrollo.
+              La visualización del catálogo ya es funcional.
+            </em>
+          </p>
+        </div>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        viewbox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+        ></path>
+      </svg>
+    </button>
+    <!-- PIE DE PÁGINA FIJO -->
+    <footer>
+      <p>
+        <strong>Proyecto:</strong> Sistema Distribuido de Gestión y
+        Clasificación de Entornos Linux
+      </p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../scripts/scrolltop.js"></script>
+  </body>
+</html>
