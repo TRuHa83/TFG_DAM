@@ -65,6 +65,27 @@
       </nav>
       <main>
         <h2>7.2. Desglose Conceptual de Vistas</h2>
+        <!-- Grupo 0 -->
+        <div class="tech-category type_c">
+          <h3>0. Experiencia de Primera Ejecución (Onboarding)</h3>
+          <p>
+            Flujo inicial diseñado para garantizar la integridad y preparación estructurada de los datos antes de alcanzar la ventana principal.
+          </p>
+          <div class="tech-item">
+            <strong>Inicialización del Sistema</strong>
+            <ul>
+              <li>
+                <strong>Detección de Base de Datos:</strong> Intervención proactiva liderada por un diálogo modal que detecta la falta de inicialización.
+              </li>
+              <li>
+                <strong>Pipeline de Arranque:</strong> Desencadenamiento automático de las rutinas de inserción e inventario con feedback al usuario sobre el progreso.
+              </li>
+              <li>
+                <strong>Integración de Escritorio:</strong> Despliegue en <em>background</em> del lanzador de entorno (<code>.desktop</code>) específico para distribuciones Linux.
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- Grupo 1 -->
         <div class="tech-category type_a">
           <h3>1. Telemetría y Resumen</h3>

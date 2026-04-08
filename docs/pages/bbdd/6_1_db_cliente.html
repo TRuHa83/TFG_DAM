@@ -143,12 +143,14 @@
             </ul>
           </li>
           <li>
-            <strong>Bloque de Rendimiento y Filtrado:</strong>
+            <strong>Bloque de Rendimiento y Filtrado (y Anulaciones):</strong>
             <ul>
               <li>
                 <code>global_ignore_rules</code>: Lista de patrones (RegEx,
-                extensiones) que el motor debe omitir, optimizando el
-                rendimiento.
+                extensiones) que el motor omite globalmente optimizando el rendimiento.
+              </li>
+              <li>
+                <code>user_inventory_overrides</code>, <code>user_unknown_overrides</code> y <code>user_ignore_overrides</code>: Tablas especializadas para gestionar anulaciones. Al separar estos registros, las preferencias e ignorados locales de los usuarios persisten y permanecen aislados de las regeneraciones o actualizaciones del estado del sistema o inventario (habilitando, por ejemplo, restricciones <code>UNIQUE</code> y escalabilidad en reconexiones).
               </li>
               <li>
                 <code>system_state_hashes</code>: Implementación técnica clave.
