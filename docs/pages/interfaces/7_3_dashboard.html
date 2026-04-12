@@ -30,30 +30,18 @@
         <ul>
           <li><a href="../1_introduccion.html">1. Introducción</a></li>
           <li><a href="../2_objetivos.html">2. Objetivos</a></li>
-          <li>
-            <a href="../3_planificacion.html">3. Planificación</a>
-          </li>
+          <li><a href="../3_planificacion.html">3. Planificación</a></li>
           <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
           <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
           <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
           <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
           <ul>
-            <li>
-              <a href="7_1_navegacion.html">7.1. Patrón de Navegación</a>
-            </li>
-            <li>
-              <a href="7_2_vistas.html">7.2. Concepto de Vistas</a>
-            </li>
-            <li class="menu_select">7.3. Dashboard</li>
-            <li>
-              <a href="7_4_apps.html">7.4. Aplicaciones</a>
-            </li>
-            <li>
-              <a href="7_5_desconocidos.html">7.5. Archivos Desconocidos</a>
-            </li>
-            <li>
-              <a href="7_6_ajustes.html">7.6. Ajustes</a>
-            </li>
+            <li><a href="7_1_navegacion.html">7.1 Navegación</a></li>
+            <li><a href="7_2_vistas.html">7.2 Vistas</a></li>
+            <li class="menu_select">7.3 Dashboard</li>
+            <li><a href="7_4_apps.html">7.4 Aplicaciones</a></li>
+            <li><a href="7_5_desconocidos.html">7.5 Desconocidos</a></li>
+            <li><a href="7_6_ajustes.html">7.6 Ajustes</a></li>
           </ul>
           <li><a href="../8_implementacion.html">8. Implementación</a></li>
           <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
@@ -107,7 +95,7 @@
                 la última vez que se calculó el hash (<code>last_checked_at</code>).
               </li>
               <li>
-                <strong>LED de cambios:</strong> Indicador visual que se
+                <strong>LED de estado:</strong> Indicador visual escalar SVG (<code>led_red.svg</code> / <code>led_green.svg</code>) que se
                 activa cuando el hash calculado en tiempo real difiere del
                 almacenado, alertando de que hay novedades pendientes de
                 procesar.
@@ -144,13 +132,13 @@
           </div>
         </div>
 
-        <h3>Información del Sistema</h3>
+        <h3>Información del Sistema y Servidor</h3>
         <p>
           En la parte inferior del Dashboard se muestra información estática del
           entorno de ejecución: nombre del equipo (<em>hostname</em>),
           distribución Linux detectada (<em>os_machine</em>), identificador
           único de la máquina (<em>machine_id</em>) y la versión actual de
-          <strong>dotmng</strong>.
+          <strong>dotmng</strong>. Además, se integra un panel de conexión asíncrona mediante <em>polling</em>, que muestra permanentemente el <strong>Endpoint</strong> de la API conectada y la fecha de la <strong>Última conexión</strong>, actualizándose en tiempo real y alertando visualmente si el servidor Oracle no está accesible o se pierde la comunicación.
         </p>
 
         <h3>Acciones desde el Dashboard</h3>
@@ -159,14 +147,14 @@
           de comprobación sin necesidad de navegar a otra vista:
         </p>
         <ul>
-          <li><code>main_check</code> — Comprobación completa (todos los hashes).</li>
+          <li><code>main_update</code> — Actualización completa (hashes e inventario completo del sistema).</li>
           <li><code>check_dotfiles</code> — Solo hash de todos los dotfiles.</li>
           <li><code>check_apps</code> — Solo hash de aplicaciones conocidas.</li>
           <li><code>check_unknown</code> — Solo hash de desconocidos.</li>
         </ul>
         <p>
           Cada botón lanza un <code>Worker(QThread)</code> independiente para
-          no bloquear la UI durante el procesamiento (<a href="../arquitectura/4_4_flujo_secuencia.html">ver sección 4.4.1</a>).
+          no bloquear la UI durante el procesamiento (<a href="../arquitectura/4_4_flujos/4_4_1_hilos.html">ver sección 4.4.1</a>).
         </p>
       </main>
     </div>

@@ -36,27 +36,17 @@
         <ul>
           <li><a href="../1_introduccion.html">1. Introducción</a></li>
           <li><a href="../2_objetivos.html">2. Objetivos</a></li>
-          <li>
-            <a href="../3_planificacion.html">3. Planificación</a>
-          </li>
+          <li><a href="../3_planificacion.html">3. Planificación</a></li>
           <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
           <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
           <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
           <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
           <li><a href="../8_implementacion.html">8. Implementación</a></li>
           <ul>
-            <li>
-              <a href="8_1_entorno_desarrollo.html">8.1. Entorno de Desarrollo</a>
-            </li>
-            <li class="menu_select">
-              8.2. Estructura del Proyecto
-            </li>
-            <li>
-              <a href="8_3_fragmentos_clave.html">8.3. Fragmentos Clave</a>
-            </li>
-            <li>
-              <a href="8_4_estrategia_pruebas.html">8.4. Estrategia de Pruebas</a>
-            </li>
+            <li><a href="8_1_entorno_desarrollo.html">8.1 Entorno Dev</a></li>
+            <li class="menu_select">8.2 Estructura</li>
+            <li><a href="8_3_fragmentos_clave.html">8.3 Fragmentos</a></li>
+            <li><a href="8_4_estrategia_pruebas.html">8.4 Pruebas</a></li>
           </ul>
           <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
         </ul>
@@ -64,11 +54,13 @@
       <main>
         <h2>8.2. Estructura del Proyecto (Estructura de Directorios)</h2>
         <p>
-          Para mantener la separación de responsabilidades, el ecosistema se
-          organiza de forma estrictamente modular. A continuación se detalla el
-          árbol de directorios actual correspondiente al cliente local (Python),
-          el cual separa de forma clara la lógica central (Core), la
-          persistencia (Database), y las múltiples interfaces (CLI y futura UI):
+          Para mantener la separación de responsabilidades, el ecosistema se organiza de forma estrictamente modular y dividida, tal y como dictaminan los repositorios independientes tanto de cliente como del servidor.
+        </p>
+
+        <h3>1. Cliente (Python)</h3>
+        <p>
+          El cliente local alberga de forma clara la lógica central (Core), la
+          persistencia local (Database), y las múltiples interfaces (CLI y UI):
         </p>
         <div class="dir-tree">
           <pre>
@@ -104,11 +96,30 @@
 └── main.py              <span class="comment"># Punto de entrada (Entry point) de la app</span>
 </pre>
         </div>
-        <p class="dir-note">
-          * Nota: La estructura del repositorio correspondiente al servidor
-          backend (Java API) se definirá y documentará en iteraciones
-          posteriores del desarrollo.
+
+        <br>
+
+        <h3>2. Servidor (Java / Spring Boot)</h3>
+        <p>
+          Siguiendo los estándares y convenciones del framework <em>Spring Boot 3</em>, el ecosistema del servidor agrupa
+          su código fuente mediante un modelo de carpetas fundamentado en paquetes de dominio:
         </p>
+        <div class="dir-tree">
+          <pre>
+<span class="root">dotfile_server/</span> (Servidor Java)
+├── <span class="dir">src/main/</span>
+│   ├── <span class="dir">java/dev/techcrafted/dotfile_server/</span>
+│   │   ├── <span class="dir">config/</span>      <span class="comment"># Configuraciones globales (WebConfig, CORS, Filtros)</span>
+│   │   ├── <span class="dir">controller/</span>  <span class="comment"># Endpoints REST (HealthController, DiscoveryController)</span>
+│   │   ├── <span class="dir">dto/</span>         <span class="comment"># Objetos de Transferencia de Datos (Request/Response)</span>
+│   │   └── DotfileServerApplication.java  <span class="comment"># Configuración y Entry Point</span>
+│   └── <span class="dir">resources/</span>
+│       └── application.yaml  <span class="comment"># Propiedades base del entorno y DB</span>
+├── <span class="dir">src/test/</span>            <span class="comment"># Casos de prueba e integración (JUnit)</span>
+├── mvnw                 <span class="comment"># Wrapper de de ejecución automatizada de Maven</span>
+└── pom.xml              <span class="comment"># Declaración y árbol de dependencias del proyecto</span>
+</pre>
+        </div>
       </main>
     </div>
     <button id="btnScrollTop" title="Volver arriba">

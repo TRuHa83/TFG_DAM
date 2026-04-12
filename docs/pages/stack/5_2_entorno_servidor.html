@@ -27,30 +27,24 @@
   <div class="container">
     <!-- MENÚ LATERAL -->
     <nav>
-      <h3><a href="../../index.html">Inicio</a></h3>
-      <ul>
-        <li><a href="../1_introduccion.html">1. Introducción</a></li>
-        <li><a href="../2_objetivos.html">2. Objetivos</a></li>
-        <li>
-          <a href="../3_planificacion.html">3. Planificación</a>
-        </li>
-        <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
-        <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+        <h3><a href="../../index.html">Inicio</a></h3>
         <ul>
-          <li>
-            <a href="5_1_entorno_local.html">5.1. Entorno del Cliente</a>
-          </li>
-          <li class="menu_select">5.2. Entorno del Servidor</li>
-          <li>
-            <a href="5_3_integracion.html">5.3. Servicios Externos</a>
-          </li>
+          <li><a href="../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../2_objetivos.html">2. Objetivos</a></li>
+          <li><a href="../3_planificacion.html">3. Planificación</a></li>
+          <li><a href="../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../5_stack.html">5. Stack Tecnológico</a></li>
+          <ul>
+            <li><a href="5_1_entorno_local.html">5.1 Local</a></li>
+            <li class="menu_select">5.2 Servidor</li>
+            <li><a href="5_3_integracion.html">5.3 Integración</a></li>
+          </ul>
+          <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
         </ul>
-        <li><a href="../6_bbdd.html">6. Base de Datos</a></li>
-        <li><a href="../7_interfaces.html">7. Interfaces UI/UX</a></li>
-        <li><a href="../8_implementacion.html">8. Implementación</a></li>
-        <li><a href="../9_conclusiones.html">9. Conclusiones</a></li>
-      </ul>
-    </nav>
+      </nav>
     <main>
       <div>
         <h2>5.2. Entorno del Servidor (Backend)</h2>
@@ -70,18 +64,22 @@
           </p>
         </div>
         <div class="tech-item">
-          <strong>SQLite + Hibernate (Preparado para PostgreSQL)</strong>
+          <strong>Spring Boot 3</strong>
+          <p>
+            Framework escogido para la orquestación e implementación robusta de la API REST. Spring Boot facilita el establecimiento de una arquitectura fundamentada en el patrón <em>Model-View-Controller</em> (MVC), permitiendo definir y modularizar fácilmente puntos de acceso (<em>Controllers</em>) y transferencia de datos. Asimismo, simplifica configuraciones transversales críticas como las reglas CORS y el registro de eventos, valiéndose de la inyección de dependencias para integrar fluidamente todos los componentes de la aplicación.
+          </p>
+        </div>
+        <div class="tech-item">
+          <strong>SQLite + Hibernate (Spring Data JPA)</strong>
           <p>
             Para la fase inicial y el Producto Mínimo Viable (MVP), el
             repositorio centralizado de conocimiento operará sobre
             <strong>SQLite</strong>. Sin embargo, toda la capa de persistencia
-            estará gestionada por el ORM <strong>Hibernate</strong> (JPA).
+            estará gestionada por <strong>Spring Data JPA</strong> empleando <strong>Hibernate</strong> como motor ORM.
             Esta decisión arquitectónica garantiza que, cuando el volumen de
             datos crezca, la migración a un motor robusto como
             <strong>PostgreSQL</strong> sea prácticamente instantánea,
-            requiriendo únicamente el cambio de la cadena de conexión y el
-            dialecto SQL en la configuración, sin modificar una sola línea de
-            lógica de negocio.
+            requiriendo únicamente el cambio de la cadena de conexión en la configuración, sin modificar la lógica algorítmica.
           </p>
         </div>
       </div>
