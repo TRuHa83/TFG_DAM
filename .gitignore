@@ -7,3 +7,7 @@
 ### Virtual Environments
 .venv
 .env
+
+docs/old/
+
+*.bkp
