@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../../styles/base.css" rel="stylesheet" />
+    <link href="../../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../../styles/roadmap.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="4_4_2_polling.html">← Anterior</a>
+        <a class="nav-btn next-btn" href="../4_5_analisis.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <nav>
+        <h3><a href="../../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../../2_objetivos.html">2. Objetivos</a></li>
+          <li><a href="../../3_planificacion.html">3. Planificación</a></li>
+          <li><a href="../../4_arquitectura.html">4. Arquitectura</a></li>
+          <ul>
+            <li><a href="../4_1_topologia.html">4.1 Topología</a></li>
+            <li><a href="../4_2_flujo_datos.html">4.2 Flujo Datos</a></li>
+            <li><a href="../4_3_patrones.html">4.3 Patrones</a></li>
+            <li><a href="../4_4_flujo_secuencia.html">4.4 Flujos Secuencia</a></li>
+            <ul>
+              <li><a href="4_4_1_hilos.html">4.4.1 Hilos</a></li>
+              <li><a href="4_4_2_polling.html">4.4.2 Polling</a></li>
+              <li class="menu_select">4.4.3 Reporter</li>
+            </ul>
+            <li><a href="../4_5_analisis.html">4.5 Análisis</a></li>
+          </ul>
+          <li><a href="../../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>4.4.3 El Reporter: Adaptador de Salida Centralizado</h1>
+        <p>
+          Uno de los requerimientos de diseño del proyecto es que la
+          <strong>lógica de negocio (los pasos individuales del análisis) sea
+          completamente agnóstica respecto a la interfaz de salida</strong>.
+          Esto implica que el motor debe poder ejecutarse desde la CLI, desde la
+          interfaz gráfica o de forma silenciosa (modo <em>headless</em>/cron) sin
+          requerir modificaciones subyacentes.
+        </p>
+        <p>
+          Esta abstracción se resuelve mediante el componente
+          <strong><code>Reporter</code></strong>. Al instanciar un
+          <code>Reporter</code>, se le inyecta un objeto receptor u oyente (<em>sender</em>) —que
+          puede ser el controlador de la interfaz visual o un formateador de terminal—.
+          Cuando un paso del motor necesita emitir información de progreso o finalización,
+          invoca al despachador central y este llama dinámicamente al método
+          correspondiente de su receptor:
+        </p>
+        <div class="roadmap-container">
+          <div class="roadmap-caption" style="text-align:left; padding: 16px 20px; background: var(--bg-code, #f8fafc); border-radius: 8px; border-left: 4px solid #3b82f6; font-family: monospace; font-size: 0.9em; line-height: 1.7;">
+            <span style="color: #6b7280"># Paso Genérico (Lógica):</span><br>
+            context.reporter.send(<span style="color:#10b981">"comparando_hashes"</span>, context)<br><br>
+            <span style="color: #6b7280"># Despachador resuelve y emite el evento al entorno correspondiente:</span><br>
+            sender = UI_Handler() &nbsp;<span style="color: #6b7280"># En entorno gráfico</span><br>
+            sender.comparando_hashes(context) &nbsp;<span style="color: #6b7280"># → emite señal segura a la Ventana Qt</span><br>
+          </div>
+          <div class="roadmap-caption">
+            Figura 4: Mecanismo de despacho de eventos.
+          </div>
+        </div>
+        <p>
+          Esta arquitectura garantiza que escalar el soporte de la aplicación a nuevos entornos (por ejemplo, notificaciones nativas de escritorio o integraciones CI/CD en servidores automatizados) únicamente requeriría programar la capa visual correspondiente, manteniendo segura e intacta la ingeniería central del proyecto.
+        </p>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg fill="none" height="24" stroke="currentColor" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+      </svg>
+    </button>
+    <footer>
+      <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../../scripts/scrolltop.js"></script>
+  </body>
+</html>

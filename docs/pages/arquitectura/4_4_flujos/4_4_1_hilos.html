@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../../styles/base.css" rel="stylesheet" />
+    <link href="../../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../../styles/roadmap.css" rel="stylesheet" />
+    <link href="../../../styles/techcat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="../4_4_flujo_secuencia.html">← Anterior</a>
+        <a class="nav-btn next-btn" href="4_4_2_polling.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <!-- MOCK NAV, WILL BE REPLACED BY SCRIPT LATER -->
+      <nav>
+        <h3><a href="../../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../../2_objetivos.html">2. Objetivos</a></li>
+          <li><a href="../../3_planificacion.html">3. Planificación</a></li>
+          <li><a href="../../4_arquitectura.html">4. Arquitectura</a></li>
+          <ul>
+            <li><a href="../4_1_topologia.html">4.1 Topología</a></li>
+            <li><a href="../4_2_flujo_datos.html">4.2 Flujo Datos</a></li>
+            <li><a href="../4_3_patrones.html">4.3 Patrones</a></li>
+            <li><a href="../4_4_flujo_secuencia.html">4.4 Flujos Secuencia</a></li>
+            <ul>
+              <li class="menu_select">4.4.1 Hilos</li>
+              <li><a href="4_4_2_polling.html">4.4.2 Polling</a></li>
+              <li><a href="4_4_3_reporter.html">4.4.3 Reporter</a></li>
+            </ul>
+            <li><a href="../4_5_analisis.html">4.5 Análisis</a></li>
+          </ul>
+          <li><a href="../../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>4.4.1 Ejecución en Hilo Independiente (QThread)</h1>
+        <p>
+          Cuando el usuario interactúa con la interfaz gráfica (UI), las
+          operaciones de pipeline pueden implicar lecturas intensivas del sistema
+          de archivos o consultas a la base de datos. Ejecutar estas operaciones
+          directamente en el hilo principal de Qt bloquearía la interfaz,
+          dejándola sin respuesta durante el tiempo de procesamiento.
+        </p>
+        <p>
+          Para evitar este bloqueo, la aplicación implementa el patrón
+          <strong>Worker / QThread</strong>: cada vez que el usuario lanza una
+          operación (por ejemplo, pulsando el botón <em>main_check</em>), el
+          método <code>run_pipeline()</code> de
+          <code>MainWindow</code> instancia un objeto
+          <code>Worker(QThread)</code> y lo inicia en un hilo secundario.
+        </p>
+        <div class="roadmap-container">
+          <div class="roadmap-caption" style="text-align:left; padding: 16px 20px; background: var(--bg-code, #f8fafc); border-radius: 8px; border-left: 4px solid #10b981; font-family: monospace; font-size: 0.9em; line-height: 1.7;">
+            UI (hilo principal) → <strong>Worker(QThread)</strong> (hilo secundario)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Worker.run() → Pipeline → Steps → Reporter<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Reporter → Handler.método(context)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Handler → Signal Qt → MainWindow (hilo principal)
+          </div>
+          <div class="roadmap-caption">
+            Figura 3: Flujo de comunicación entre hilos durante la ejecución de un pipeline desde la UI.
+          </div>
+        </div>
+        <p>
+          Las señales Qt (<code>ui_signal</code>,
+          <code>update_widget_signal</code>) son el mecanismo seguro que provee
+          PySide6 para cruzar datos desde un hilo secundario hacia el hilo
+          principal de la UI. De esta forma, los widgets de la interfaz se actualizan de forma completamente asíncrona.
+        </p>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg fill="none" height="24" stroke="currentColor" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+      </svg>
+    </button>
+    <footer>
+      <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../../scripts/scrolltop.js"></script>
+  </body>
+</html>

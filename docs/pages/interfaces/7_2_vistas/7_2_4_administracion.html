@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Memoria - Dotfiles-Manager</title>
+    <link href="../../../styles/base.css" rel="stylesheet" />
+    <link href="../../../styles/scrolltop.css" rel="stylesheet" />
+    <link href="../../../styles/techcat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-titles">
+        <h1>Dotfiles-Manager</h1>
+        <h2>Memoria de Proyecto</h2>
+      </div>
+      <div class="header-nav-btn">
+        <a class="nav-btn prev-btn" href="7_2_3_inventario.html">← Anterior</a>
+        <a class="nav-btn next-btn" href="../7_3_dashboard.html">Siguiente →</a>
+      </div>
+    </header>
+    <div class="container">
+      <nav>
+        <h3><a href="../../../index.html">Inicio</a></h3>
+        <ul>
+          <li><a href="../../1_introduccion.html">1. Introducción</a></li>
+          <li><a href="../../2_objetivos.html">2. Objetivos</a></li>
+          <li><a href="../../3_planificacion.html">3. Planificación</a></li>
+          <li><a href="../../4_arquitectura.html">4. Arquitectura</a></li>
+          <li><a href="../../5_stack.html">5. Stack Tecnológico</a></li>
+          <li><a href="../../6_bbdd.html">6. Base de Datos</a></li>
+          <li><a href="../../7_interfaces.html">7. Interfaces UI/UX</a></li>
+          <li><a href="../../8_implementacion.html">8. Implementación</a></li>
+          <li><a href="../../9_conclusiones.html">9. Conclusiones</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="tech-category type_c">
+          <h3>7.2.4 Administración y Mantenimiento</h3>
+          <p>
+            Submódulo destinado al control macro y a garantizar que el software local se mantenga cohesionado y sano.
+          </p>
+          <div class="tech-item">
+            <strong>Ajustes Generales</strong>
+            <ul>
+              <li>
+                <strong>Gestor de Ignore Engine:</strong> Listado global tipo <code>.gitignore</code> editable en la interfaz (permitiendo añadir exclusiones como <code>*.tmp</code> o <code>.*_history</code>) previniendo que los ciclos iniciales lean siquiera los ficheros en disco.
+              </li>
+              <li>
+                <strong>Conexión Backend:</strong> Determinación manual de las URL del API Endpoint de modo que si se aloja de forma autogestionada, el sistema pueda interactuar.
+              </li>
+              <li>
+                Vaciado de estado local (DB Wipe) para purgar artefactos inconsistentes.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="view-note">
+          <p>
+            <em>Nota: A medida que avance el alcance, está concebida la integración en este último bloque de módulos como las copias de seguridad estáticas tipo <code>tar.gz</code>.</em>
+          </p>
+        </div>
+      </main>
+    </div>
+    <button id="btnScrollTop" title="Volver arriba">
+      <svg fill="none" height="24" stroke="currentColor" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+      </svg>
+    </button>
+    <footer>
+      <p><strong>Proyecto:</strong> Sistema Distribuido de Gestión y Clasificación de Entornos Linux</p>
+      <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
+    </footer>
+    <script src="../../../scripts/scrolltop.js"></script>
+  </body>
+</html>
