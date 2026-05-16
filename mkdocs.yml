@@ -1,0 +1,73 @@
+site_name: TFG_DAM
+site_url: https://truha83.github.io/TFG_DAM/
+repo_url: https://github.com/TRuHa83/TFG_DAM
+repo_name: TRuHa83/TFG_DAM
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+nav:
+  - Inicio: index.md
+  - Memoria:
+      - Introducción: memoria/01-introduccion.md
+      - Objetivos: memoria/02-objetivos.md
+      - Alcance y Limitaciones: memoria/03-alcance-y-limitaciones.md
+      - Metodología de Desarrollo: memoria/04-metodologia-de-desarrollo.md
+      - Planificación y Cronograma: memoria/05-planificacion-y-cronograma.md
+      - Análisis de Requisitos: memoria/06-analisis-de-requisitos.md
+      - Arquitectura del Sistema: memoria/07-arquitectura-del-sistema.md
+      - Tecnologías Utilizadas: memoria/08-tecnologias-utilizadas.md
+      - Conclusiones: memoria/09-conclusiones.md
+      - Trabajo Futuro: memoria/10-trabajo-futuro.md
+      - Referencias Bibliográficas: memoria/11-referencias-bibliograficas.md
+      - Fin de Sección: memoria/12-fin-de-seccion.md
+  - Cliente:
+      - Introducción: cliente/01-introduccion.md
+      - Entorno y Dependencias: cliente/02-entorno-y-dependencias.md
+      - Arquitectura Interna: cliente/03-arquitectura-interna.md
+      - Base de Datos Local: cliente/04-base-de-datos-local.md
+      - Detección y Escaneo: cliente/05-deteccion-y-escaneo.md
+      - Modo Autónomo: cliente/06-modo-autonomo.md
+      - Comunicación con el Servidor: cliente/07-comunicacion-con-el-servidor.md
+      - Interfaz de Usuario: cliente/08-interfaz-de-usuario.md
+      - Gestión de Errores y Logging: cliente/09-gestion-de-errores-y-logging.md
+      - Pruebas y Validación: cliente/10-pruebas-y-validacion.md
+      - Fin de Sección: cliente/11-fin-de-seccion.md
+  - Servidor:
+      - Introducción: servidor/01-introduccion.md
+      - Entorno y Dependencias: servidor/02-entorno-y-dependencias.md
+      - Arquitectura Interna: servidor/03-arquitectura-interna.md
+      - Modelo de Datos y Persistencia: servidor/04-modelo-de-datos-y-persistencia.md
+      - API REST: servidor/05-api-rest.md
+      - Lógica de Resolución con IA: servidor/06-logica-de-resolucion-con-ia.md
+      - Seguridad y Autenticación: servidor/07-seguridad-y-autenticacion.md
+      - Despliegue y Configuración: servidor/08-despliegue-y-configuracion.md
+      - Gestión de Errores y Logging: servidor/09-gestion-de-errores-y-logging.md
+      - Pruebas y Validación: servidor/10-pruebas-y-validacion.md
+      - Fin de Sección: servidor/11-fin-de-seccion.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
