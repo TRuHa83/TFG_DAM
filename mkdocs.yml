@@ -1,4 +1,4 @@
-site_name: TFG_DAM
+site_name: Dotfiles-Manager
 site_url: https://truha83.github.io/TFG_DAM/
 repo_url: https://github.com/TRuHa83/TFG_DAM
 repo_name: TRuHa83/TFG_DAM
@@ -36,9 +36,10 @@ nav:
       - Arquitectura del Sistema: memoria/07-arquitectura-del-sistema.md
       - Tecnologías Utilizadas: memoria/08-tecnologias-utilizadas.md
       - Conclusiones: memoria/09-conclusiones.md
-      - Trabajo Futuro: memoria/10-trabajo-futuro.md
-      - Referencias Bibliográficas: memoria/11-referencias-bibliograficas.md
-      - Fin de Sección: memoria/12-fin-de-seccion.md
+      - Estado del Proyecto: memoria/10-estado-del-proyecto.md
+      - Trabajo Futuro: memoria/11-trabajo-futuro.md
+      - Referencias Bibliográficas: memoria/12-referencias-bibliograficas.md
+      - Fin de Sección: memoria/13-fin-de-seccion.md
   - Cliente:
       - Introducción: cliente/01-introduccion.md
       - Entorno y Dependencias: cliente/02-entorno-y-dependencias.md
@@ -65,6 +66,8 @@ nav:
       - Fin de Sección: servidor/11-fin-de-seccion.md
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - attr_list
   - md_in_html
   - pymdownx.emoji:

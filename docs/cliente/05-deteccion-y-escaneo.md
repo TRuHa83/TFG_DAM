@@ -1,14 +1,13 @@
-## 5. Detección y escaneo de dotfiles
-
 El motor de detección es el corazón técnico del cliente. Utiliza un patrón de diseño **Pipeline** (tubería) para procesar el sistema de archivos de forma secuencial y eficiente.
 
 ### El Pipeline de Auditoría
 
 <br>
 <div align="center">
-  <img src="../assets/DiagramaFlujo.webp" width="90%" alt="Diagrama Flujo">
+  <a href="../../assets/DiagramaFlujo.webp" target="_blank">
+    <img src="../../assets/DiagramaFlujo.webp" alt="Diagrama Flujo">
+  </a>
 </div>
-<br>
 
 Cada vez que se inicia un escaneo (comando `check` o `update`), los archivos atraviesan las siguientes etapas:
 
@@ -23,3 +22,4 @@ Cada vez que se inicia un escaneo (comando `check` o `update`), los archivos atr
 Para evitar cuellos de botella en discos mecánicos o directorios $HOME muy extensos, el sistema no lee el contenido de todos los archivos. En su lugar, calcula un hash de la estructura del directorio (nombres de archivos y fechas de modificación) para determinar en milisegundos si es necesario profundizar en el análisis de ese nodo.
 
 
+---

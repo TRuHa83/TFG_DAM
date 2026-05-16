@@ -1,16 +1,14 @@
-## 4. Modelo de datos y persistencia
-
 La persistencia del servidor Java se basa en una base de datos relacional (**SQLite** en esta fase) gestionada mediante **Spring Data JPA** e **Hibernate**. El modelo se centra en la gestión del ciclo de vida de las peticiones y el almacenamiento del conocimiento global.
 
 ### Modelo de datos
 
 El diseño relacional global del servidor se organiza en dos bloques lógicos principales representados en el siguiente diagrama:
 
-<br>
 <div align="center">
-  <img src="../assets/Diagrama%20ERD%20-%20Servidor.webp" width="80%" alt="Diagrama Entidad-Relación Servidor">
+  <a href="../../assets/Diagrama%20ERD%20-%20Servidor.webp" target="_blank">
+    <img src="../../assets/Diagrama%20ERD%20-%20Servidor.webp" alt="Diagrama Entidad-Relación Servidor">
+  </a>
 </div>
-<br>
 
 ### Bloque de Procesamiento Asíncrono (Entidad Task)
 
@@ -54,3 +52,4 @@ Este bloque almacena la base de datos de conocimiento acumulativo del servidor p
 * **Escalabilidad:** El uso de JPA asegura que el sistema pueda migrar a motores de base de datos más potentes (como PostgreSQL) sin cambios en el código fuente.
 
 
+---

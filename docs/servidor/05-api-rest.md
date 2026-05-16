@@ -1,5 +1,3 @@
-## 5. API REST
-
 El servidor expone una interfaz de programación de aplicaciones (API) basada en los principios de REST, utilizando JSON como formato de intercambio y códigos de estado HTTP estándar para la gestión de errores.
 
 ### Endpoints expuestos
@@ -77,3 +75,4 @@ Endpoint de comprobación de salud del sistema.
 ```
 
 
+---

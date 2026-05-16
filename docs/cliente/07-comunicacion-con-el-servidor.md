@@ -1,5 +1,3 @@
-## 7. Comunicación con el servidor
-
 El cliente se comunica con el servidor central a través de una API REST utilizando el protocolo HTTP y el intercambio de datos en formato **JSON**.
 
 ### Protocolo de Descubrimiento (Asíncrono)
@@ -19,3 +17,4 @@ El payload enviado al servidor está estrictamente auditado para proteger la pri
 * **Identificación:** Se utiliza un hash único por instalación para permitir que el servidor relacione tareas sin identificar al usuario real.
 
 
+---

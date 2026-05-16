@@ -1,11 +1,6 @@
-## 8. Despliegue y configuración
-
 El servidor ha sido diseñado para ser fácilmente desplegable en cualquier entorno que soporte la Máquina Virtual de Java (JVM).
 
-!!! warning "En Desarrollo: Despliegue con Docker"
-    Actualmente, la infraestructura de contenedores se encuentra en fase de diseño. Las siguientes especificaciones sobre Docker y Docker Compose reflejan la **proyección inicial** para el despliegue en producción, pero los archivos `Dockerfile` y `docker-compose.yml` aún no se han implementado.
-
-### Despliegue Contenerizado (Docker) - *Planificado*
+### Despliegue Contenerizado (Docker)
 
 La idea principal para facilitar el despliegue del servidor y asegurar su portabilidad es distribuirlo mediante contenedores Docker. Esto permitirá abstraer las dependencias del sistema operativo y levantar el servicio con un único comando.
 
@@ -28,3 +23,4 @@ La configuración se externaliza a través de `application.yaml` o variables de 
 * **`SPRING_DATASOURCE_URL`:** Ubicación del archivo de base de datos SQLite.
 
 
+---

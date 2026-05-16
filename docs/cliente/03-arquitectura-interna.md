@@ -1,5 +1,3 @@
-## 3. Arquitectura interna
-
 El cliente sigue una estructura modular para separar la lógica de negocio de la interfaz de usuario.
 
 A continuación se presenta la estructura física de directorios del código fuente bajo `src/dotmng/`, representando de forma fiel los módulos del proyecto actual:
@@ -7,39 +5,46 @@ A continuación se presenta la estructura física de directorios del código fue
 ```text
 src/dotmng/
 ├── cli/
-│   ├── commands.py      # Controladores de comandos (check, update, bind)
-│   ├── console.py       # Inicialización de consola Rich
-│   ├── create.py        # Creador y configurador de argumentos
-│   ├── customs.py       # Vistas y menús personalizados interactivos
-│   ├── parser.py        # Orquestador del parseo de argumentos de CLI
-│   └── printer.py       # Renderizador avanzado de tablas y reportes con Rich
+│   ├── commands.py         # Controladores de comandos (check, update, bind)
+│   ├── console.py          # Inicialización de consola Rich
+│   ├── create.py           # Creador y configurador de argumentos
+│   ├── customs.py          # Vistas y menús personalizados interactivos
+│   ├── parser.py           # Orquestador del parseo de argumentos de CLI
+│   └── printer.py          # Renderizador avanzado de tablas y reportes con Rich
+│
 ├── core/
-│   ├── context.py       # Almacenamiento de estado durante la ejecución del pipeline
-│   ├── pipelines.py     # Orquestador secuencial del motor de tareas
-│   ├── reporter.py      # Adaptador y despachador de eventos (CLI vs GUI)
-│   └── steps.py         # Definición de pasos granulares del pipeline (auditoría, etc.)
+│   ├── context.py          # Almacenamiento de estado durante la ejecución del pipeline
+│   ├── pipelines.py        # Orquestador secuencial del motor de tareas
+│   ├── reporter.py         # Adaptador y despachador de eventos (CLI vs GUI)
+│   └── steps.py            # Definición de pasos granulares del pipeline (auditoría, etc.)
+│
 ├── modules/
 │   ├── api/
-│   │   ├── client.py    # AppClient: interfaz de llamadas HTTP a /discovery
-│   │   └── poller.py    # ServerPoller y TaskPoller (QThread) para sondeo asíncrono
+│   │   ├── client.py       # AppClient: interfaz de llamadas HTTP a /discovery
+│   │   └── poller.py       # ServerPoller y TaskPoller (QThread) para sondeo asíncrono
+│   │
 │   ├── database/
-│   │   ├── manager.py   # Gestor transaccional SQLite
-│   │   └── models.py    # Definición de modelos ORM SQLAlchemy
-│   └── logger.py        # Sistema de logging rotativo y consola
+│   │   ├── manager.py      # Gestor transaccional SQLite
+│   │   └── models.py       # Definición de modelos ORM SQLAlchemy
+│   │
+│   └── logger.py           # Sistema de logging rotativo y consola
+│
 ├── ui/
-│   ├── forms/           # Diseños visuales en formato .ui (Qt Designer)
-│   ├── interface/       # Archivos de interfaz autogenerados en Python
-│   ├── styles/          # Hojas de estilo personalizadas QSS (diseño premium)
-│   ├── widgets/         # Componentes y listas personalizadas Qt
-│   ├── actions.py       # Rutinas del sistema (hostname, distro, hashes de disco)
+│   ├── forms/              # Diseños visuales en formato .ui (Qt Designer)
+│   ├── interface/          # Archivos de interfaz autogenerados en Python
+│   ├── styles/             # Hojas de estilo personalizadas QSS (diseño premium)
+│   ├── widgets/            # Componentes y listas personalizadas Qt
+│   │
+│   ├── actions.py          # Rutinas del sistema (hostname, distro, hashes de disco)
 │   ├── first_run_dialog.py # Diálogo guiado de primera configuración
-│   ├── handler.py       # Canalizador seguro de hilos y eventos QT (QObject)
-│   ├── load_screen.py   # Pantalla de carga (Splash screen animada)
-│   ├── main_window.py   # Ventana principal y dashboard del cliente
-│   └── worker.py        # Trabajador en segundo plano (QThread) para el motor de pipelines
-├── config.py            # Configuración global de rutas y variables de entorno
-├── version.py           # Metadatos de la versión del cliente
-└── main.py              # Punto de entrada de la aplicación
+│   ├── handler.py          # Canalizador seguro de hilos y eventos QT (QObject)
+│   ├── load_screen.py      # Pantalla de carga (Splash screen animada)
+│   ├── main_window.py      # Ventana principal y dashboard del cliente
+│   └── worker.py           # Trabajador en segundo plano (QThread) para el motor de pipelines
+│
+├── config.py               # Configuración global de rutas y variables de entorno
+├── version.py              # Metadatos de la versión del cliente
+└── main.py                 # Punto de entrada de la aplicación
 ```
 
 ### Módulos Core
@@ -75,10 +80,11 @@ src/dotmng/
 
 El comportamiento dinámico y las interacciones secuenciales entre estos componentes (por ejemplo, al ejecutar un comando a través de los hilos seguros de Qt) se detallan en el siguiente diagrama de secuencia:
 
-<br>
-
 <div align="center">
-  <img src="../assets/DiagramaSecuencia.webp" width="80%" alt="Diagrama de Secuencia y Ejecución de Comandos">
+  <a href="../../assets/DiagramaSecuencia.webp" target="_blank">
+    <img src="../../assets/DiagramaSecuencia.webp" alt="Diagrama de Secuencia y Ejecución de Comandos">
+  </a>
 </div>
 
 
+---

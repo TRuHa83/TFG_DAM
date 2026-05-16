@@ -1,5 +1,3 @@
-## 2. Entorno y dependencias
-
 El backend ha sido construido utilizando el stack tecnológico estándar de la industria para aplicaciones empresariales robustas y escalables.
 
 ### Tecnologías Base
@@ -27,3 +25,4 @@ El servidor se configura a través del archivo `application.yaml`, donde se defi
 * API Key de Google Gemini (inyectada de forma segura mediante variables de entorno).
 
 
+---

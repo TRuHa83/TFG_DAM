@@ -1,9 +1,9 @@
 Para garantizar el éxito del proyecto y la entrega de un Producto Mínimo Viable (MVP) funcional, el desarrollo se ha estructurado en fases incrementales. Esta secuenciación permite asegurar la estabilidad de los componentes críticos antes de añadir funcionalidades superiores.
 
 <div align="center">
-    <a href="/assets/RoadMap.webp" target="_blank">
-      <img src="/assets/RoadMap.webp" width="100%" alt="RoadMap">
-    </a>
+  <a href="../../assets/RoadMap.webp" target="_blank">
+    <img src="../../assets/RoadMap.webp" alt="RoadMap">
+  </a>
 </div>
 
 ## Fases de desarrollo

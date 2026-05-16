@@ -16,11 +16,7 @@
   </p>
 </div>
 
----
 
-⚠️ **Aviso de Desarrollo:** Este proyecto se encuentra actualmente en **fase activa de desarrollo** (Work in Progress). Es posible que muchas de las características, especificaciones y componentes descritos en este repositorio y en la documentación aún no estén implementados, se encuentren incompletos o estén sujetos a cambios.
-
----
 
 ## 📖 Acerca del Proyecto
 
@@ -53,6 +49,11 @@ Toda la memoria técnica, análisis de requisitos, arquitectura y guías de uso 
 - **Cliente:** Python 3.13, PySide6, SQLAlchemy, Rich, SQLite.
 - **Servidor:** Java 21 (LTS), Spring Boot 3.5, Spring AI (Gemini), Hibernate, SQLite.
 - **Documentación:** Markdown, MkDocs, Material for MkDocs.
+
+---
+
+> [!WARNING] 
+> Este proyecto se encuentra en fase de desarrollo activo. Para conocer con exactitud qué características ya están implementadas y cuáles faltan, consulta la sección **[Estado del Proyecto](https://truha83.github.io/TFG_DAM/memoria/10-estado-del-proyecto/)** en nuestra Wiki.
 
 ---
 

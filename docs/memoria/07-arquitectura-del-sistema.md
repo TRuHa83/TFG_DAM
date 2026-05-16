@@ -7,11 +7,10 @@ El diseño arquitectónico de **Dotfiles-Manager** se concibe como un sistema di
 
 <br>
 <div align="center">
-    <a href="/assets/ArquitecturaGlobal.webp" target="_blank">
-      <img src="/assets/ArquitecturaGlobal.webp" width="100%" alt="Arquitectura Global">
-    </a>
+  <a href="../../assets/ArquitecturaGlobal.webp" target="_blank">
+    <img src="../../assets/ArquitecturaGlobal.webp" alt="Arquitectura Global">
+  </a>
 </div>
-<br>
 
 ## Flujo de Datos y Privacidad
 

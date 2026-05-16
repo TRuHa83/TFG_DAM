@@ -1,10 +1,9 @@
-## 2. Entorno y dependencias
-
 Para garantizar un entorno de ejecución moderno, rápido y determinista, el cliente utiliza las siguientes herramientas y dependencias:
 
-### Gestor de proyecto: uv
+## Gestor de proyecto: **uv**
 
 Se utiliza **uv** (un gestor de paquetes escrito en Rust) para la administración del proyecto. `uv` se encarga de:
+
 *   Crear y gestionar el entorno virtual (venv).
 *   Resolver y bloquear las versiones de las dependencias.
 *   Ejecutar la aplicación de forma eficiente.
@@ -24,3 +23,4 @@ Se utiliza **uv** (un gestor de paquetes escrito en Rust) para la administració
 *   **Binarios externos:** Git debe estar instalado y accesible en el PATH.
 
 
+---

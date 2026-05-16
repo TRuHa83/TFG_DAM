@@ -1,5 +1,3 @@
-## 6. Lógica de resolución de dotfiles (AI)
-
 El componente más innovador del servidor es su capacidad para deducir la identidad de aplicaciones basándose en firmas estructurales, utilizando modelos de lenguaje avanzados.
 
 ### El Procesador de Tareas (TaskProcessorService)
@@ -38,3 +36,4 @@ El servidor utiliza la SDK oficial de **Google GenAI** para procesar peticiones 
      Finalmente, se marca la tarea como `COMPLETE` y se guarda el JSON final en `resultData`.
 
 
+---

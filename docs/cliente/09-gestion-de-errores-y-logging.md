@@ -1,5 +1,3 @@
-## 9. Gestión de errores y logging
-
 Para asegurar la robustez en un entorno tan crítico como el directorio $HOME, el cliente implementa una gestión de errores exhaustiva y un sistema de trazas detallado.
 
 ### Niveles de Trazas (Logging)
@@ -16,3 +14,4 @@ El sistema genera logs en diferentes niveles:
 *   **Conflictos de Git:** Si se detecta un conflicto en el repositorio Bare, el sistema detiene la operación y solicita la intervención del usuario para evitar la pérdida de datos.
 
 
+---

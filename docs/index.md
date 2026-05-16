@@ -17,7 +17,8 @@ Este repositorio está organizado como una **Wiki Técnica**.
 
 <div align="center" markdown>
   [ :material-book-open-page-variant: Memoria Técnica ](memoria/01-introduccion.md){ .md-button .md-button--primary }
-  &nbsp;&nbsp;
+  <br>
+  <br>
   [ :material-language-python: Cliente ](cliente/01-introduccion.md){ .md-button .md-button--primary }
   &nbsp;&nbsp;
   [ :material-language-java: Servidor ](servidor/01-introduccion.md){ .md-button .md-button--primary }
@@ -34,14 +35,6 @@ Si deseas explorar el código fuente o ejecutar los componentes localmente, cons
 
 ---
 
-Warning "Proyecto en Desarrollo (WIP)"
-El sistema **Dotfiles-Manager** se encuentra en fase activa de desarrollo. La documentación técnica aquí expuesta detalla el diseño, la planificación y los objetivos del sistema, pero debes tener en cuenta que **no todas las características descritas han sido implementadas todavía**.
-
-Es posible que encuentres secciones que documenten arquitecturas o funcionalidades que aún están en progreso o incluso pendientes de iniciarse.
-
----
-
 <div align="center">
   <p><strong>Autor:</strong> Sergio Trujillo de la Nuez</p>
-  <p><strong>Año:</strong> 2024 - 2026</p>
 </div>

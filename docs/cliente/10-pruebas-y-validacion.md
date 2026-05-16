@@ -1,5 +1,3 @@
-## 10. Pruebas y validación
-
 La calidad del software se garantiza mediante una estrategia de pruebas multinivel, utilizando el framework **pytest**.
 
 ### Pruebas Unitarias
@@ -20,3 +18,4 @@ Se validan de forma aislada las funciones más críticas:
 Pruebas manuales en diferentes distribuciones de Linux (Arch, Ubuntu) para asegurar que las rutas por defecto y el comportamiento de la interfaz son consistentes en distintos entornos de escritorio (KDE, GNOME).
 
 
+---

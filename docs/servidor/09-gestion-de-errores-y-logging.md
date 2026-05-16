@@ -1,5 +1,3 @@
-## 9. Gestión de errores y logging
-
 El servidor implementa un sistema de control de errores centralizado para garantizar la disponibilidad del servicio y facilitar el diagnóstico de problemas en la red o en la IA.
 
 ### Control de Excepciones
@@ -33,3 +31,4 @@ Utiliza **SLF4J** con **Logback** para generar trazas en consola y archivos, reg
 ```
 
 
+---

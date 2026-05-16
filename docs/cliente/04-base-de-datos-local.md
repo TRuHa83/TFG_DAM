@@ -1,5 +1,3 @@
-## 4. Base de datos local (SQLite)
-
 El cliente Python implementa una base de datos relacional integrada (**SQLite**) gestionada a través del ORM **SQLAlchemy**. Su función principal es actuar como una caché persistente de alto rendimiento para el inventario local, evitando lecturas redundantes en disco y permitiendo el funcionamiento offline.
 
 ### Modelo de datos
@@ -7,7 +5,9 @@ El cliente Python implementa una base de datos relacional integrada (**SQLite**)
 El diseño relacional se organiza en varios bloques lógicos principales:
 
 <div align="center">
-  <img src="../assets/Diagrama%20ERD%20-%20Cliente.webp" width="80%" alt="Diagrama Entidad-Relación SQLite">
+  <a href="../../assets/Diagrama%20ERD%20-%20Cliente.webp" target="_blank">
+    <img src="../../assets/Diagrama%20ERD%20-%20Cliente.webp" alt="Diagrama Entidad-Relación SQLite">
+  </a>
 </div>
 
 #### Bloque de Inventario y Auditoría
@@ -46,3 +46,4 @@ El sistema aplica una lógica diferencial para gestionar los archivos encontrado
   * El usuario puede habilitarlos o ignorarlos modificando las preferencias en las tablas de overrides.
 
 
+---

@@ -1,5 +1,3 @@
-## 10. Pruebas y validación
-
 Para garantizar la fiabilidad del backend y la integridad de las respuestas entregadas a los clientes, el servidor Java cuenta con una estrategia de pruebas basada en el ecosistema de Spring Boot.
 
 ### Pruebas Unitarias con JUnit 5
@@ -26,3 +24,4 @@ Aunque el sistema utiliza SQLite en producción, las pruebas de base de datos se
 Se utilizan **Mocks** de los servicios de Spring AI para simular las respuestas de Google Gemini. Esto permite probar el comportamiento del servidor ante diferentes respuestas de la IA (clasificaciones exitosas, errores de formato, timeouts) sin incurrir en costes de API ni depender de la conectividad externa durante los tests.
 
 
+---
