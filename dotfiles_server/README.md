@@ -80,8 +80,6 @@ GEMINI_API_KEY=tu_clave java -jar target/dotfile_server-*.jar
 
 ## 🐳 Despliegue con Docker (En Desarrollo)
 
-> ⚠️ **Nota:** La infraestructura de contenedores está actualmente en fase de diseño. Las especificaciones a continuación reflejan la proyección inicial. Los archivos `Dockerfile` y `docker-compose.yml` se incluirán en futuras actualizaciones.
-
 El objetivo principal para el entorno de producción es abstraer la aplicación mediante Docker Compose, permitiendo un despliegue con un único comando:
 
 ```bash
