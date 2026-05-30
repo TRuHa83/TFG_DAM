@@ -1,0 +1,27 @@
+logging:
+  level:
+    root: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
+  file:
+    name: app.log
+
+spring:
+  application:
+    name: dotfile_server
+  datasource:
+    url: jdbc:sqlite:data.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY:pon_aqui_tu_api_key_temporal}
+        batch-model: gemini-3.1-pro-preview
+        sync-model: gemini-2.5-flash
+        polling-interval-ms: 30000

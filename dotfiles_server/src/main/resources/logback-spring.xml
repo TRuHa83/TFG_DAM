@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Importar configuraciones por defecto de Spring Boot -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    
+    <!-- Configuración estándar del Console Appender de Spring Boot -->
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- Propiedad para el archivo de log principal, usando app.log por defecto -->
+    <property name="LOG_FILE" value="${LOG_FILE:-app.log}"/>
+    
+    <!-- Appender de archivo rotativo para el log principal de la aplicación -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+            <charset>${FILE_LOG_CHARSET}</charset>
+        </encoder>
+        <file>${LOG_FILE}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+            <cleanHistoryOnStart>${LOGBACK_ROLLINGPOLICY_CLEAN_HISTORY_ON_START:-false}</cleanHistoryOnStart>
+            <maxFileSize>${LOGBACK_ROLLINGPOLICY_MAX_FILE_SIZE:-10MB}</maxFileSize>
+            <totalSizeCap>${LOGBACK_ROLLINGPOLICY_TOTAL_SIZE_CAP:-0}</totalSizeCap>
+            <maxHistory>${LOGBACK_ROLLINGPOLICY_MAX_HISTORY:-7}</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Appender de archivo dedicado para las interacciones con Gemini -->
+    <appender name="GEMINI_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>gemini.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>gemini.log.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Logger dedicado para Gemini. additivity="false" evita que estos logs vayan al root (consola/app.log) -->
+    <logger name="gemini-logger" level="INFO" additivity="false">
+        <appender-ref ref="GEMINI_FILE"/>
+    </logger>
+
+    <!-- Configuración del logger Root -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
