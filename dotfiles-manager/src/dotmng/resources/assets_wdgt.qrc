@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/toggle_off.svg</file>
+    <file>icons/toggle_on.svg</file>
+    <file>icons/default-app.svg</file>
+  </qresource>
+</RCC>

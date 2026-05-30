@@ -1,0 +1,8852 @@
+{
+  "1password_cli": {
+    "app_name": "1Password CLI",
+    "category": "Security",
+    "subcategory": "Password Manager",
+    "files_info_json": [
+      {
+        "path": ".op",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "1password-cli"
+    ]
+  },
+  "alsa": {
+    "app_name": "ALSA",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".asoundrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "amule": {
+    "app_name": "amule",
+    "category": "Network",
+    "subcategory": "P2P",
+    "files_info_json": [
+      {
+        "path": ".aMule",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "amule"
+    ]
+  },
+  "anki": {
+    "app_name": "anki",
+    "category": "Productivity",
+    "subcategory": "Education",
+    "files_info_json": [
+      {
+        "path": "Anki",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "anki"
+    ]
+  },
+  "ansible": {
+    "app_name": "Ansible",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".ansible",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ansible"
+    ]
+  },
+  "anthy": {
+    "app_name": "anthy",
+    "category": "System",
+    "subcategory": "Input Method",
+    "files_info_json": [
+      {
+        "path": ".anthy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "antigen": {
+    "app_name": "Antigen",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".antigen",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "antigen",
+      "zsh-antigen"
+    ]
+  },
+  "antimicrox": {
+    "app_name": "AntimicroX",
+    "category": "Utilities",
+    "subcategory": "Peripherals",
+    "files_info_json": [
+      {
+        "path": ".antimicro",
+        "type": "folder"
+      },
+      {
+        "path": ".antimicrox",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "antimicrox"
+    ]
+  },
+  "anydesk": {
+    "app_name": "AnyDesk",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".anydesk",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "anydesk"
+    ]
+  },
+  "apache_beam": {
+    "app_name": "Apache Beam",
+    "category": "Development",
+    "subcategory": "Data Processing",
+    "files_info_json": [
+      {
+        "path": ".apache_beam",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "apache_directory_studio": {
+    "app_name": "Apache Directory Studio",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".ApacheDirectoryStudio",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "apache-directory-studio"
+    ]
+  },
+  "aptitude": {
+    "app_name": "Aptitude",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".aptitude",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "aptitude"
+    ]
+  },
+  "apvlv": {
+    "app_name": "apvlv",
+    "category": "Productivity",
+    "subcategory": "Document Viewer",
+    "files_info_json": [
+      {
+        "path": ".apvlvrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "apvlv"
+    ]
+  },
+  "arandr": {
+    "app_name": "arandr",
+    "category": "System",
+    "subcategory": "Display",
+    "files_info_json": [
+      {
+        "path": ".screenlayout",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "arandr"
+    ]
+  },
+  "arduino": {
+    "app_name": "Arduino",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".arduino15",
+        "type": "folder"
+      },
+      {
+        "path": ".jssc",
+        "type": "folder"
+      },
+      {
+        "path": ".arduino-create",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "arduino",
+      "arduino-ide",
+      "arduino-cli"
+    ]
+  },
+  "aria2": {
+    "app_name": "aria2",
+    "category": "Network",
+    "subcategory": "Downloader",
+    "files_info_json": [
+      {
+        "path": ".aria2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "aria2"
+    ]
+  },
+  "asdf-vm": {
+    "app_name": "asdf-vm",
+    "category": "Development",
+    "subcategory": "Version Manager",
+    "files_info_json": [
+      {
+        "path": ".asdf",
+        "type": "folder"
+      },
+      {
+        "path": ".asdfrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "asdf-vm"
+    ]
+  },
+  "ash": {
+    "app_name": "ash",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".ash_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "asp.net": {
+    "app_name": "ASP.NET",
+    "category": "Development",
+    "subcategory": "Web Development",
+    "files_info_json": [
+      {
+        "path": ".aspnet",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "aspnet-runtime",
+      "dotnet-sdk"
+    ]
+  },
+  "aspell": {
+    "app_name": "Aspell",
+    "category": "Utilities",
+    "subcategory": "Text Processing",
+    "files_info_json": [
+      {
+        "path": ".aspell.*",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "aspell"
+    ]
+  },
+  "asunder": {
+    "app_name": "asunder",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".asunder",
+        "type": "file"
+      },
+      {
+        "path": ".asunder_album_artist",
+        "type": "file"
+      },
+      {
+        "path": ".asunder_album_genre",
+        "type": "file"
+      },
+      {
+        "path": ".asunder_album_title",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "asunder"
+    ]
+  },
+  "asymptote": {
+    "app_name": "Asymptote",
+    "category": "Development",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".asy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "asymptote"
+    ]
+  },
+  "atom": {
+    "app_name": "Atom",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".atom",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "atom"
+    ]
+  },
+  "audacity": {
+    "app_name": "Audacity",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".audacity-data",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "audacity"
+    ]
+  },
+  "avidemux": {
+    "app_name": "avidemux",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".avidemux6",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "awesome": {
+    "app_name": "awesome",
+    "category": "System",
+    "subcategory": "Window Manager",
+    "files_info_json": [
+      {
+        "path": ".awesome-errors",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "aws-cli": {
+    "app_name": "AWS CLI",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".aws",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "aws-cli",
+      "awscli"
+    ]
+  },
+  "aws-vault": {
+    "app_name": "aws-vault",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".awsvault",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "aws-vault"
+    ]
+  },
+  "azure-cli": {
+    "app_name": "azure-cli",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".azure",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "azure-cli"
+    ]
+  },
+  "azure-devops": {
+    "app_name": "Azure DevOps",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".azure-devops",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "bash": {
+    "app_name": "Bash",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".bash_logout",
+        "type": "file"
+      },
+      {
+        "path": ".bash_login",
+        "type": "file"
+      },
+      {
+        "path": ".bash_profile",
+        "type": "file"
+      },
+      {
+        "path": ".bash_aliases",
+        "type": "file"
+      },
+      {
+        "path": ".bashrc",
+        "type": "file"
+      },
+      {
+        "path": ".oh-my-bash",
+        "type": "folder"
+      },
+      {
+        "path": ".bash_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "bash",
+      "bash-completion"
+    ]
+  },
+  "bash-completion": {
+    "app_name": "bash-completion",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".bash_completion",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "bash-completion"
+    ]
+  },
+  "bashdb": {
+    "app_name": "bashdb",
+    "category": "Development",
+    "subcategory": "Debugging",
+    "files_info_json": [
+      {
+        "path": ".bashdb_hist",
+        "type": "file"
+      },
+      {
+        "path": ".bashdbinit",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "bashdb"
+    ]
+  },
+  "bazaar": {
+    "app_name": "bazaar",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".bzr.log",
+        "type": "file"
+      },
+      {
+        "path": ".bazaar",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "bzr"
+    ]
+  },
+  "berkshelf": {
+    "app_name": "Berkshelf",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".berkshelf",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "binaryninja": {
+    "app_name": "Binary Ninja",
+    "category": "Development",
+    "subcategory": "Reverse Engineering",
+    "files_info_json": [
+      {
+        "path": ".binaryninja",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "binaryninja"
+    ]
+  },
+  "bindle": {
+    "app_name": "Bindle",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".bindle",
+        "type": "folder"
+      },
+      {
+        "path": ".bindlerc",
+        "type": "file"
+      },
+      {
+        "path": ".dotsrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "binwalk": {
+    "app_name": "binwalk",
+    "category": "Security",
+    "subcategory": "Reverse Engineering",
+    "files_info_json": [
+      {
+        "path": ".binwalk",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "binwalk"
+    ]
+  },
+  "blender": {
+    "app_name": "Blender",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".blender",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "blender"
+    ]
+  },
+  "bm": {
+    "app_name": "bm",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".sdirs",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "bogofilter": {
+    "app_name": "Bogofilter",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".bogofilter",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "bogofilter"
+    ]
+  },
+  "boinc": {
+    "app_name": "BOINC",
+    "category": "System",
+    "subcategory": "Distributed Computing",
+    "files_info_json": [
+      {
+        "path": ".BOINC",
+        "type": "folder"
+      },
+      {
+        "path": ".BOINC Manager",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "boinc",
+      "boinc-manager"
+    ]
+  },
+  "boto": {
+    "app_name": "boto",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".boto",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "bpython": {
+    "app_name": "bpython",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".pythonhist",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "bpython"
+    ]
+  },
+  "btpd": {
+    "app_name": "btpd",
+    "category": "Network",
+    "subcategory": "P2P",
+    "files_info_json": [
+      {
+        "path": ".btpd",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "btpd"
+    ]
+  },
+  "bubblewrap": {
+    "app_name": "bubblewrap",
+    "category": "Security",
+    "subcategory": "Sandboxing",
+    "files_info_json": [
+      {
+        "path": ".bubblewrap",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "bubblewrap"
+    ]
+  },
+  "bun": {
+    "app_name": "bun",
+    "category": "Development",
+    "subcategory": "JavaScript Runtime",
+    "files_info_json": [
+      {
+        "path": ".bun",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "burpsuite": {
+    "app_name": "Burp Suite",
+    "category": "Security",
+    "subcategory": "Web Security",
+    "files_info_json": [
+      {
+        "path": ".BurpSuite",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "burpsuite"
+    ]
+  },
+  "byobu": {
+    "app_name": "Byobu",
+    "category": "System",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".byobu",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "byobu"
+    ]
+  },
+  "bytecode_viewer": {
+    "app_name": "Bytecode Viewer",
+    "category": "Development",
+    "subcategory": "Reverse Engineering",
+    "files_info_json": [
+      {
+        "path": ".Bytecode-Viewer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "bytecode-viewer"
+    ]
+  },
+  "cabal": {
+    "app_name": "cabal",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".cabal",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cabal-install"
+    ]
+  },
+  "calc": {
+    "app_name": "Calc",
+    "category": "Utilities",
+    "subcategory": "Math",
+    "files_info_json": [
+      {
+        "path": ".calc_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "calc"
+    ]
+  },
+  "calcurse": {
+    "app_name": "calcurse",
+    "category": "Productivity",
+    "subcategory": "Calendar",
+    "files_info_json": [
+      {
+        "path": ".calcurse",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "calcurse"
+    ]
+  },
+  "carbon-now-cli": {
+    "app_name": "carbon-now-cli",
+    "category": "Development",
+    "subcategory": "Utilities",
+    "files_info_json": [
+      {
+        "path": ".carbon-now.json",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "carbon-now-cli"
+    ]
+  },
+  "cargo": {
+    "app_name": "cargo",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".cargo",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cargo",
+      "rust"
+    ]
+  },
+  "cassandra-cqlsh": {
+    "app_name": "Cassandra CQLSH",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".cassandra",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cassandra"
+    ]
+  },
+  "cataclysm-dda": {
+    "app_name": "Cataclysm: Dark Days Ahead",
+    "category": "Games",
+    "subcategory": "Roguelike",
+    "files_info_json": [
+      {
+        "path": ".cataclysm-dda",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cataclysm-dda",
+      "cataclysm-dda-tiles",
+      "cataclysm-dda-curses",
+      "cataclysm-dda-sdl"
+    ]
+  },
+  "ccache": {
+    "app_name": "ccache",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".ccache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ccache"
+    ]
+  },
+  "cd-bookmark": {
+    "app_name": "cd-bookmark",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".cdbookmark",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "cgdb": {
+    "app_name": "cgdb",
+    "category": "Development",
+    "subcategory": "Debugger",
+    "files_info_json": [
+      {
+        "path": ".cgdb",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cgdb"
+    ]
+  },
+  "chatty": {
+    "app_name": "Chatty",
+    "category": "Network",
+    "subcategory": "Chat",
+    "files_info_json": [
+      {
+        "path": ".chatty",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "chatty"
+    ]
+  },
+  "chez": {
+    "app_name": "Chez Scheme",
+    "category": "Development",
+    "subcategory": "Compilers & Interpreters",
+    "files_info_json": [
+      {
+        "path": ".chezscheme_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "chez-scheme"
+    ]
+  },
+  "chirp": {
+    "app_name": "CHIRP",
+    "category": "Utilities",
+    "subcategory": "Ham Radio",
+    "files_info_json": [
+      {
+        "path": ".chirp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "chirp"
+    ]
+  },
+  "chktex": {
+    "app_name": "chktex",
+    "category": "Productivity",
+    "subcategory": "Typesetting",
+    "files_info_json": [
+      {
+        "path": ".chktexrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "chktex"
+    ]
+  },
+  "cinelerra": {
+    "app_name": "Cinelerra",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".bcast5",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cinelerra"
+    ]
+  },
+  "cinnamon": {
+    "app_name": "Cinnamon",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".cinnamon/",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cinnamon"
+    ]
+  },
+  "citra": {
+    "app_name": "Citra",
+    "category": "Games",
+    "subcategory": "Emulators",
+    "files_info_json": [
+      {
+        "path": ".citra-emu",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "citra"
+    ]
+  },
+  "citrix_workspace_app": {
+    "app_name": "Citrix Workspace App",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".ICAClient",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "clang-format": {
+    "app_name": "clang-format",
+    "category": "Development",
+    "subcategory": "Code Formatter",
+    "files_info_json": [
+      {
+        "path": ".clang-format",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "clang-format"
+    ]
+  },
+  "clangd": {
+    "app_name": "clangd",
+    "category": "Development",
+    "subcategory": "Language Server",
+    "files_info_json": [
+      {
+        "path": ".clangd",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "clangd",
+      "clang"
+    ]
+  },
+  "claws-mail": {
+    "app_name": "Claws Mail",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".claws-mail",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "claws-mail"
+    ]
+  },
+  "clickhouse": {
+    "app_name": "ClickHouse",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".clickhouse-client-history",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "clojure": {
+    "app_name": "Clojure",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".clojure",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "clojure"
+    ]
+  },
+  "clusterssh": {
+    "app_name": "clusterssh",
+    "category": "System",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".clusterssh",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "clusterssh"
+    ]
+  },
+  "cmake": {
+    "app_name": "CMake",
+    "category": "Development",
+    "subcategory": "Build System",
+    "files_info_json": [
+      {
+        "path": ".cmake",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cmake"
+    ]
+  },
+  "cocoapods": {
+    "app_name": "CocoaPods",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".cocoapods",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "codeium.vim": {
+    "app_name": "Codeium.vim",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".codeium",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "colima": {
+    "app_name": "colima",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".colima",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "composer": {
+    "app_name": "Composer",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".composer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "composer"
+    ]
+  },
+  "conan": {
+    "app_name": "Conan",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".conan",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "conan"
+    ]
+  },
+  "conda": {
+    "app_name": "Conda",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".condarc",
+        "type": "file"
+      },
+      {
+        "path": ".conda",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "conda"
+    ]
+  },
+  "conky": {
+    "app_name": "Conky",
+    "category": "System",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".conkyrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "conky"
+    ]
+  },
+  "cookiecutter": {
+    "app_name": "cookiecutter",
+    "category": "Development",
+    "subcategory": "Utilities",
+    "files_info_json": [
+      {
+        "path": ".cookiecutter_replay",
+        "type": "folder"
+      },
+      {
+        "path": ".cookiecutterrc",
+        "type": "file"
+      },
+      {
+        "path": ".cookiecutters",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "cozy": {
+    "app_name": "Cozy",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".cozy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cozy"
+    ]
+  },
+  "cpanminus": {
+    "app_name": "cpanminus",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".cpanm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cpanminus"
+    ]
+  },
+  "crawl": {
+    "app_name": "Dungeon Crawl Stone Soup",
+    "category": "Games",
+    "subcategory": "Roguelike",
+    "files_info_json": [
+      {
+        "path": ".crawl",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "crawl",
+      "stone-soup"
+    ]
+  },
+  "crossnote": {
+    "app_name": "Crossnote",
+    "category": "Productivity",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".mume",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "crossover": {
+    "app_name": "CrossOver",
+    "category": "System",
+    "subcategory": "Compatibility",
+    "files_info_json": [
+      {
+        "path": ".mailcap",
+        "type": "file"
+      },
+      {
+        "path": ".mime.types",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "cryptomator": {
+    "app_name": "Cryptomator",
+    "category": "Security",
+    "subcategory": "Encryption",
+    "files_info_json": [
+      {
+        "path": ".Cryptomator",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cryptomator"
+    ]
+  },
+  "ctags": {
+    "app_name": "Ctags",
+    "category": "Development",
+    "subcategory": "Code Analysis",
+    "files_info_json": [
+      {
+        "path": ".ctags.d",
+        "type": "folder"
+      },
+      {
+        "path": ".ctagsrc",
+        "type": "file"
+      },
+      {
+        "path": ".ctags",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "universal-ctags",
+      "exuberant-ctags"
+    ]
+  },
+  "cuda": {
+    "app_name": "NVIDIA CUDA",
+    "category": "Development",
+    "subcategory": "SDK",
+    "files_info_json": [
+      {
+        "path": ".nv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "cuda",
+      "nvidia-cuda-toolkit"
+    ]
+  },
+  "cups": {
+    "app_name": "CUPS",
+    "category": "System",
+    "subcategory": "Printing",
+    "files_info_json": [
+      {
+        "path": ".cups",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "curl": {
+    "app_name": "cURL",
+    "category": "Network",
+    "subcategory": "Transfer",
+    "files_info_json": [
+      {
+        "path": ".curlrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "curl"
+    ]
+  },
+  "d-feet": {
+    "app_name": "d-feet",
+    "category": "Development",
+    "subcategory": "Debugging",
+    "files_info_json": [
+      {
+        "path": ".d-feet",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "d-feet"
+    ]
+  },
+  "darcs": {
+    "app_name": "Darcs",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".darcs",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "darcs"
+    ]
+  },
+  "dart": {
+    "app_name": "Dart",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".dart",
+        "type": "folder"
+      },
+      {
+        "path": ".dartServer",
+        "type": "folder"
+      },
+      {
+        "path": ".dart-tool",
+        "type": "folder"
+      },
+      {
+        "path": ".pub-cache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dart"
+    ]
+  },
+  "davfs2": {
+    "app_name": "davfs2",
+    "category": "System",
+    "subcategory": "Filesystem",
+    "files_info_json": [
+      {
+        "path": ".davfs2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "davfs2"
+    ]
+  },
+  "delve": {
+    "app_name": "Delve",
+    "category": "Development",
+    "subcategory": "Debugger",
+    "files_info_json": [
+      {
+        "path": ".dlv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "delve"
+    ]
+  },
+  "deno": {
+    "app_name": "Deno",
+    "category": "Development",
+    "subcategory": "Runtime",
+    "files_info_json": [
+      {
+        "path": ".deno",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "deno"
+    ]
+  },
+  "devedeng": {
+    "app_name": "DeVeDeNG",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".devedeng",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "devede"
+    ]
+  },
+  "dhex": {
+    "app_name": "dhex",
+    "category": "Development",
+    "subcategory": "Hex Editor",
+    "files_info_json": [
+      {
+        "path": ".dhexrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "dhex"
+    ]
+  },
+  "dia": {
+    "app_name": "Dia",
+    "category": "Productivity",
+    "subcategory": "Diagramming",
+    "files_info_json": [
+      {
+        "path": ".dia",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dia"
+    ]
+  },
+  "dict": {
+    "app_name": "dict",
+    "category": "Utilities",
+    "subcategory": "Dictionary",
+    "files_info_json": [
+      {
+        "path": ".dictrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "dict"
+    ]
+  },
+  "dig": {
+    "app_name": "dig",
+    "category": "Network",
+    "subcategory": "DNS",
+    "files_info_json": [
+      {
+        "path": ".digrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "bind",
+      "dnsutils",
+      "bind-utils"
+    ]
+  },
+  "dircolors": {
+    "app_name": "dircolors",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".dircolors",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "coreutils"
+    ]
+  },
+  "distcc": {
+    "app_name": "distcc",
+    "category": "Development",
+    "subcategory": "Compilers",
+    "files_info_json": [
+      {
+        "path": ".distcc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "distcc"
+    ]
+  },
+  "dm": {
+    "app_name": "Display Manager",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".dmrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "docker": {
+    "app_name": "Docker",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".docker",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "docker"
+    ]
+  },
+  "docker-machine": {
+    "app_name": "docker-machine",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".docker",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "docker-machine"
+    ]
+  },
+  "dolphin_emulator": {
+    "app_name": "Dolphin Emulator",
+    "category": "Games",
+    "subcategory": "Emulation",
+    "files_info_json": [
+      {
+        "path": ".dolphin-emu",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dolphin-emu"
+    ]
+  },
+  "dolt": {
+    "app_name": "Dolt",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".dolt",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dolt"
+    ]
+  },
+  "doom-emacs": {
+    "app_name": "Doom Emacs",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".doom.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "emacs",
+      "git",
+      "ripgrep",
+      "fd"
+    ]
+  },
+  "dosbox": {
+    "app_name": "DOSBox",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".dosbox",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dosbox"
+    ]
+  },
+  "dotnet": {
+    "app_name": ".NET CLI",
+    "category": "Development",
+    "subcategory": "Language SDK",
+    "files_info_json": [
+      {
+        "path": ".dotnet",
+        "type": "folder"
+      },
+      {
+        "path": ".templateengine",
+        "type": "folder"
+      },
+      {
+        "path": ".net",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "dotnet-sdk",
+      "dotnet-runtime"
+    ]
+  },
+  "dropbox": {
+    "app_name": "Dropbox",
+    "category": "Productivity",
+    "subcategory": "Cloud Storage",
+    "files_info_json": [
+      {
+        "path": ".dropbox",
+        "type": "folder"
+      },
+      {
+        "path": ".dropbox-dist",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dropbox"
+    ]
+  },
+  "dub_package_manager": {
+    "app_name": "Dub Package Manager",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".dub",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dub"
+    ]
+  },
+  "dwarffortress": {
+    "app_name": "Dwarf Fortress",
+    "category": "Games",
+    "subcategory": "Simulation",
+    "files_info_json": [
+      {
+        "path": ".dwarffortress",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "dwarffortress"
+    ]
+  },
+  "eagle_mode": {
+    "app_name": "Eagle Mode",
+    "category": "Utilities",
+    "subcategory": "File Manager",
+    "files_info_json": [
+      {
+        "path": ".eaglemode",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "eaglemode"
+    ]
+  },
+  "earthly": {
+    "app_name": "earthly",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".earthly",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "easyocr": {
+    "app_name": "EasyOCR",
+    "category": "Development",
+    "subcategory": "Machine Learning",
+    "files_info_json": [
+      {
+        "path": ".EasyOCR",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-easyocr"
+    ]
+  },
+  "eclipse": {
+    "app_name": "Eclipse",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".eclipse",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "eclipse"
+    ]
+  },
+  "editor": {
+    "app_name": "Selected Editor",
+    "category": "System",
+    "subcategory": "Configuration",
+    "files_info_json": [
+      {
+        "path": ".selected_editor",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "elan": {
+    "app_name": "elan",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".elan",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "elan"
+    ]
+  },
+  "electrum": {
+    "app_name": "Electrum",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".electrum",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "electrum"
+    ]
+  },
+  "elinks": {
+    "app_name": "ELinks",
+    "category": "Network",
+    "subcategory": "Web Browser",
+    "files_info_json": [
+      {
+        "path": ".elinks",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "elinks"
+    ]
+  },
+  "elixir": {
+    "app_name": "Elixir",
+    "category": "Development",
+    "subcategory": "Programming Language",
+    "files_info_json": [
+      {
+        "path": ".mix",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "elixir"
+    ]
+  },
+  "elm": {
+    "app_name": "elm",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".elm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "emacs": {
+    "app_name": "GNU Emacs",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".emacs.d",
+        "type": "folder"
+      },
+      {
+        "path": ".emacs",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "emacs"
+    ]
+  },
+  "emscripten": {
+    "app_name": "Emscripten",
+    "category": "Development",
+    "subcategory": "Compilers",
+    "files_info_json": [
+      {
+        "path": ".emscripten",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "emscripten"
+    ]
+  },
+  "emulationstation-de": {
+    "app_name": "EmulationStation Desktop Edition",
+    "category": "Games",
+    "subcategory": "Emulation",
+    "files_info_json": [
+      {
+        "path": ".emulationstation",
+        "type": "folder"
+      },
+      {
+        "path": "ES-DE",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "emulationstation-de"
+    ]
+  },
+  "equalx": {
+    "app_name": "EqualX",
+    "category": "Productivity",
+    "subcategory": "Typesetting",
+    "files_info_json": [
+      {
+        "path": ".equalx",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "equalx"
+    ]
+  },
+  "erlang": {
+    "app_name": "Erlang",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".erlang.cookie",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "erlang"
+    ]
+  },
+  "everdev": {
+    "app_name": "everdev",
+    "category": "Development",
+    "subcategory": "Blockchain",
+    "files_info_json": [
+      {
+        "path": ".everdev",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "expo": {
+    "app_name": "Expo",
+    "category": "Development",
+    "subcategory": "Mobile Development",
+    "files_info_json": [
+      {
+        "path": ".expo",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "fceux": {
+    "app_name": "FCEUX",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".fceux",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "fceux"
+    ]
+  },
+  "feed_the_beast": {
+    "app_name": "Feed the Beast",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".ftba",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "feed_the_beast_classic": {
+    "app_name": "Feed the Beast Classic",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".ftb",
+        "type": "folder"
+      },
+      {
+        "path": ".ftblauncher",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "feh": {
+    "app_name": "feh",
+    "category": "Multimedia",
+    "subcategory": "Image Viewer",
+    "files_info_json": [
+      {
+        "path": ".fehbg",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "feh"
+    ]
+  },
+  "fennel": {
+    "app_name": "Fennel",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".fennelrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "fennel"
+    ]
+  },
+  "fetchmail": {
+    "app_name": "Fetchmail",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".fetchmailrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "fetchmail"
+    ]
+  },
+  "ffmpeg": {
+    "app_name": "FFmpeg",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".ffmpeg",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ffmpeg"
+    ]
+  },
+  "firedragon": {
+    "app_name": "Firedragon",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".firedragon",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "firedragon"
+    ]
+  },
+  "firefox": {
+    "app_name": "Firefox",
+    "category": "Network",
+    "subcategory": "Web Browser",
+    "files_info_json": [
+      {
+        "path": ".mozilla",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "firefox"
+    ]
+  },
+  "flatpak": {
+    "app_name": "Flatpak",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".var",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "flatpak"
+    ]
+  },
+  "fleet": {
+    "app_name": "Fleet",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".fleet",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "fleet"
+    ]
+  },
+  "flipper": {
+    "app_name": "Flipper",
+    "category": "Development",
+    "subcategory": "Debugging",
+    "files_info_json": [
+      {
+        "path": ".flipper",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "flipper"
+    ]
+  },
+  "fltk": {
+    "app_name": "FLTK",
+    "category": "Development",
+    "subcategory": "GUI Toolkit",
+    "files_info_json": [
+      {
+        "path": ".fltk",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "fltk"
+    ]
+  },
+  "flutter": {
+    "app_name": "Flutter",
+    "category": "Development",
+    "subcategory": "SDK",
+    "files_info_json": [
+      {
+        "path": ".flutter",
+        "type": "folder"
+      },
+      {
+        "path": ".flutter_settings",
+        "type": "file"
+      },
+      {
+        "path": ".flutter_tool_state",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "flutter"
+    ]
+  },
+  "flyctl": {
+    "app_name": "flyctl",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".fly",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "flyctl"
+    ]
+  },
+  "fnm": {
+    "app_name": "fnm",
+    "category": "Development",
+    "subcategory": "Version Manager",
+    "files_info_json": [
+      {
+        "path": ".fnm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "fnm"
+    ]
+  },
+  "fontconfig": {
+    "app_name": "fontconfig",
+    "category": "System",
+    "subcategory": "Fonts",
+    "files_info_json": [
+      {
+        "path": ".fontconfig",
+        "type": "folder"
+      },
+      {
+        "path": ".fonts.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "fontconfig"
+    ]
+  },
+  "fontforge": {
+    "app_name": "FontForge",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".FontForge",
+        "type": "folder"
+      },
+      {
+        "path": ".PfaEdit",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "fontforge"
+    ]
+  },
+  "fonts": {
+    "app_name": "fonts",
+    "category": "System",
+    "subcategory": "Fonts",
+    "files_info_json": [
+      {
+        "path": ".fonts",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "freerdp": {
+    "app_name": "FreeRDP",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".freerdp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "freerdp"
+    ]
+  },
+  "freesweep": {
+    "app_name": "Freesweep",
+    "category": "Games",
+    "subcategory": "Puzzle",
+    "files_info_json": [
+      {
+        "path": ".sweeprc",
+        "type": "file"
+      },
+      {
+        "path": ".sweeptimes",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "freesweep"
+    ]
+  },
+  "from_the_depths": {
+    "app_name": "From The Depths",
+    "category": "Games",
+    "subcategory": "Simulation",
+    "files_info_json": [
+      {
+        "path": "From The Depths",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "fvm": {
+    "app_name": "fvm",
+    "category": "Development",
+    "subcategory": "SDK Management",
+    "files_info_json": [
+      {
+        "path": "fvm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "fzf": {
+    "app_name": "fzf",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".fzf",
+        "type": "folder"
+      },
+      {
+        "path": ".fzf.zsh",
+        "type": "file"
+      },
+      {
+        "path": ".fzf.bash",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "fzf"
+    ]
+  },
+  "gajim": {
+    "app_name": "Gajim",
+    "category": "Network",
+    "subcategory": "Instant Messaging",
+    "files_info_json": [
+      {
+        "path": ".gajim",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gajim"
+    ]
+  },
+  "gcalcli": {
+    "app_name": "gcalcli",
+    "category": "Productivity",
+    "subcategory": "Calendar",
+    "files_info_json": [
+      {
+        "path": ".gcalcli_oauth",
+        "type": "file"
+      },
+      {
+        "path": ".gcalcli_cache",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gcalcli"
+    ]
+  },
+  "gconf": {
+    "app_name": "GConf",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".gconf",
+        "type": "folder"
+      },
+      {
+        "path": ".gconf.path",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gconf"
+    ]
+  },
+  "gdb": {
+    "app_name": "gdb",
+    "category": "Development",
+    "subcategory": "Debugger",
+    "files_info_json": [
+      {
+        "path": ".gdbinit",
+        "type": "file"
+      },
+      {
+        "path": ".gdb_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gdb"
+    ]
+  },
+  "gef": {
+    "app_name": "GEF",
+    "category": "Development",
+    "subcategory": "Debugger",
+    "files_info_json": [
+      {
+        "path": ".gef.rc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "gem": {
+    "app_name": "RubyGems",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".gem",
+        "type": "folder"
+      },
+      {
+        "path": ".gemrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ruby"
+    ]
+  },
+  "get_iplayer": {
+    "app_name": "get_iplayer",
+    "category": "Multimedia",
+    "subcategory": "Video/Audio",
+    "files_info_json": [
+      {
+        "path": ".get_iplayer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "get_iplayer"
+    ]
+  },
+  "getmail": {
+    "app_name": "getmail",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".getmail",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "getmail"
+    ]
+  },
+  "gftp": {
+    "app_name": "gFTP",
+    "category": "Network",
+    "subcategory": "File Transfer",
+    "files_info_json": [
+      {
+        "path": ".gftp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gftp"
+    ]
+  },
+  "ghci": {
+    "app_name": "GHCi",
+    "category": "Development",
+    "subcategory": "Compilers",
+    "files_info_json": [
+      {
+        "path": ".ghci",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ghc"
+    ]
+  },
+  "ghcup": {
+    "app_name": "ghcup",
+    "category": "Development",
+    "subcategory": "Language Manager",
+    "files_info_json": [
+      {
+        "path": ".ghcup",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "ghidra": {
+    "app_name": "Ghidra",
+    "category": "Security",
+    "subcategory": "Reverse Engineering",
+    "files_info_json": [
+      {
+        "path": ".ghidra",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ghidra"
+    ]
+  },
+  "giada": {
+    "app_name": "Giada",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".giada",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "giada"
+    ]
+  },
+  "gimp": {
+    "app_name": "gimp",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".thumbnails",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gimp"
+    ]
+  },
+  "git": {
+    "app_name": "git",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".gitconfig",
+        "type": "file"
+      },
+      {
+        "path": ".git-credentials",
+        "type": "file"
+      },
+      {
+        "path": ".gitk",
+        "type": "file"
+      },
+      {
+        "path": ".gitignore",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "git"
+    ]
+  },
+  "gitkraken": {
+    "app_name": "GitKraken",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".gitkraken",
+        "type": "folder"
+      },
+      {
+        "path": ".gk",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gitkraken"
+    ]
+  },
+  "gitmoji-cli": {
+    "app_name": "gitmoji-cli",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".gitmoji",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gitmoji-cli"
+    ]
+  },
+  "gliv": {
+    "app_name": "gliv",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".glivrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gliv"
+    ]
+  },
+  "gmrun": {
+    "app_name": "gmrun",
+    "category": "Utilities",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".gmrunrc",
+        "type": "file"
+      },
+      {
+        "path": ".gmrun_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gmrun"
+    ]
+  },
+  "gnu-screen": {
+    "app_name": "GNU Screen",
+    "category": "Utilities",
+    "subcategory": "Terminal Multiplexer",
+    "files_info_json": [
+      {
+        "path": ".screenrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "screen"
+    ]
+  },
+  "gnu_enscript": {
+    "app_name": "GNU Enscript",
+    "category": "Utilities",
+    "subcategory": "Printing",
+    "files_info_json": [
+      {
+        "path": ".enscriptrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "enscript"
+    ]
+  },
+  "gnu_solfege": {
+    "app_name": "GNU Solfege",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".solfege",
+        "type": "folder"
+      },
+      {
+        "path": ".solfegerc",
+        "type": "file"
+      },
+      {
+        "path": "lessonfiles",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "solfege"
+    ]
+  },
+  "gnupg": {
+    "app_name": "GnuPG",
+    "category": "Security",
+    "subcategory": "Cryptography",
+    "files_info_json": [
+      {
+        "path": ".gnupg",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gnupg"
+    ]
+  },
+  "gnuplot": {
+    "app_name": "gnuplot",
+    "category": "Development",
+    "subcategory": "Data Visualization",
+    "files_info_json": [
+      {
+        "path": ".gnuplot_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gnuplot"
+    ]
+  },
+  "gnuradio": {
+    "app_name": "GNU Radio",
+    "category": "Development",
+    "subcategory": "SDR",
+    "files_info_json": [
+      {
+        "path": ".gnuradio",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gnuradio"
+    ]
+  },
+  "godot": {
+    "app_name": "Godot",
+    "category": "Development",
+    "subcategory": "Game Development",
+    "files_info_json": [
+      {
+        "path": ".godot",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "godot"
+    ]
+  },
+  "goldendict": {
+    "app_name": "GoldenDict",
+    "category": "Productivity",
+    "subcategory": "Reference",
+    "files_info_json": [
+      {
+        "path": ".goldendict",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "goldendict"
+    ]
+  },
+  "goobook": {
+    "app_name": "GooBook",
+    "category": "Productivity",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".goobookrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "goobook"
+    ]
+  },
+  "google-cloud-sdk": {
+    "app_name": "Google Cloud SDK",
+    "category": "Development",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".gsutil",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "google-cloud-sdk"
+    ]
+  },
+  "google_earth": {
+    "app_name": "Google Earth",
+    "category": "Utilities",
+    "subcategory": "Mapping",
+    "files_info_json": [
+      {
+        "path": ".googleearth",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "google-earth-pro"
+    ]
+  },
+  "gore": {
+    "app_name": "gore",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".gore",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "gore"
+    ]
+  },
+  "gphoto": {
+    "app_name": "gPhoto",
+    "category": "Multimedia",
+    "subcategory": "Photography",
+    "files_info_json": [
+      {
+        "path": ".gphoto",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gphoto2",
+      "libgphoto2"
+    ]
+  },
+  "gpodder": {
+    "app_name": "gPodder",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": "gPodder",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gpodder"
+    ]
+  },
+  "gq-ldap-client": {
+    "app_name": "GQ LDAP Client",
+    "category": "System",
+    "subcategory": "Administration",
+    "files_info_json": [
+      {
+        "path": ".gq-state",
+        "type": "file"
+      },
+      {
+        "path": ".gq",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gq"
+    ]
+  },
+  "gradle": {
+    "app_name": "Gradle",
+    "category": "Development",
+    "subcategory": "Build System",
+    "files_info_json": [
+      {
+        "path": ".gradle",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gradle"
+    ]
+  },
+  "gramps": {
+    "app_name": "Gramps",
+    "category": "Productivity",
+    "subcategory": "Genealogy",
+    "files_info_json": [
+      {
+        "path": ".gramps",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gramps"
+    ]
+  },
+  "grip": {
+    "app_name": "grip",
+    "category": "Development",
+    "subcategory": "Documentation",
+    "files_info_json": [
+      {
+        "path": ".grip",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "grip"
+    ]
+  },
+  "groovy": {
+    "app_name": "Groovy",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".groovy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "groovy"
+    ]
+  },
+  "grsync": {
+    "app_name": "Grsync",
+    "category": "Utilities",
+    "subcategory": "Backup",
+    "files_info_json": [
+      {
+        "path": ".grsync",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "grsync"
+    ]
+  },
+  "gtk-1": {
+    "app_name": "GTK+ 1.x",
+    "category": "System",
+    "subcategory": "GUI Toolkit",
+    "files_info_json": [
+      {
+        "path": ".gtkrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "gtk-2": {
+    "app_name": "GTK+ 2",
+    "category": "System",
+    "subcategory": "GUI Toolkit",
+    "files_info_json": [
+      {
+        "path": ".gtkrc-2.0",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gtk2"
+    ]
+  },
+  "gtk-3": {
+    "app_name": "gtk-3",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".gtk-bookmarks",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "gtk3"
+    ]
+  },
+  "gtk-recordmydesktop": {
+    "app_name": "gtk-recordmydesktop",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".gtk-recordmydesktop",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "gtk-recordmydesktop"
+    ]
+  },
+  "guile": {
+    "app_name": "GNU Guile",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".guile_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "guile"
+    ]
+  },
+  "hammerspoon": {
+    "app_name": "Hammerspoon",
+    "category": "Utilities",
+    "subcategory": "Automation",
+    "files_info_json": [
+      {
+        "path": ".hammerspoon",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "helm": {
+    "app_name": "Helm",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".helm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "helm"
+    ]
+  },
+  "helm-synth": {
+    "app_name": "helm-synth",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".helm",
+        "type": "folder"
+      },
+      {
+        "path": ".helm-synth",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "helm-synth"
+    ]
+  },
+  "hledger": {
+    "app_name": "hledger",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".hledger.journal",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "hledger"
+    ]
+  },
+  "homebridge": {
+    "app_name": "homebridge",
+    "category": "System",
+    "subcategory": "Home Automation",
+    "files_info_json": [
+      {
+        "path": ".homebridge",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "homebridge"
+    ]
+  },
+  "hplip": {
+    "app_name": "hplip",
+    "category": "System",
+    "subcategory": "Printing",
+    "files_info_json": [
+      {
+        "path": ".hplip",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "hplip"
+    ]
+  },
+  "htop": {
+    "app_name": "htop",
+    "category": "System",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".htoprc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "htop"
+    ]
+  },
+  "httpie": {
+    "app_name": "httpie",
+    "category": "Development",
+    "subcategory": "API Client",
+    "files_info_json": [
+      {
+        "path": ".httpie",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "httpie"
+    ]
+  },
+  "hunspell": {
+    "app_name": "Hunspell",
+    "category": "Utilities",
+    "subcategory": "Text Processing",
+    "files_info_json": [
+      {
+        "path": ".hunspell_*",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "hunspell"
+    ]
+  },
+  "hydrogen": {
+    "app_name": "hydrogen",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".hydrogen",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "hydrogen"
+    ]
+  },
+  "hypnotix": {
+    "app_name": "Hypnotix",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".hypnotix",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "hypnotix"
+    ]
+  },
+  "i3": {
+    "app_name": "i3",
+    "category": "System",
+    "subcategory": "Window Manager",
+    "files_info_json": [
+      {
+        "path": ".i3",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "i3-wm"
+    ]
+  },
+  "i3status": {
+    "app_name": "i3status",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".i3status.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "i3status"
+    ]
+  },
+  "icons": {
+    "app_name": "User Icons & Cursors",
+    "category": "System",
+    "subcategory": "Desktop Customization",
+    "files_info_json": [
+      {
+        "path": ".icons",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "ideavim": {
+    "app_name": "IdeaVim",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".ideavimrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "idris": {
+    "app_name": "Idris",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".idris",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "idris"
+    ]
+  },
+  "imapfilter": {
+    "app_name": "imapfilter",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".imapfilter",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "imapfilter"
+    ]
+  },
+  "imwheel": {
+    "app_name": "imwheel",
+    "category": "Utilities",
+    "subcategory": "Input",
+    "files_info_json": [
+      {
+        "path": ".imwheelrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "imwheel"
+    ]
+  },
+  "influx-cli": {
+    "app_name": "influx-cli",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".influx_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "influx-cli"
+    ]
+  },
+  "inkscape": {
+    "app_name": "Inkscape",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".inkscape",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "inkscape"
+    ]
+  },
+  "install4j": {
+    "app_name": "install4j",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".install4j",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "install4j"
+    ]
+  },
+  "intellij": {
+    "app_name": "IntelliJ IDEA",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".jdks",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "ipfs": {
+    "app_name": "ipfs",
+    "category": "Network",
+    "subcategory": "P2P",
+    "files_info_json": [
+      {
+        "path": ".ipfs",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "ipython": {
+    "app_name": "IPython",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".ipython",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ipython"
+    ]
+  },
+  "irb": {
+    "app_name": "IRB",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".irbrc",
+        "type": "file"
+      },
+      {
+        "path": ".irb_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ruby"
+    ]
+  },
+  "irssi": {
+    "app_name": "irssi",
+    "category": "Network",
+    "subcategory": "IRC",
+    "files_info_json": [
+      {
+        "path": ".irssi",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "irssi"
+    ]
+  },
+  "isync": {
+    "app_name": "isync",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".mbsyncrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "isync"
+    ]
+  },
+  "itch": {
+    "app_name": "itch",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".itch",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "itch"
+    ]
+  },
+  "iterm_2": {
+    "app_name": "iTerm 2",
+    "category": "System",
+    "subcategory": "Terminal Emulator",
+    "files_info_json": [
+      {
+        "path": ".iterm2",
+        "type": "folder"
+      },
+      {
+        "path": ".iterm2_shell_integration.fish",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "iwctl": {
+    "app_name": "iwctl",
+    "category": "Network",
+    "subcategory": "Wireless",
+    "files_info_json": [
+      {
+        "path": ".iwctl_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "iwd"
+    ]
+  },
+  "jack2": {
+    "app_name": "jack2",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".jackdrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "jameica": {
+    "app_name": "Jameica",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".jameica",
+        "type": "folder"
+      },
+      {
+        "path": ".jameica.properties",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "jameica"
+    ]
+  },
+  "jdownloader": {
+    "app_name": "JDownloader",
+    "category": "Network",
+    "subcategory": "Download Manager",
+    "files_info_json": [
+      {
+        "path": ".jd",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "jfrog-cli": {
+    "app_name": "JFrog CLI",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".jfrog",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "jfrog-cli"
+    ]
+  },
+  "jgmenu": {
+    "app_name": "jgmenu",
+    "category": "Utilities",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".jgmenu-lockfile",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "jgmenu"
+    ]
+  },
+  "jmol": {
+    "app_name": "Jmol",
+    "category": "Productivity",
+    "subcategory": "Science",
+    "files_info_json": [
+      {
+        "path": ".jmol",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "jmol"
+    ]
+  },
+  "john": {
+    "app_name": "John the Ripper",
+    "category": "Security",
+    "subcategory": "Password Cracking",
+    "files_info_json": [
+      {
+        "path": ".john",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "john"
+    ]
+  },
+  "joplin": {
+    "app_name": "Joplin",
+    "category": "Productivity",
+    "subcategory": "Note-taking",
+    "files_info_json": [
+      {
+        "path": ".joplin",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "joplin"
+    ]
+  },
+  "josm": {
+    "app_name": "JOSM",
+    "category": "Productivity",
+    "subcategory": "Mapping",
+    "files_info_json": [
+      {
+        "path": ".josm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "josm"
+    ]
+  },
+  "jpilot": {
+    "app_name": "jpilot",
+    "category": "Productivity",
+    "subcategory": "PIM",
+    "files_info_json": [
+      {
+        "path": ".jpilot",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "julia": {
+    "app_name": "Julia",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".julia",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "julia"
+    ]
+  },
+  "jupyter": {
+    "app_name": "Jupyter",
+    "category": "Development",
+    "subcategory": "Data Science",
+    "files_info_json": [
+      {
+        "path": ".jupyter",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "jupyter"
+    ]
+  },
+  "k9s": {
+    "app_name": "k9s",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".k9s",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "k9s"
+    ]
+  },
+  "kaggle": {
+    "app_name": "kaggle",
+    "category": "Development",
+    "subcategory": "Data Science",
+    "files_info_json": [
+      {
+        "path": ".kaggle",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-kaggle"
+    ]
+  },
+  "kani": {
+    "app_name": "kani",
+    "category": "Development",
+    "subcategory": "Code Analysis",
+    "files_info_json": [
+      {
+        "path": ".kani",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kani-verifier"
+    ]
+  },
+  "kde": {
+    "app_name": "KDE",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".kde4",
+        "type": "folder"
+      },
+      {
+        "path": ".kde",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "plasma-desktop",
+      "plasma-meta"
+    ]
+  },
+  "keychain": {
+    "app_name": "keychain",
+    "category": "Security",
+    "subcategory": "SSH",
+    "files_info_json": [
+      {
+        "path": ".keychain",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "keychain"
+    ]
+  },
+  "keynav": {
+    "app_name": "keynav",
+    "category": "Utilities",
+    "subcategory": "Accessibility",
+    "files_info_json": [
+      {
+        "path": ".keynavrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "keynav"
+    ]
+  },
+  "kite": {
+    "app_name": "Kite",
+    "category": "Development",
+    "subcategory": "Utilities",
+    "files_info_json": [
+      {
+        "path": ".kite",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kite"
+    ]
+  },
+  "kivy": {
+    "app_name": "Kivy",
+    "category": "Development",
+    "subcategory": "Framework",
+    "files_info_json": [
+      {
+        "path": ".kivy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-kivy"
+    ]
+  },
+  "kodi": {
+    "app_name": "Kodi",
+    "category": "Multimedia",
+    "subcategory": "Media Center",
+    "files_info_json": [
+      {
+        "path": ".kodi",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kodi"
+    ]
+  },
+  "koka": {
+    "app_name": "Koka",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".koka",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "koka"
+    ]
+  },
+  "kotlin": {
+    "app_name": "Kotlin",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".konan",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kotlin"
+    ]
+  },
+  "krew": {
+    "app_name": "krew",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".krew",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "kscript": {
+    "app_name": "kscript",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".kscript",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kscript"
+    ]
+  },
+  "kubernetes": {
+    "app_name": "Kubernetes",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".kube",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "kubectl"
+    ]
+  },
+  "latexmk": {
+    "app_name": "latexmk",
+    "category": "Productivity",
+    "subcategory": "Typesetting",
+    "files_info_json": [
+      {
+        "path": ".latexmkrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "latexmk"
+    ]
+  },
+  "lazarus": {
+    "app_name": "Lazarus",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".lazarus",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lazarus"
+    ]
+  },
+  "lbdb": {
+    "app_name": "lbdb",
+    "category": "Productivity",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".lbdbrc",
+        "type": "file"
+      },
+      {
+        "path": ".lbdb",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lbdb"
+    ]
+  },
+  "ledger": {
+    "app_name": "ledger",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".pricedb",
+        "type": "file"
+      },
+      {
+        "path": ".ledgerrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ledger"
+    ]
+  },
+  "leiningen": {
+    "app_name": "Leiningen",
+    "category": "Development",
+    "subcategory": "Build Tool",
+    "files_info_json": [
+      {
+        "path": ".m2",
+        "type": "folder"
+      },
+      {
+        "path": ".lein",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "leiningen"
+    ]
+  },
+  "lens": {
+    "app_name": "Lens",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".k8slens",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lens"
+    ]
+  },
+  "less": {
+    "app_name": "less",
+    "category": "Utilities",
+    "subcategory": "Pager",
+    "files_info_json": [
+      {
+        "path": ".lesshst",
+        "type": "file"
+      },
+      {
+        "path": ".lesskey",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "less"
+    ]
+  },
+  "lftp": {
+    "app_name": "lftp",
+    "category": "Network",
+    "subcategory": "File Transfer",
+    "files_info_json": [
+      {
+        "path": ".lftp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lftp"
+    ]
+  },
+  "lgogdownloader": {
+    "app_name": "LGOGDownloader",
+    "category": "Games",
+    "subcategory": "Gaming Tools",
+    "files_info_json": [
+      {
+        "path": ".gogdownloader",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lgogdownloader"
+    ]
+  },
+  "libdvdcss": {
+    "app_name": "libdvdcss",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".dvdcss",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "libdvdcss"
+    ]
+  },
+  "libice": {
+    "app_name": "libice",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".ICEauthority",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "libice"
+    ]
+  },
+  "librewolf": {
+    "app_name": "Librewolf",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".librewolf",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "librewolf"
+    ]
+  },
+  "libx11": {
+    "app_name": "libx11",
+    "category": "System",
+    "subcategory": "Window System",
+    "files_info_json": [
+      {
+        "path": ".compose-cache",
+        "type": "folder"
+      },
+      {
+        "path": ".XCompose",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "libx11"
+    ]
+  },
+  "lima": {
+    "app_name": "Lima",
+    "category": "Development",
+    "subcategory": "Virtualization",
+    "files_info_json": [
+      {
+        "path": ".lima",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lima"
+    ]
+  },
+  "links": {
+    "app_name": "Links",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".links",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "links"
+    ]
+  },
+  "lldb": {
+    "app_name": "lldb",
+    "category": "Development",
+    "subcategory": "Debugger",
+    "files_info_json": [
+      {
+        "path": ".lldb",
+        "type": "folder"
+      },
+      {
+        "path": ".lldbinit",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "lldb"
+    ]
+  },
+  "lmms": {
+    "app_name": "LMMS",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".lmmsrc.xml",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "lmms"
+    ]
+  },
+  "lnav": {
+    "app_name": "lnav",
+    "category": "Utilities",
+    "subcategory": "Logging",
+    "files_info_json": [
+      {
+        "path": ".lnav",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lnav"
+    ]
+  },
+  "login": {
+    "app_name": "Login",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".hushlogin",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "logseq": {
+    "app_name": "Logseq",
+    "category": "Productivity",
+    "subcategory": "Note-taking",
+    "files_info_json": [
+      {
+        "path": ".logseq",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "logseq"
+    ]
+  },
+  "ltrace": {
+    "app_name": "ltrace",
+    "category": "Development",
+    "subcategory": "Debugging",
+    "files_info_json": [
+      {
+        "path": ".ltrace.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ltrace"
+    ]
+  },
+  "lua": {
+    "app_name": "Lua",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".luahistory",
+        "type": "file"
+      },
+      {
+        "path": ".luarocks",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lua"
+    ]
+  },
+  "lunar_client": {
+    "app_name": "Lunar Client",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".lunarclient",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "lunar-client"
+    ]
+  },
+  "lyrics": {
+    "app_name": "lyrics",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".lyrics",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "m17n": {
+    "app_name": "m17n",
+    "category": "System",
+    "subcategory": "Localization",
+    "files_info_json": [
+      {
+        "path": ".m17n.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "m17n-lib",
+      "m17n-db"
+    ]
+  },
+  "mamba": {
+    "app_name": "mamba",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".mambarc",
+        "type": "file"
+      },
+      {
+        "path": ".mamba",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "mame": {
+    "app_name": "mame",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".mame",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mame"
+    ]
+  },
+  "maple": {
+    "app_name": "Maple",
+    "category": "Productivity",
+    "subcategory": "Mathematics",
+    "files_info_json": [
+      {
+        "path": ".flexlmrc",
+        "type": "file"
+      },
+      {
+        "path": ".maple",
+        "type": "folder"
+      },
+      {
+        "path": ".maplesoft",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "mapscii": {
+    "app_name": "mapscii",
+    "category": "Utilities",
+    "subcategory": "Maps",
+    "files_info_json": [
+      {
+        "path": ".mapscii",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "mapscii"
+    ]
+  },
+  "maptool": {
+    "app_name": "MapTool",
+    "category": "Games",
+    "subcategory": "Tabletop",
+    "files_info_json": [
+      {
+        "path": ".maptool",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "maptool"
+    ]
+  },
+  "mathematica": {
+    "app_name": "Wolfram Mathematica",
+    "category": "Development",
+    "subcategory": "Scientific Computing",
+    "files_info_json": [
+      {
+        "path": ".Mathematica",
+        "type": "folder"
+      },
+      {
+        "path": ".Wolfram",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mathematica"
+    ]
+  },
+  "mathomatic": {
+    "app_name": "Mathomatic",
+    "category": "Productivity",
+    "subcategory": "Mathematics",
+    "files_info_json": [
+      {
+        "path": ".matho_history",
+        "type": "file"
+      },
+      {
+        "path": ".mathomaticrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mathomatic"
+    ]
+  },
+  "matplotlib": {
+    "app_name": "Matplotlib",
+    "category": "Development",
+    "subcategory": "Data Science",
+    "files_info_json": [
+      {
+        "path": ".matplotlib",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-matplotlib",
+      "python3-matplotlib"
+    ]
+  },
+  "maven": {
+    "app_name": "Maven",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".m2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "maven"
+    ]
+  },
+  "maxima": {
+    "app_name": "maxima",
+    "category": "Development",
+    "subcategory": "Mathematics",
+    "files_info_json": [
+      {
+        "path": ".maxima",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "maxima"
+    ]
+  },
+  "mc": {
+    "app_name": "Midnight Commander",
+    "category": "Utilities",
+    "subcategory": "File Manager",
+    "files_info_json": [
+      {
+        "path": ".mc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mc"
+    ]
+  },
+  "mcfly": {
+    "app_name": "mcfly",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".mcfly/",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mcfly"
+    ]
+  },
+  "mediainfo-gui": {
+    "app_name": "mediainfo-gui",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".mediainfo-gui",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mediainfo-gui"
+    ]
+  },
+  "mediawiki": {
+    "app_name": "MediaWiki",
+    "category": "Development",
+    "subcategory": "Web Development",
+    "files_info_json": [
+      {
+        "path": ".mweval_history",
+        "type": "file"
+      },
+      {
+        "path": ".mwsql_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mediawiki"
+    ]
+  },
+  "mednafen": {
+    "app_name": "Mednafen",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".mednafen",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mednafen"
+    ]
+  },
+  "mercurial": {
+    "app_name": "Mercurial",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".hgrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mercurial"
+    ]
+  },
+  "metasploit": {
+    "app_name": "Metasploit",
+    "category": "Security",
+    "subcategory": "Penetration Testing",
+    "files_info_json": [
+      {
+        "path": ".msf4",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "metasploit"
+    ]
+  },
+  "milkytracker": {
+    "app_name": "MilkyTracker",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".milkytracker_config",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "milkytracker"
+    ]
+  },
+  "minecraft": {
+    "app_name": "Minecraft",
+    "category": "Games",
+    "subcategory": "Sandbox",
+    "files_info_json": [
+      {
+        "path": ".minecraft",
+        "type": "folder"
+      },
+      {
+        "path": ".betacraft",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "minetest": {
+    "app_name": "Minetest",
+    "category": "Games",
+    "subcategory": "Sandbox",
+    "files_info_json": [
+      {
+        "path": ".minetest",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "minetest"
+    ]
+  },
+  "minicom": {
+    "app_name": "minicom",
+    "category": "Utilities",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".minirc.dfl",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "minicom"
+    ]
+  },
+  "minikube": {
+    "app_name": "Minikube",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".minikube",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "minikube"
+    ]
+  },
+  "mintty": {
+    "app_name": "Mintty",
+    "category": "System",
+    "subcategory": "Terminal Emulator",
+    "files_info_json": [
+      {
+        "path": ".minttyrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "mise": {
+    "app_name": "mise",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".mise.toml",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mise"
+    ]
+  },
+  "mitmproxy": {
+    "app_name": "mitmproxy",
+    "category": "Network",
+    "subcategory": "Proxy",
+    "files_info_json": [
+      {
+        "path": ".mitmproxy",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mitmproxy"
+    ]
+  },
+  "mixx": {
+    "app_name": "Mixxx",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".mixxx",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mixxx"
+    ]
+  },
+  "mlterm": {
+    "app_name": "mlterm",
+    "category": "System",
+    "subcategory": "Terminal Emulator",
+    "files_info_json": [
+      {
+        "path": ".mlterm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mlterm"
+    ]
+  },
+  "moc": {
+    "app_name": "Music On Console",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".moc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "moc"
+    ]
+  },
+  "monero": {
+    "app_name": "Monero",
+    "category": "Productivity",
+    "subcategory": "Cryptocurrency",
+    "files_info_json": [
+      {
+        "path": ".bitmonero",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "monero",
+      "monero-gui"
+    ]
+  },
+  "mongodb": {
+    "app_name": "MongoDB",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".mongodb",
+        "type": "folder"
+      },
+      {
+        "path": ".mongorc.js",
+        "type": "file"
+      },
+      {
+        "path": ".dbshell",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "mono": {
+    "app_name": "mono",
+    "category": "Development",
+    "subcategory": "Runtime",
+    "files_info_json": [
+      {
+        "path": ".mono",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mono"
+    ]
+  },
+  "most": {
+    "app_name": "most",
+    "category": "Utilities",
+    "subcategory": "Text Processing",
+    "files_info_json": [
+      {
+        "path": ".mostrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "most"
+    ]
+  },
+  "mozc": {
+    "app_name": "Mozc",
+    "category": "System",
+    "subcategory": "Input Method",
+    "files_info_json": [
+      {
+        "path": ".mozc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mozc"
+    ]
+  },
+  "mp3splt-gtk": {
+    "app_name": "mp3splt-gtk",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".mp3splt-gtk",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mp3splt-gtk"
+    ]
+  },
+  "mpd": {
+    "app_name": "MPD (Music Player Daemon)",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".mpdconf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mpd"
+    ]
+  },
+  "mplayer": {
+    "app_name": "mplayer",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".mplayer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mplayer"
+    ]
+  },
+  "mpv": {
+    "app_name": "mpv",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".mpv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mpv"
+    ]
+  },
+  "msmtp": {
+    "app_name": "msmtp",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".msmtprc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "msmtp"
+    ]
+  },
+  "mtpaint": {
+    "app_name": "mtPaint",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".mtpaint",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mtpaint"
+    ]
+  },
+  "mujoco": {
+    "app_name": "MuJoCo",
+    "category": "Development",
+    "subcategory": "Simulation",
+    "files_info_json": [
+      {
+        "path": ".mujoco",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "mycli": {
+    "app_name": "MyCLI",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".myclirc",
+        "type": "file"
+      },
+      {
+        "path": ".mycli-history",
+        "type": "file"
+      },
+      {
+        "path": ".mycli.log",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mycli"
+    ]
+  },
+  "mypaint": {
+    "app_name": "MyPaint",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".mypaint",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mypaint"
+    ]
+  },
+  "mypy": {
+    "app_name": "mypy",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".mypy_cache",
+        "type": "folder"
+      },
+      {
+        "path": ".mypy.ini",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "mypy"
+    ]
+  },
+  "mysql": {
+    "app_name": "MySQL",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".mylogin.cnf",
+        "type": "file"
+      },
+      {
+        "path": ".my.cnf",
+        "type": "file"
+      },
+      {
+        "path": ".mysql_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "mysql-workbench": {
+    "app_name": "MySQL Workbench",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".mysql",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "mysql-workbench"
+    ]
+  },
+  "nano": {
+    "app_name": "nano",
+    "category": "Utilities",
+    "subcategory": "Text Editor",
+    "files_info_json": [
+      {
+        "path": ".nanorc",
+        "type": "file"
+      },
+      {
+        "path": ".nano",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nano"
+    ]
+  },
+  "nb": {
+    "app_name": "nb",
+    "category": "Productivity",
+    "subcategory": "Note-taking",
+    "files_info_json": [
+      {
+        "path": ".nb",
+        "type": "folder"
+      },
+      {
+        "path": ".nbrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "nb"
+    ]
+  },
+  "ncmpc": {
+    "app_name": "ncmpc",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".ncmpc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ncmpc"
+    ]
+  },
+  "ncmpcpp": {
+    "app_name": "ncmpcpp",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".ncmpcpp",
+        "type": "folder"
+      },
+      {
+        "path": ".lyrics",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ncmpcpp"
+    ]
+  },
+  "ncurses": {
+    "app_name": "ncurses",
+    "category": "System",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".terminfo",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ncurses"
+    ]
+  },
+  "neomutt": {
+    "app_name": "NeoMutt",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".mutt_certificates",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "neomutt"
+    ]
+  },
+  "neovim": {
+    "app_name": "Neovim",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".nvim",
+        "type": "folder"
+      },
+      {
+        "path": ".nviminfo",
+        "type": "file"
+      },
+      {
+        "path": ".nvimlog",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "neovim"
+    ]
+  },
+  "nestopia": {
+    "app_name": "Nestopia",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".nestopia",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nestopia"
+    ]
+  },
+  "netbeans": {
+    "app_name": "NetBeans",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".netbeans",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "netbeans"
+    ]
+  },
+  "netexec": {
+    "app_name": "NetExec",
+    "category": "Security",
+    "subcategory": "Pentesting",
+    "files_info_json": [
+      {
+        "path": ".nxc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "netexec"
+    ]
+  },
+  "netrc": {
+    "app_name": "netrc",
+    "category": "Network",
+    "subcategory": "Authentication",
+    "files_info_json": [
+      {
+        "path": ".netrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "neverball": {
+    "app_name": "Neverball",
+    "category": "Games",
+    "subcategory": "Arcade",
+    "files_info_json": [
+      {
+        "path": ".neverball",
+        "type": "folder"
+      },
+      {
+        "path": ".neverball-dev",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "neverball"
+    ]
+  },
+  "newsboat": {
+    "app_name": "newsboat",
+    "category": "Network",
+    "subcategory": "RSS Reader",
+    "files_info_json": [
+      {
+        "path": ".newsboat",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "newsboat"
+    ]
+  },
+  "ngrok": {
+    "app_name": "ngrok",
+    "category": "Development",
+    "subcategory": "Web Development",
+    "files_info_json": [
+      {
+        "path": ".ngrok2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ngrok"
+    ]
+  },
+  "nimble": {
+    "app_name": "nimble",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".nimble",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nimble"
+    ]
+  },
+  "nix": {
+    "app_name": "nix",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".nix-channels",
+        "type": "file"
+      },
+      {
+        "path": ".nix-defexpr",
+        "type": "folder"
+      },
+      {
+        "path": ".nix-profile",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nix"
+    ]
+  },
+  "nmap": {
+    "app_name": "nmap",
+    "category": "Security",
+    "subcategory": "Network Analysis",
+    "files_info_json": [
+      {
+        "path": ".zenmap",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nmap"
+    ]
+  },
+  "nmcli": {
+    "app_name": "nmcli",
+    "category": "Network",
+    "subcategory": "Management",
+    "files_info_json": [
+      {
+        "path": ".nmcli",
+        "type": "Unknown"
+      }
+    ],
+    "packages_json": [
+      "networkmanager"
+    ]
+  },
+  "node-gyp": {
+    "app_name": "node-gyp",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".node-gyp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "node-gyp"
+    ]
+  },
+  "nodejs": {
+    "app_name": "Node.js",
+    "category": "Development",
+    "subcategory": "Programming",
+    "files_info_json": [
+      {
+        "path": ".node_repl_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "nodejs",
+      "npm"
+    ]
+  },
+  "nodenv": {
+    "app_name": "nodenv",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".nodenv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nodenv"
+    ]
+  },
+  "nomachine": {
+    "app_name": "NoMachine",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".nx",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nomachine"
+    ]
+  },
+  "notion": {
+    "app_name": "Notion",
+    "category": "Productivity",
+    "subcategory": "Notes",
+    "files_info_json": [
+      {
+        "path": ".notion-enhancer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "notmuch": {
+    "app_name": "notmuch",
+    "category": "Productivity",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".notmuch-config",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "notmuch"
+    ]
+  },
+  "npm": {
+    "app_name": "npm",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".node-gyp",
+        "type": "folder"
+      },
+      {
+        "path": ".npm",
+        "type": "folder"
+      },
+      {
+        "path": ".npmrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "npm"
+    ]
+  },
+  "nrfutil": {
+    "app_name": "nrfutil",
+    "category": "Development",
+    "subcategory": "Embedded",
+    "files_info_json": [
+      {
+        "path": ".nrfutil",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nrfutil"
+    ]
+  },
+  "nss": {
+    "app_name": "NSS",
+    "category": "Security",
+    "subcategory": "Cryptography",
+    "files_info_json": [
+      {
+        "path": ".pki",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nss"
+    ]
+  },
+  "nuget": {
+    "app_name": "NuGet",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".nuget",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nuget"
+    ]
+  },
+  "nvidia-settings": {
+    "app_name": "NVIDIA Settings",
+    "category": "System",
+    "subcategory": "Hardware",
+    "files_info_json": [
+      {
+        "path": ".nvidia-settings-rc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "nvidia-settings"
+    ]
+  },
+  "nvm": {
+    "app_name": "nvm",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".nvm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "nwinkler": {
+    "app_name": "nwinkler",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".nwinkler_random_colors",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "nyx": {
+    "app_name": "nyx",
+    "category": "Network",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".nyx",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "nyx"
+    ]
+  },
+  "octave": {
+    "app_name": "GNU Octave",
+    "category": "Development",
+    "subcategory": "Mathematics",
+    "files_info_json": [
+      {
+        "path": ".octaverc",
+        "type": "file"
+      },
+      {
+        "path": ".octave_hist",
+        "type": "file"
+      },
+      {
+        "path": ".octave_packages",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "octave"
+    ]
+  },
+  "offlineimap": {
+    "app_name": "OfflineIMAP",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".offlineimaprc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "offlineimap"
+    ]
+  },
+  "ohmyzsh": {
+    "app_name": "Oh My Zsh",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".oh-my-zsh",
+        "type": "folder"
+      },
+      {
+        "path": ".zshrc.pre-oh-my-zsh",
+        "type": "file"
+      },
+      {
+        "path": ".zshrc.pre-oh-my-zsh-[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]_[0-9][0-9]-[0-9][0-9]-[0-9][0-9]",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "ollama": {
+    "app_name": "Ollama",
+    "category": "Development",
+    "subcategory": "AI",
+    "files_info_json": [
+      {
+        "path": ".ollama",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ollama"
+    ]
+  },
+  "omnisharp": {
+    "app_name": "OmniSharp",
+    "category": "Development",
+    "subcategory": "Language Server",
+    "files_info_json": [
+      {
+        "path": ".omnisharp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "opam": {
+    "app_name": "Opam",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".opam",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "opam"
+    ]
+  },
+  "openal": {
+    "app_name": "OpenAL",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".alsoftrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "openjdk": {
+    "app_name": "OpenJDK",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".java",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "jdk-openjdk",
+      "default-jdk"
+    ]
+  },
+  "openjfx": {
+    "app_name": "OpenJFX",
+    "category": "Development",
+    "subcategory": "Frameworks",
+    "files_info_json": [
+      {
+        "path": ".openjfx",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "openshot": {
+    "app_name": "OpenShot",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".openshot_qt",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "openshot",
+      "openshot-qt"
+    ]
+  },
+  "openssh": {
+    "app_name": "OpenSSH",
+    "category": "Network",
+    "subcategory": "Remote Access",
+    "files_info_json": [
+      {
+        "path": ".ssh",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "openssh"
+    ]
+  },
+  "openssl": {
+    "app_name": "OpenSSL",
+    "category": "Security",
+    "subcategory": "Cryptography",
+    "files_info_json": [
+      {
+        "path": ".rnd",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "openssl"
+    ]
+  },
+  "opentyrian": {
+    "app_name": "OpenTyrian",
+    "category": "Games",
+    "subcategory": "Arcade",
+    "files_info_json": [
+      {
+        "path": ".opentyrian",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "opentyrian"
+    ]
+  },
+  "orbstack": {
+    "app_name": "OrbStack",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".orbstack",
+        "type": "folder"
+      },
+      {
+        "path": "OrbStack",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "osc": {
+    "app_name": "osc",
+    "category": "Development",
+    "subcategory": "Packaging",
+    "files_info_json": [
+      {
+        "path": ".oscrc",
+        "type": "file"
+      },
+      {
+        "path": ".osc_cookiejar",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "osc"
+    ]
+  },
+  "osmos": {
+    "app_name": "Osmos",
+    "category": "Games",
+    "subcategory": "Puzzle",
+    "files_info_json": [
+      {
+        "path": ".Osmos",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "osmos"
+    ]
+  },
+  "pacman": {
+    "app_name": "pacman",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".makepkg.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "pacman"
+    ]
+  },
+  "pale_moon": {
+    "app_name": "Pale Moon",
+    "category": "Network",
+    "subcategory": "Web Browser",
+    "files_info_json": [
+      {
+        "path": ".moonchild productions",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "palemoon"
+    ]
+  },
+  "panda3d": {
+    "app_name": "Panda3D",
+    "category": "Development",
+    "subcategory": "Game Engine",
+    "files_info_json": [
+      {
+        "path": ".panda3d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "pandoc": {
+    "app_name": "pandoc",
+    "category": "Productivity",
+    "subcategory": "Document Converter",
+    "files_info_json": [
+      {
+        "path": ".pandoc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pandoc"
+    ]
+  },
+  "paradox_games": {
+    "app_name": "Paradox Games",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".paradoxinteractive",
+        "type": "folder"
+      },
+      {
+        "path": ".paradoxlauncher",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "parallel": {
+    "app_name": "GNU Parallel",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".parallel",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "parallel"
+    ]
+  },
+  "parsec": {
+    "app_name": "Parsec",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".parsec",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "parsec-bin"
+    ]
+  },
+  "pass": {
+    "app_name": "pass",
+    "category": "Security",
+    "subcategory": "Password Manager",
+    "files_info_json": [
+      {
+        "path": ".password-store",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pass"
+    ]
+  },
+  "pciutils": {
+    "app_name": "pciutils",
+    "category": "System",
+    "subcategory": "Hardware",
+    "files_info_json": [
+      {
+        "path": ".pciids-cache",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "pciutils"
+    ]
+  },
+  "pcloud": {
+    "app_name": "pCloud",
+    "category": "Network",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".pcloud",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pcloud-drive"
+    ]
+  },
+  "pcsx2": {
+    "app_name": "PCSX2",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".pcsx2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pcsx2"
+    ]
+  },
+  "pcsxr": {
+    "app_name": "pcsxr",
+    "category": "Games",
+    "subcategory": "Emulation",
+    "files_info_json": [
+      {
+        "path": ".pcsxr",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pcsxr"
+    ]
+  },
+  "pdb": {
+    "app_name": "pdb",
+    "category": "Development",
+    "subcategory": "Debuggers",
+    "files_info_json": [
+      {
+        "path": ".pdbhistory",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "python"
+    ]
+  },
+  "perf": {
+    "app_name": "perf",
+    "category": "Development",
+    "subcategory": "Profiling",
+    "files_info_json": [
+      {
+        "path": ".debug",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "perf"
+    ]
+  },
+  "perl": {
+    "app_name": "perl",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".cpan",
+        "type": "folder"
+      },
+      {
+        "path": ".perl5",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "perl"
+    ]
+  },
+  "pex": {
+    "app_name": "Pex",
+    "category": "Development",
+    "subcategory": "Python",
+    "files_info_json": [
+      {
+        "path": ".pex",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pex"
+    ]
+  },
+  "phoronix_test_suite": {
+    "app_name": "Phoronix Test Suite",
+    "category": "System",
+    "subcategory": "Benchmarking",
+    "files_info_json": [
+      {
+        "path": ".phoronix-test-suite",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "phoronix-test-suite"
+    ]
+  },
+  "php": {
+    "app_name": "PHP",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".php_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "php"
+    ]
+  },
+  "pidgin": {
+    "app_name": "Pidgin",
+    "category": "Network",
+    "subcategory": "Instant Messaging",
+    "files_info_json": [
+      {
+        "path": ".purple",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pidgin"
+    ]
+  },
+  "pinfo": {
+    "app_name": "pinfo",
+    "category": "System",
+    "subcategory": "Documentation",
+    "files_info_json": [
+      {
+        "path": ".pinforc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "pinfo"
+    ]
+  },
+  "pip": {
+    "app_name": "pip",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".pip",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-pip"
+    ]
+  },
+  "pkg": {
+    "app_name": "pkg",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".pkg-cache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "platformio": {
+    "app_name": "PlatformIO",
+    "category": "Development",
+    "subcategory": "Embedded",
+    "files_info_json": [
+      {
+        "path": ".platformio",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "platformio"
+    ]
+  },
+  "pnpm": {
+    "app_name": "pnpm",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".pnpm-state",
+        "type": "folder"
+      },
+      {
+        "path": ".pnpm-store",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pnpm"
+    ]
+  },
+  "pokemmo": {
+    "app_name": "PokeMMO",
+    "category": "Games",
+    "subcategory": "MMORPG",
+    "files_info_json": [
+      {
+        "path": ".pokemmo",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "portfolio_performance": {
+    "app_name": "Portfolio Performance",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".PortfolioPerformance",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "postgresql": {
+    "app_name": "PostgreSQL",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".pg_service.conf",
+        "type": "file"
+      },
+      {
+        "path": ".pgpass",
+        "type": "file"
+      },
+      {
+        "path": ".psql_history",
+        "type": "file"
+      },
+      {
+        "path": ".psqlrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "postgresql"
+    ]
+  },
+  "powerlevel10k": {
+    "app_name": "powerlevel10k",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".p10k.zsh",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "zsh-theme-powerlevel10k"
+    ]
+  },
+  "ppsspp": {
+    "app_name": "PPSSPP",
+    "category": "Games",
+    "subcategory": "Emulators",
+    "files_info_json": [
+      {
+        "path": ".ppsspp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ppsspp"
+    ]
+  },
+  "procps-ng": {
+    "app_name": "procps-ng",
+    "category": "System",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".toprc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "procps-ng"
+    ]
+  },
+  "profile": {
+    "app_name": "Profile",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".profile",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "project_zomboid": {
+    "app_name": "Project Zomboid",
+    "category": "Games",
+    "subcategory": "Survival",
+    "files_info_json": [
+      {
+        "path": "Zomboid",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "protonvpn-cli": {
+    "app_name": "ProtonVPN CLI",
+    "category": "Network",
+    "subcategory": "VPN",
+    "files_info_json": [
+      {
+        "path": ".pvpn-cli",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "protonvpn-cli"
+    ]
+  },
+  "proxyman": {
+    "app_name": "Proxyman",
+    "category": "Network",
+    "subcategory": "Proxy",
+    "files_info_json": [
+      {
+        "path": ".proxyman",
+        "type": "folder"
+      },
+      {
+        "path": ".proxyman-data",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "pry": {
+    "app_name": "pry",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".pryrc",
+        "type": "file"
+      },
+      {
+        "path": ".pry_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "psensor": {
+    "app_name": "psensor",
+    "category": "System",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".psensor",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "psensor"
+    ]
+  },
+  "pulseaudio": {
+    "app_name": "PulseAudio",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".pulse",
+        "type": "folder"
+      },
+      {
+        "path": ".pulse-cookie",
+        "type": "file"
+      },
+      {
+        "path": ".esd_auth",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "pulseaudio"
+    ]
+  },
+  "pulumi": {
+    "app_name": "Pulumi",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".pulumi",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pulumi"
+    ]
+  },
+  "putty": {
+    "app_name": "PuTTY",
+    "category": "Network",
+    "subcategory": "Remote Access",
+    "files_info_json": [
+      {
+        "path": ".putty",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "putty"
+    ]
+  },
+  "pyenv": {
+    "app_name": "pyenv",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".pyenv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "pyenv"
+    ]
+  },
+  "pylint": {
+    "app_name": "Pylint",
+    "category": "Development",
+    "subcategory": "Linters",
+    "files_info_json": [
+      {
+        "path": ".pylint.d",
+        "type": "folder"
+      },
+      {
+        "path": ".pylintrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "pylint",
+      "python-pylint"
+    ]
+  },
+  "pytest": {
+    "app_name": "pytest",
+    "category": "Development",
+    "subcategory": "Testing",
+    "files_info_json": [
+      {
+        "path": ".pytest_cache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-pytest"
+    ]
+  },
+  "python": {
+    "app_name": "Python",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".python_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "python"
+    ]
+  },
+  "python-poetry": {
+    "app_name": "Poetry",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".poetry",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-poetry",
+      "python3-poetry"
+    ]
+  },
+  "python-setuptools": {
+    "app_name": "Python Setuptools",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".python-eggs",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-setuptools"
+    ]
+  },
+  "python-tensorflow": {
+    "app_name": "TensorFlow",
+    "category": "Development",
+    "subcategory": "Machine Learning",
+    "files_info_json": [
+      {
+        "path": ".keras",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-tensorflow"
+    ]
+  },
+  "qmmp": {
+    "app_name": "Qmmp",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".qmmp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "qmmp"
+    ]
+  },
+  "qrcp": {
+    "app_name": "qrcp",
+    "category": "Network",
+    "subcategory": "File Transfer",
+    "files_info_json": [
+      {
+        "path": ".qrcp",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "qrcp"
+    ]
+  },
+  "qt": {
+    "app_name": "Qt",
+    "category": "Development",
+    "subcategory": "GUI Toolkit",
+    "files_info_json": [
+      {
+        "path": ".qt",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "qt5-base",
+      "qt6-base"
+    ]
+  },
+  "qt_designer": {
+    "app_name": "Qt Designer",
+    "category": "Development",
+    "subcategory": "GUI Designer",
+    "files_info_json": [
+      {
+        "path": ".designer",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "quickemu": {
+    "app_name": "quickemu",
+    "category": "System",
+    "subcategory": "Virtualization",
+    "files_info_json": [
+      {
+        "path": ".quickemu",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "quilt": {
+    "app_name": "Quilt",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".quiltrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "quilt"
+    ]
+  },
+  "quodlibet": {
+    "app_name": "Quod Libet",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".quodlibet",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "quodlibet"
+    ]
+  },
+  "racket": {
+    "app_name": "Racket",
+    "category": "Development",
+    "subcategory": "Programming Language",
+    "files_info_json": [
+      {
+        "path": ".racket",
+        "type": "folder"
+      },
+      {
+        "path": ".racketrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "racket"
+    ]
+  },
+  "radian": {
+    "app_name": "radian",
+    "category": "Development",
+    "subcategory": "Data Science",
+    "files_info_json": [
+      {
+        "path": ".radian_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "rbenv": {
+    "app_name": "rbenv",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".rbenv",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "rbenv"
+    ]
+  },
+  "rclone": {
+    "app_name": "rclone",
+    "category": "Network",
+    "subcategory": "Cloud",
+    "files_info_json": [
+      {
+        "path": ".rclone.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "rclone"
+    ]
+  },
+  "readline": {
+    "app_name": "readline",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".inputrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "readline"
+    ]
+  },
+  "recoll": {
+    "app_name": "Recoll",
+    "category": "Utilities",
+    "subcategory": "Desktop Search",
+    "files_info_json": [
+      {
+        "path": ".recoll",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "recoll"
+    ]
+  },
+  "red_hat_telemetry": {
+    "app_name": "Red Hat Telemetry",
+    "category": "Development",
+    "subcategory": "Tooling",
+    "files_info_json": [
+      {
+        "path": ".redhat",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "redis": {
+    "app_name": "Redis",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".rediscli_history",
+        "type": "file"
+      },
+      {
+        "path": ".redisclirc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "redis"
+    ]
+  },
+  "redis_insight": {
+    "app_name": "Redis Insight",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".redisinsight-app",
+        "type": "folder"
+      },
+      {
+        "path": ".redisinsight-v2",
+        "type": "folder"
+      },
+      {
+        "path": ".redisinsight-preview",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "rednotebook": {
+    "app_name": "RedNotebook",
+    "category": "Productivity",
+    "subcategory": "Journaling",
+    "files_info_json": [
+      {
+        "path": ".rednotebook",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "rednotebook"
+    ]
+  },
+  "remarkable": {
+    "app_name": "Remarkable",
+    "category": "Productivity",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".remarkable",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "remarkable"
+    ]
+  },
+  "renderdoc": {
+    "app_name": "RenderDoc",
+    "category": "Development",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".renderdoc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "renderdoc"
+    ]
+  },
+  "repo": {
+    "app_name": "Repo",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".repoconfig",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "repo"
+    ]
+  },
+  "reportbug": {
+    "app_name": "Reportbug",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".reportbugrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "reportbug"
+    ]
+  },
+  "revive": {
+    "app_name": "revive",
+    "category": "Development",
+    "subcategory": "Linters",
+    "files_info_json": [
+      {
+        "path": "revive.toml",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "revive"
+    ]
+  },
+  "rofi": {
+    "app_name": "rofi",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".rofi.pid",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "rofi"
+    ]
+  },
+  "roswell": {
+    "app_name": "Roswell",
+    "category": "Development",
+    "subcategory": "Language Manager",
+    "files_info_json": [
+      {
+        "path": ".roswell",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "roswell"
+    ]
+  },
+  "rpm": {
+    "app_name": "RPM",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".rpmrc",
+        "type": "file"
+      },
+      {
+        "path": ".rpmmacros",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "rpm"
+    ]
+  },
+  "rr": {
+    "app_name": "rr",
+    "category": "Development",
+    "subcategory": "Debugging",
+    "files_info_json": [
+      {
+        "path": ".rr",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "rr"
+    ]
+  },
+  "rspec": {
+    "app_name": "RSpec",
+    "category": "Development",
+    "subcategory": "Testing",
+    "files_info_json": [
+      {
+        "path": ".rspec",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ruby-rspec"
+    ]
+  },
+  "rtorrent": {
+    "app_name": "rtorrent",
+    "category": "Network",
+    "subcategory": "P2P",
+    "files_info_json": [
+      {
+        "path": ".rtorrent.rc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "rtorrent"
+    ]
+  },
+  "rubocop": {
+    "app_name": "RuboCop",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".rubocop.yml",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "rubocop"
+    ]
+  },
+  "ruby-travis": {
+    "app_name": "Travis CI",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".travis",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ruby-travis"
+    ]
+  },
+  "ruby_bundler": {
+    "app_name": "Ruby Bundler",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".bundle",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ruby-bundler"
+    ]
+  },
+  "ruff": {
+    "app_name": "Ruff",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".ruff_cache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ruff"
+    ]
+  },
+  "runelite": {
+    "app_name": "RuneLite",
+    "category": "Games",
+    "subcategory": "MMORPG Client",
+    "files_info_json": [
+      {
+        "path": ".runelite",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "runelite"
+    ]
+  },
+  "rusherhack": {
+    "app_name": "RusherHack",
+    "category": "Games",
+    "subcategory": "Minecraft Utility",
+    "files_info_json": [
+      {
+        "path": ".rusherhack",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "rustup": {
+    "app_name": "rustup",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".rustup",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "rvm": {
+    "app_name": "rvm",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".rvm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "sagemath": {
+    "app_name": "SageMath",
+    "category": "Development",
+    "subcategory": "Mathematics",
+    "files_info_json": [
+      {
+        "path": ".sage",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "sagemath"
+    ]
+  },
+  "sandbox": {
+    "app_name": "sandbox",
+    "category": "Development",
+    "subcategory": "Utilities",
+    "files_info_json": [
+      {
+        "path": ".sandboxrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "sbcl": {
+    "app_name": "SBCL",
+    "category": "Development",
+    "subcategory": "Compilers",
+    "files_info_json": [
+      {
+        "path": ".sbclrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "sbcl"
+    ]
+  },
+  "sbt": {
+    "app_name": "sbt",
+    "category": "Development",
+    "subcategory": "Build Tool",
+    "files_info_json": [
+      {
+        "path": ".sbt",
+        "type": "folder"
+      },
+      {
+        "path": ".ivy2",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "sbt"
+    ]
+  },
+  "sc": {
+    "app_name": "sc",
+    "category": "Productivity",
+    "subcategory": "Spreadsheet",
+    "files_info_json": [
+      {
+        "path": ".sc_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "sc"
+    ]
+  },
+  "scilab": {
+    "app_name": "Scilab",
+    "category": "Development",
+    "subcategory": "Scientific Computing",
+    "files_info_json": [
+      {
+        "path": ".Scilab",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "scilab"
+    ]
+  },
+  "scite": {
+    "app_name": "SciTE",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".SciTE.session",
+        "type": "file"
+      },
+      {
+        "path": ".SciTEUser.properties",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "scite"
+    ]
+  },
+  "scribus": {
+    "app_name": "Scribus",
+    "category": "Productivity",
+    "subcategory": "Desktop Publishing",
+    "files_info_json": [
+      {
+        "path": ".scribus",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "scribus"
+    ]
+  },
+  "scriptkit": {
+    "app_name": "Script Kit",
+    "category": "Development",
+    "subcategory": "Scripting",
+    "files_info_json": [
+      {
+        "path": ".kit",
+        "type": "folder"
+      },
+      {
+        "path": ".kenv",
+        "type": "folder"
+      },
+      {
+        "path": "knode",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "scummvm": {
+    "app_name": "ScummVM",
+    "category": "Games",
+    "subcategory": "Emulator",
+    "files_info_json": [
+      {
+        "path": ".scummvmrc",
+        "type": "file"
+      },
+      {
+        "path": ".scummvm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "scummvm"
+    ]
+  },
+  "sdcv": {
+    "app_name": "sdcv",
+    "category": "Productivity",
+    "subcategory": "Reference",
+    "files_info_json": [
+      {
+        "path": ".stardict",
+        "type": "folder"
+      },
+      {
+        "path": ".sdcv_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "sdcv"
+    ]
+  },
+  "sdkman": {
+    "app_name": "SDKMAN!",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".sdkman",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "shellcheck": {
+    "app_name": "ShellCheck",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".shellcheckrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "shellcheck"
+    ]
+  },
+  "simplescreenrecorder": {
+    "app_name": "SimpleScreenRecorder",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".ssr",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "simplescreenrecorder"
+    ]
+  },
+  "since": {
+    "app_name": "since",
+    "category": "Utilities",
+    "subcategory": "System",
+    "files_info_json": [
+      {
+        "path": ".since",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "since"
+    ]
+  },
+  "singularity": {
+    "app_name": "Singularity",
+    "category": "Development",
+    "subcategory": "Containerization",
+    "files_info_json": [
+      {
+        "path": ".singularity",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "singularity"
+    ]
+  },
+  "skhd": {
+    "app_name": "skhd",
+    "category": "Utilities",
+    "subcategory": "Hotkeys",
+    "files_info_json": [
+      {
+        "path": ".skhdrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "skiko_(skia_for_kotlin)": {
+    "app_name": "Skiko (Skia for Kotlin)",
+    "category": "Development",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".skiko",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "skrooge": {
+    "app_name": "skrooge",
+    "category": "Productivity",
+    "subcategory": "Finance",
+    "files_info_json": [
+      {
+        "path": ".skrooge",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "skrooge"
+    ]
+  },
+  "skype": {
+    "app_name": "Skype",
+    "category": "Network",
+    "subcategory": "VoIP",
+    "files_info_json": [
+      {
+        "path": ".Skype",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "skypeforlinux"
+    ]
+  },
+  "slime": {
+    "app_name": "Slime",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".slime",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "slime",
+      "emacs-slime"
+    ]
+  },
+  "snap": {
+    "app_name": "Snap",
+    "category": "System",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": "snap",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "snapd"
+    ]
+  },
+  "snes9x": {
+    "app_name": "Snes9x",
+    "category": "Games",
+    "subcategory": "Emulators",
+    "files_info_json": [
+      {
+        "path": ".snes9x",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "snes9x"
+    ]
+  },
+  "solargraph": {
+    "app_name": "solargraph",
+    "category": "Development",
+    "subcategory": "Language Server",
+    "files_info_json": [
+      {
+        "path": ".solargraph",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "sonarlint": {
+    "app_name": "SonarLint",
+    "category": "Development",
+    "subcategory": "Code Quality",
+    "files_info_json": [
+      {
+        "path": ".sonarlint",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "spacemacs": {
+    "app_name": "Spacemacs",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".spacemacs",
+        "type": "file"
+      },
+      {
+        "path": ".spacemacs.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "spacevim": {
+    "app_name": "SpaceVim",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".SpaceVim.d",
+        "type": "folder"
+      },
+      {
+        "path": ".SpaceVim",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "spamassassin": {
+    "app_name": "SpamAssassin",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".spamassassin",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "spamassassin"
+    ]
+  },
+  "spectrwm": {
+    "app_name": "spectrwm",
+    "category": "System",
+    "subcategory": "Window Manager",
+    "files_info_json": [
+      {
+        "path": ".spectrwm.conf",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "spectrwm"
+    ]
+  },
+  "spotdl": {
+    "app_name": "spotdl",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".spotdl",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "sqlite": {
+    "app_name": "sqlite",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".sqlite_history",
+        "type": "file"
+      },
+      {
+        "path": ".sqliterc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "sqlite"
+    ]
+  },
+  "stack": {
+    "app_name": "Stack",
+    "category": "Development",
+    "subcategory": "Haskell",
+    "files_info_json": [
+      {
+        "path": ".stack",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "stack",
+      "haskell-stack"
+    ]
+  },
+  "stalonetray": {
+    "app_name": "stalonetray",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".stalonetrayrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "stalonetray"
+    ]
+  },
+  "steam": {
+    "app_name": "Steam",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".steampid",
+        "type": "file"
+      },
+      {
+        "path": ".steampath",
+        "type": "file"
+      },
+      {
+        "path": ".steam",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "steam"
+    ]
+  },
+  "stellarium": {
+    "app_name": "Stellarium",
+    "category": "Utilities",
+    "subcategory": "Astronomy",
+    "files_info_json": [
+      {
+        "path": ".stellarium",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "stellarium"
+    ]
+  },
+  "streamlink": {
+    "app_name": "Streamlink",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".livestreamerrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "streamlink"
+    ]
+  },
+  "streamlit": {
+    "app_name": "Streamlit",
+    "category": "Development",
+    "subcategory": "Data Science",
+    "files_info_json": [
+      {
+        "path": ".streamlit",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "python-streamlit"
+    ]
+  },
+  "stremio": {
+    "app_name": "Stremio",
+    "category": "Multimedia",
+    "subcategory": "Video",
+    "files_info_json": [
+      {
+        "path": ".stremio-server",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "stremio"
+    ]
+  },
+  "sts4": {
+    "app_name": "Spring Tool Suite 4",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".sts4",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "spring-tool-suite"
+    ]
+  },
+  "subversion": {
+    "app_name": "Subversion",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".subversion",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "subversion"
+    ]
+  },
+  "surf": {
+    "app_name": "surf",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".surf",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "surf"
+    ]
+  },
+  "surfraw": {
+    "app_name": "surfraw",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".surfraw.conf",
+        "type": "file"
+      },
+      {
+        "path": ".surfraw.bookmarks",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "surfraw"
+    ]
+  },
+  "sway": {
+    "app_name": "Sway",
+    "category": "System",
+    "subcategory": "Window Manager",
+    "files_info_json": [
+      {
+        "path": ".sway",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "sway"
+    ]
+  },
+  "sweet_home_3d": {
+    "app_name": "Sweet Home 3D",
+    "category": "Productivity",
+    "subcategory": "Interior Design",
+    "files_info_json": [
+      {
+        "path": ".eteks",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "sweethome3d"
+    ]
+  },
+  "swift_package_manager": {
+    "app_name": "Swift Package Manager",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".swiftpm",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "t-engine": {
+    "app_name": "T-Engine 4",
+    "category": "Games",
+    "subcategory": "Game Engine",
+    "files_info_json": [
+      {
+        "path": ".t-engine",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "t-engine"
+    ]
+  },
+  "taskwarrior": {
+    "app_name": "Taskwarrior",
+    "category": "Productivity",
+    "subcategory": "Task Management",
+    "files_info_json": [
+      {
+        "path": ".task",
+        "type": "folder"
+      },
+      {
+        "path": ".taskrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "taskwarrior",
+      "task"
+    ]
+  },
+  "technic_launcher": {
+    "app_name": "Technic Launcher",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".technic",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "teeworlds": {
+    "app_name": "Teeworlds",
+    "category": "Games",
+    "subcategory": "Shooter",
+    "files_info_json": [
+      {
+        "path": ".teeworlds",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "teeworlds"
+    ]
+  },
+  "telegram-cli": {
+    "app_name": "telegram-cli",
+    "category": "Network",
+    "subcategory": "Messaging",
+    "files_info_json": [
+      {
+        "path": ".telegram-cli",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "telegram-cli"
+    ]
+  },
+  "terraform": {
+    "app_name": "Terraform",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".terraform.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "terraform"
+    ]
+  },
+  "texinfo": {
+    "app_name": "Texinfo",
+    "category": "Utilities",
+    "subcategory": "Documentation",
+    "files_info_json": [
+      {
+        "path": ".infokey",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "texinfo"
+    ]
+  },
+  "texmacs": {
+    "app_name": "GNU TeXmacs",
+    "category": "Productivity",
+    "subcategory": "Office",
+    "files_info_json": [
+      {
+        "path": ".TeXmacs",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "texmacs"
+    ]
+  },
+  "texmf": {
+    "app_name": "texmf",
+    "category": "Productivity",
+    "subcategory": "Typesetting",
+    "files_info_json": [
+      {
+        "path": ".texlive/",
+        "type": "folder"
+      },
+      {
+        "path": ".texmf",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "texlive-core",
+      "texlive-bin"
+    ]
+  },
+  "themes": {
+    "app_name": "User Themes",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".themes",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "thunderbird": {
+    "app_name": "thunderbird",
+    "category": "Network",
+    "subcategory": "Email",
+    "files_info_json": [
+      {
+        "path": ".thunderbird",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "thunderbird"
+    ]
+  },
+  "tig": {
+    "app_name": "tig",
+    "category": "Development",
+    "subcategory": "Version Control",
+    "files_info_json": [
+      {
+        "path": ".tig_history",
+        "type": "file"
+      },
+      {
+        "path": ".tigrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "tig"
+    ]
+  },
+  "tigervnc": {
+    "app_name": "TigerVNC",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".vnc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "tigervnc"
+    ]
+  },
+  "tiptop": {
+    "app_name": "tiptop",
+    "category": "System",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".tiptoprc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "tiptop"
+    ]
+  },
+  "tlauncher": {
+    "app_name": "TLauncher",
+    "category": "Games",
+    "subcategory": "Launcher",
+    "files_info_json": [
+      {
+        "path": ".tlauncher",
+        "type": "folder"
+      },
+      {
+        "path": ".tl",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "tldr": {
+    "app_name": "tldr",
+    "category": "Utilities",
+    "subcategory": "Documentation",
+    "files_info_json": [
+      {
+        "path": ".tldr",
+        "type": "folder"
+      },
+      {
+        "path": ".tldrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "tldr"
+    ]
+  },
+  "tllocalmgr": {
+    "app_name": "tllocalmgr",
+    "category": "Productivity",
+    "subcategory": "Typesetting",
+    "files_info_json": [
+      {
+        "path": ".texlive",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "tmux": {
+    "app_name": "tmux",
+    "category": "Utilities",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".tmux.conf",
+        "type": "file"
+      },
+      {
+        "path": ".tmux",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "tmux"
+    ]
+  },
+  "tmuxinator": {
+    "app_name": "tmuxinator",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".tmuxinator",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "tmuxinator"
+    ]
+  },
+  "tmuxp": {
+    "app_name": "tmuxp",
+    "category": "Utilities",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".tmuxp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "tmuxp"
+    ]
+  },
+  "transmission": {
+    "app_name": "transmission",
+    "category": "Network",
+    "subcategory": "P2P",
+    "files_info_json": [
+      {
+        "path": ".config/transmission",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "transmission",
+      "transmission-gtk",
+      "transmission-qt",
+      "transmission-cli"
+    ]
+  },
+  "ts-node": {
+    "app_name": "ts-node",
+    "category": "Development",
+    "subcategory": "Language",
+    "files_info_json": [
+      {
+        "path": ".ts_node_repl_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "ts-node"
+    ]
+  },
+  "ts3client": {
+    "app_name": "TeamSpeak 3",
+    "category": "Multimedia",
+    "subcategory": "VoIP",
+    "files_info_json": [
+      {
+        "path": ".ts3client",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "teamspeak3"
+    ]
+  },
+  "tt": {
+    "app_name": "tt",
+    "category": "Utilities",
+    "subcategory": "Typing",
+    "files_info_json": [
+      {
+        "path": ".tt",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "tt"
+    ]
+  },
+  "tuist": {
+    "app_name": "Tuist",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".tuist",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "uim": {
+    "app_name": "uim",
+    "category": "System",
+    "subcategory": "Input Method",
+    "files_info_json": [
+      {
+        "path": ".uim.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "uim"
+    ]
+  },
+  "uncrustify": {
+    "app_name": "uncrustify",
+    "category": "Development",
+    "subcategory": "Formatter",
+    "files_info_json": [
+      {
+        "path": ".uncrustify.cfg",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "uncrustify"
+    ]
+  },
+  "unison": {
+    "app_name": "Unison",
+    "category": "Utilities",
+    "subcategory": "File Synchronization",
+    "files_info_json": [
+      {
+        "path": ".unison",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "unison"
+    ]
+  },
+  "units": {
+    "app_name": "units",
+    "category": "Utilities",
+    "subcategory": "Calculation",
+    "files_info_json": [
+      {
+        "path": ".units_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "units"
+    ]
+  },
+  "urlview": {
+    "app_name": "urlview",
+    "category": "Utilities",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".urlview",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "urlview"
+    ]
+  },
+  "urxvtd": {
+    "app_name": "urxvtd",
+    "category": "System",
+    "subcategory": "Terminal Emulator",
+    "files_info_json": [
+      {
+        "path": ".urxvt",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "rxvt-unicode"
+    ]
+  },
+  "usql": {
+    "app_name": "usql",
+    "category": "Development",
+    "subcategory": "Database",
+    "files_info_json": [
+      {
+        "path": ".usql_history",
+        "type": "file"
+      },
+      {
+        "path": ".usqlrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "usql"
+    ]
+  },
+  "utop": {
+    "app_name": "utop",
+    "category": "Development",
+    "subcategory": "REPL",
+    "files_info_json": [
+      {
+        "path": ".utoprc",
+        "type": "file"
+      },
+      {
+        "path": ".utop-history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "utop"
+    ]
+  },
+  "v": {
+    "app_name": "V",
+    "category": "Development",
+    "subcategory": "Programming Language",
+    "files_info_json": [
+      {
+        "path": ".vmodules",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "v"
+    ]
+  },
+  "vagrant": {
+    "app_name": "Vagrant",
+    "category": "Development",
+    "subcategory": "DevOps",
+    "files_info_json": [
+      {
+        "path": ".vagrant.d",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "vagrant"
+    ]
+  },
+  "vale": {
+    "app_name": "Vale",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".vale.ini",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "vale"
+    ]
+  },
+  "viber": {
+    "app_name": "Viber",
+    "category": "Network",
+    "subcategory": "Instant Messaging",
+    "files_info_json": [
+      {
+        "path": ".ViberPC",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "vim": {
+    "app_name": "vim",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".vimrc",
+        "type": "file"
+      },
+      {
+        "path": ".viminfo",
+        "type": "file"
+      },
+      {
+        "path": ".vim",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "vim"
+    ]
+  },
+  "vint": {
+    "app_name": "vint",
+    "category": "Development",
+    "subcategory": "Linter",
+    "files_info_json": [
+      {
+        "path": ".vintrc.yaml",
+        "type": "file"
+      },
+      {
+        "path": ".vintrc.yml",
+        "type": "file"
+      },
+      {
+        "path": ".vintrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "vim-vint"
+    ]
+  },
+  "virtualbox": {
+    "app_name": "VirtualBox",
+    "category": "System",
+    "subcategory": "Virtualization",
+    "files_info_json": [
+      {
+        "path": ".VirtualBox",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "virtualbox"
+    ]
+  },
+  "virtualenv": {
+    "app_name": "virtualenv",
+    "category": "Development",
+    "subcategory": "Python",
+    "files_info_json": [
+      {
+        "path": ".virtualenvs",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "vis": {
+    "app_name": "Vis",
+    "category": "Development",
+    "subcategory": "Editor",
+    "files_info_json": [
+      {
+        "path": ".vis",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "vis"
+    ]
+  },
+  "visidata": {
+    "app_name": "Visidata",
+    "category": "Utilities",
+    "subcategory": "Data Processing",
+    "files_info_json": [
+      {
+        "path": ".visidata/",
+        "type": "folder"
+      },
+      {
+        "path": ".visidatarc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "visidata"
+    ]
+  },
+  "visual_studio_code": {
+    "app_name": "Visual Studio Code",
+    "category": "Development",
+    "subcategory": "IDE",
+    "files_info_json": [
+      {
+        "path": ".vscode",
+        "type": "folder"
+      },
+      {
+        "path": ".vscode-insiders",
+        "type": "folder"
+      },
+      {
+        "path": ".vscode-oss",
+        "type": "folder"
+      },
+      {
+        "path": ".vscode-server",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "code",
+      "code-oss",
+      "visual-studio-code-bin"
+    ]
+  },
+  "vital": {
+    "app_name": "Vital",
+    "category": "Multimedia",
+    "subcategory": "Audio",
+    "files_info_json": [
+      {
+        "path": ".vital",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "vital-synth"
+    ]
+  },
+  "vmware": {
+    "app_name": "VMware",
+    "category": "System",
+    "subcategory": "Virtualization",
+    "files_info_json": [
+      {
+        "path": ".vmware",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "vmware-workstation"
+    ]
+  },
+  "volta": {
+    "app_name": "Volta",
+    "category": "Development",
+    "subcategory": "Version Management",
+    "files_info_json": [
+      {
+        "path": ".volta",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "vscode_leetcode_extension": {
+    "app_name": "VSCode LeetCode Extension",
+    "category": "Development",
+    "subcategory": "Education",
+    "files_info_json": [
+      {
+        "path": ".lc",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "vue": {
+    "app_name": "Vue.js CLI",
+    "category": "Development",
+    "subcategory": "Web Development",
+    "files_info_json": [
+      {
+        "path": ".vuerc",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "w3m": {
+    "app_name": "w3m",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".w3m",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "w3m"
+    ]
+  },
+  "wakatime": {
+    "app_name": "WakaTime",
+    "category": "Development",
+    "subcategory": "Time Tracking",
+    "files_info_json": [
+      {
+        "path": ".wakatime.cfg",
+        "type": "file"
+      },
+      {
+        "path": ".wakatime.data",
+        "type": "file"
+      },
+      {
+        "path": ".wakatime.db",
+        "type": "file"
+      },
+      {
+        "path": ".wakatime.log",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "wakatime"
+    ]
+  },
+  "warp": {
+    "app_name": "Warp",
+    "category": "Utilities",
+    "subcategory": "Terminal",
+    "files_info_json": [
+      {
+        "path": ".warp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "warp-terminal"
+    ]
+  },
+  "waterfox": {
+    "app_name": "Waterfox",
+    "category": "Network",
+    "subcategory": "Web Browser",
+    "files_info_json": [
+      {
+        "path": ".waterfox",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "wavemon": {
+    "app_name": "wavemon",
+    "category": "Network",
+    "subcategory": "Monitoring",
+    "files_info_json": [
+      {
+        "path": ".wavemonrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "wavemon"
+    ]
+  },
+  "weechat": {
+    "app_name": "weechat",
+    "category": "Network",
+    "subcategory": "IRC Client",
+    "files_info_json": [
+      {
+        "path": ".weechat",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "weechat"
+    ]
+  },
+  "wego": {
+    "app_name": "wego",
+    "category": "Utilities",
+    "subcategory": "Weather",
+    "files_info_json": [
+      {
+        "path": ".wegorc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "wego"
+    ]
+  },
+  "wget": {
+    "app_name": "wget",
+    "category": "Network",
+    "subcategory": "Download Manager",
+    "files_info_json": [
+      {
+        "path": ".wget-hsts",
+        "type": "file"
+      },
+      {
+        "path": ".wgetrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "wget"
+    ]
+  },
+  "when": {
+    "app_name": "when",
+    "category": "Productivity",
+    "subcategory": "Calendar",
+    "files_info_json": [
+      {
+        "path": ".when",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "when"
+    ]
+  },
+  "wine": {
+    "app_name": "wine",
+    "category": "System",
+    "subcategory": "Emulation",
+    "files_info_json": [
+      {
+        "path": ".wine",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "wine"
+    ]
+  },
+  "wireshark": {
+    "app_name": "Wireshark",
+    "category": "Network",
+    "subcategory": "Analysis",
+    "files_info_json": [
+      {
+        "path": ".wireshark",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "wireshark"
+    ]
+  },
+  "wpa_cli": {
+    "app_name": "wpa_cli",
+    "category": "Network",
+    "subcategory": "Wireless",
+    "files_info_json": [
+      {
+        "path": ".wpa_cli_history",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "wpa_supplicant"
+    ]
+  },
+  "wpscan": {
+    "app_name": "wpscan",
+    "category": "Security",
+    "subcategory": "Vulnerability Scanner",
+    "files_info_json": [
+      {
+        "path": ".wpscan",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "wpscan"
+    ]
+  },
+  "x2goclient": {
+    "app_name": "X2Go Client",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": ".x2goclient",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "x2goclient"
+    ]
+  },
+  "x3270": {
+    "app_name": "x3270",
+    "category": "Network",
+    "subcategory": "Terminal Emulator",
+    "files_info_json": [
+      {
+        "path": ".x3270pro",
+        "type": "file"
+      },
+      {
+        "path": ".c3270pro",
+        "type": "file"
+      },
+      {
+        "path": ".x3270connect",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "xbindkeys": {
+    "app_name": "xbindkeys",
+    "category": "Utilities",
+    "subcategory": "Input",
+    "files_info_json": [
+      {
+        "path": ".xbindkeysrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xbindkeys"
+    ]
+  },
+  "xcompose": {
+    "app_name": "xcompose",
+    "category": "System",
+    "subcategory": "Input",
+    "files_info_json": [
+      {
+        "path": ".XCompose",
+        "type": "file"
+      },
+      {
+        "path": ".compose-cache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "libx11"
+    ]
+  },
+  "xdg-utils": {
+    "app_name": "xdg-utils",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".gnome",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xdg-utils"
+    ]
+  },
+  "xinit": {
+    "app_name": "xinit",
+    "category": "System",
+    "subcategory": "Window System",
+    "files_info_json": [
+      {
+        "path": ".xserverrc",
+        "type": "file"
+      },
+      {
+        "path": ".xinitrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xorg-xinit",
+      "xinit"
+    ]
+  },
+  "xmake": {
+    "app_name": "xmake",
+    "category": "Development",
+    "subcategory": "Build Tools",
+    "files_info_json": [
+      {
+        "path": ".xmake",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xmake"
+    ]
+  },
+  "xmobar": {
+    "app_name": "xmobar",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".xmobarrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xmobar"
+    ]
+  },
+  "xmodmap": {
+    "app_name": "xmodmap",
+    "category": "System",
+    "subcategory": "Input",
+    "files_info_json": [
+      {
+        "path": ".Xmodmap",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xorg-xmodmap"
+    ]
+  },
+  "xmonad": {
+    "app_name": "XMonad",
+    "category": "System",
+    "subcategory": "Window Manager",
+    "files_info_json": [
+      {
+        "path": ".xmonad",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xmonad",
+      "xmonad-contrib"
+    ]
+  },
+  "xonsh": {
+    "app_name": "xonsh",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".xonshrc",
+        "type": "file"
+      },
+      {
+        "path": ".oh-my-xonsh",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xonsh"
+    ]
+  },
+  "xorg": {
+    "app_name": "xorg",
+    "category": "System",
+    "subcategory": "Display Server",
+    "files_info_json": [
+      {
+        "path": ".Xsession",
+        "type": "file"
+      },
+      {
+        "path": ".xsessionrc",
+        "type": "file"
+      },
+      {
+        "path": ".xsession",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "xorg-xauth": {
+    "app_name": "xorg-xauth",
+    "category": "System",
+    "subcategory": "Display Server",
+    "files_info_json": [
+      {
+        "path": ".Xauthority",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xorg-xauth"
+    ]
+  },
+  "xorg-xrdb": {
+    "app_name": "xorg-xrdb",
+    "category": "System",
+    "subcategory": "Window System",
+    "files_info_json": [
+      {
+        "path": ".Xresources",
+        "type": "file"
+      },
+      {
+        "path": ".Xdefaults",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xorg-xrdb"
+    ]
+  },
+  "xournal++": {
+    "app_name": "Xournal++",
+    "category": "Productivity",
+    "subcategory": "Note-taking",
+    "files_info_json": [
+      {
+        "path": ".xournalpp",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xournalpp"
+    ]
+  },
+  "xpdf": {
+    "app_name": "xpdf",
+    "category": "Productivity",
+    "subcategory": "Document Viewer",
+    "files_info_json": [
+      {
+        "path": ".xpdfrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xpdf"
+    ]
+  },
+  "xprofile": {
+    "app_name": "xprofile",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".xprofile",
+        "type": "file"
+      }
+    ],
+    "packages_json": []
+  },
+  "xrdp": {
+    "app_name": "xrdp",
+    "category": "Network",
+    "subcategory": "Remote Desktop",
+    "files_info_json": [
+      {
+        "path": "thinclient_drives",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xrdp"
+    ]
+  },
+  "xsane": {
+    "app_name": "XSane",
+    "category": "Multimedia",
+    "subcategory": "Graphics",
+    "files_info_json": [
+      {
+        "path": ".sane",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "xsane"
+    ]
+  },
+  "xscreensaver": {
+    "app_name": "xscreensaver",
+    "category": "System",
+    "subcategory": "Desktop",
+    "files_info_json": [
+      {
+        "path": ".xscreensaver",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xscreensaver"
+    ]
+  },
+  "xsettingsd": {
+    "app_name": "xsettingsd",
+    "category": "System",
+    "subcategory": "Desktop Environment",
+    "files_info_json": [
+      {
+        "path": ".xsettingsd",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "xsettingsd"
+    ]
+  },
+  "yard": {
+    "app_name": "YARD",
+    "category": "Development",
+    "subcategory": "Documentation",
+    "files_info_json": [
+      {
+        "path": ".yard",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "ruby-yard",
+      "yard"
+    ]
+  },
+  "yarn": {
+    "app_name": "yarn",
+    "category": "Development",
+    "subcategory": "Package Management",
+    "files_info_json": [
+      {
+        "path": ".yarnrc",
+        "type": "file"
+      },
+      {
+        "path": ".yarn",
+        "type": "folder"
+      },
+      {
+        "path": ".yarncache",
+        "type": "folder"
+      },
+      {
+        "path": ".yarn-config",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "yarn"
+    ]
+  },
+  "z": {
+    "app_name": "z",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".z",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "z"
+    ]
+  },
+  "zap_proxy": {
+    "app_name": "ZAP Proxy",
+    "category": "Security",
+    "subcategory": "Web Security",
+    "files_info_json": [
+      {
+        "path": ".ZAP",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "zaproxy"
+    ]
+  },
+  "zen_browser": {
+    "app_name": "Zen Browser",
+    "category": "Network",
+    "subcategory": "Browser",
+    "files_info_json": [
+      {
+        "path": ".zen",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "zlua": {
+    "app_name": "z.lua",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".zlua",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "z.lua"
+    ]
+  },
+  "zoom": {
+    "app_name": "Zoom",
+    "category": "Network",
+    "subcategory": "Communication",
+    "files_info_json": [
+      {
+        "path": ".zoom",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "zoom"
+    ]
+  },
+  "zotero": {
+    "app_name": "Zotero",
+    "category": "Productivity",
+    "subcategory": "Research",
+    "files_info_json": [
+      {
+        "path": "Zotero",
+        "type": "folder"
+      },
+      {
+        "path": ".zotero",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  },
+  "zoxide": {
+    "app_name": "zoxide",
+    "category": "Utilities",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".zo",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "zoxide"
+    ]
+  },
+  "zplug": {
+    "app_name": "zplug",
+    "category": "Development",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".zplug",
+        "type": "folder"
+      }
+    ],
+    "packages_json": [
+      "zplug"
+    ]
+  },
+  "zsh": {
+    "app_name": "Zsh",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".zsh_sessions",
+        "type": "folder"
+      },
+      {
+        "path": ".zcompcache",
+        "type": "folder"
+      },
+      {
+        "path": ".zcompdump*",
+        "type": "file"
+      },
+      {
+        "path": ".zhistory",
+        "type": "file"
+      },
+      {
+        "path": ".histfile",
+        "type": "file"
+      },
+      {
+        "path": ".zsh_history",
+        "type": "file"
+      },
+      {
+        "path": ".zlogin",
+        "type": "file"
+      },
+      {
+        "path": ".zprofile",
+        "type": "file"
+      },
+      {
+        "path": ".zshenv",
+        "type": "file"
+      },
+      {
+        "path": ".zshrc",
+        "type": "file"
+      }
+    ],
+    "packages_json": [
+      "zsh"
+    ]
+  },
+  "zsh-evalcache": {
+    "app_name": "zsh-evalcache",
+    "category": "System",
+    "subcategory": "Shell",
+    "files_info_json": [
+      {
+        "path": ".zsh-evalcache",
+        "type": "folder"
+      }
+    ],
+    "packages_json": []
+  }
+}

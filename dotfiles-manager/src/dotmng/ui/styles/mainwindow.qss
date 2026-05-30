@@ -1,0 +1,95 @@
+/*QMainWindow*/
+QWidget#navBar {
+    background-color: #f8faff;
+    border-right: 1px solid #e2e8f0;
+}
+
+QWidget#navBar > QPushButton {
+    background-color: transparent;
+    border: none;
+    padding-left: 4px;
+    color: #94a3b8;
+}
+
+QWidget#navBar > QPushButton:hover {
+    background-color: #eff6ff;
+    border-right: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+QWidget#navBar > QPushButton:checked {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-left: 4px solid #2563eb;
+    border-right: 1px solid #e2e8f0;
+    padding-left: 0px;
+}
+
+QStackedWidget {
+	background-color: #eff6ff;
+}
+
+QStatusBar {
+	background-color: #f8faff;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* --- ESTILO PARA QCOMBOBOX (Listas desplegables) --- */
+QComboBox {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #475569;
+    min-width: 150px;
+}
+
+QComboBox:hover {
+    border: 1px solid #2563eb;
+}
+
+/* El área donde reside la flecha */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid #f1f5f9; /* Línea divisoria sutil */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    /* La ruta ahora apunta al prefijo que creaste en el recurso */
+    image: url(":/icons/chevron.svg"); 
+    width: 14px;
+    height: 14px;
+}
+
+/* Estilo del menú desplegable (La lista) */
+QComboBox QAbstractItemView {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    selection-background-color: #eff6ff;
+    selection-color: #2563eb;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*QPushButton*/
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px; /* Esquinas redondeadas suaves */
+    color: #475569;
+}
+
+QPushButton:hover {
+    background-color: #f8faff;
+    border: 1px solid #2563eb;
+    color: #1e293b;
+}
+
+QPushButton:pressed {
+    background-color: #f1f5f9;
+    border: 1px solid #94a3b8;
+}

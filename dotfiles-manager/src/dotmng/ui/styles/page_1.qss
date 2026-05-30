@@ -1,0 +1,72 @@
+/* --- ESTILO PARA QCOMBOBOX (Listas desplegables) --- */
+QComboBox {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #475569;
+    min-width: 150px;
+}
+
+QComboBox:hover {
+    border: 1px solid #2563eb;
+}
+
+/* El área donde reside la flecha */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid #f1f5f9; /* Línea divisoria sutil */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    /* La ruta ahora apunta al prefijo que creaste en el recurso */
+    image: url(":/icons/chevron.svg");
+    width: 14px;
+    height: 14px;
+}
+
+/* Estilo del menú desplegable (La lista) */
+QComboBox QAbstractItemView {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    selection-background-color: #eff6ff;
+    selection-color: #2563eb;
+    outline: none;
+    border-radius: 4px;
+}
+
+/* ESTILOS PARA BOTON PRINCIPAL */
+QPushButton#app_update {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid #1d4ed8;
+	padding-right: 3px;
+	border-radius: 8px;
+}
+
+QPushButton#app_update:hover {
+    background-color: #1d4ed8;
+}
+
+QPushButton#app_update:pressed {
+    background-color: #2563eb;
+}
+
+QFrame#widgetApps {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#stats_apps {
+	border-bottom: 1px solid #e2e8f0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}

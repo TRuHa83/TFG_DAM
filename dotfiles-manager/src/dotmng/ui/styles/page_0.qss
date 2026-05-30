@@ -1,0 +1,88 @@
+/* ESTILOS PARA QFRAME */
+QFrame#frame_1 {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#frame_2 {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#frame_3 {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#frame_4 {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#frame_5 {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#label_hostname {
+	border-bottom: 1px solid #e2e8f0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+QFrame#label_server {
+	border-bottom: 1px solid #e2e8f0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #ffffff;
+    color: #475569;
+}
+
+/* ESTILOS PARA BOTON PRINCIPAL */
+QPushButton#main_update {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid #1d4ed8;
+	padding-right: 3px;
+	border-radius: 8px;
+}
+
+QPushButton#main_update:hover {
+    background-color: #1d4ed8;
+}
+
+QPushButton#main_update:pressed {
+    background-color: #2563eb;
+}
+
+/* ESTILOS BOTONES BASICOS*/
+QPushButton {
+    background-color: #ffffff;
+    color: #475569;
+	padding-right: 3px;
+}
+
+QPushButton:hover {
+    background-color: #f8faff;
+    color: #1e293b;
+}
+
+QPushButton:pressed {
+    background-color: #f8faff;
+    border: none;
+	color: #2563eb;
+}
+
+

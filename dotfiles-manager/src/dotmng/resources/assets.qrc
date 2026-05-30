@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="assets">
+    <file>icons/update.svg</file>
+    <file>icons/led_red.svg</file>
+    <file>icons/led_green.svg</file>
+    <file>icons/sync.svg</file>
+    <file>icons/toggle_on.svg</file>
+    <file>icons/default-app.svg</file>
+    <file>icons/chevron.svg</file>
+    <file>icons/toggle_off.svg</file>
+    <file>icons/info_off.svg</file>
+    <file>icons/info_on.svg</file>
+    <file>icons/file_off.svg</file>
+    <file>icons/file_on.svg</file>
+    <file>icons/package_off.svg</file>
+    <file>icons/package_on.svg</file>
+    <file>icons/dashboard_on.svg</file>
+    <file>icons/dashboard_off.svg</file>
+    <file>icons/gear_on.svg</file>
+    <file>icons/gear_off.svg</file>
+  </qresource>
+</RCC>

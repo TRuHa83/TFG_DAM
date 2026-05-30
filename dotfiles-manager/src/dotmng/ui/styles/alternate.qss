@@ -1,0 +1,18 @@
+/*QPushButton*/
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px; /* Esquinas redondeadas suaves */
+    color: #475569;
+}
+
+QPushButton:hover {
+    background-color: #f8faff;
+    border: 1px solid #2563eb;
+    color: #1e293b;
+}
+
+QPushButton:pressed {
+    background-color: #f1f5f9;
+    border: 1px solid #94a3b8;
+}

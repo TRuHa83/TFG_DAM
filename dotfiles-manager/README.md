@@ -36,16 +36,71 @@ IA (Google Gemini) los dotfiles desconocidos.
 
 ## Instalación
 
+`dotmng` ofrece un proceso de instalación sumamente versátil y profesional gracias a su script automatizado de instalación `install.sh` y al uso del gestor de paquetes moderno **uv**.
+
+Elige el método que mejor se adapte a tus necesidades:
+
+### 1. Instalación Automática y Directa (Recomendado)
+Es el método más rápido y limpio. Descarga y ejecuta el asistente de instalación directamente desde el repositorio oficial de GitHub sin necesidad de clonar el código fuente:
+
+**Usando cURL:**
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/truha83/TFG_DAM.git
+curl -sSL https://raw.githubusercontent.com/TRuHa83/TFG_DAM/main/dotfiles-manager/install.sh | bash
+```
+
+**Usando wget:**
+```bash
+wget -qO- https://raw.githubusercontent.com/TRuHa83/TFG_DAM/main/dotfiles-manager/install.sh | bash
+```
+
+> [!NOTE]
+> **¿Qué hace el instalador por ti?**
+> * Verifica la compatibilidad de tu entorno Linux y la disponibilidad de `uv`.
+> * Instala `dotmng` de manera segura y aislada en tu entorno de usuario usando `uv tool`.
+> * Descarga los recursos visuales (iconos y archivo `.desktop`) y los configura automáticamente en tu sistema de escritorio (`~/.local/share/applications` y `~/.local/share/icons`).
+> * Verifica tu variable `$PATH` y te proporciona instrucciones precisas si necesitas actualizarla.
+
+---
+
+### 2. Instalación Directa con `uv tool` (Sin clonar repositorio)
+Si prefieres saltarte la configuración visual (entrada `.desktop`) e instalar únicamente la herramienta de línea de comandos de forma rápida e independiente con `uv`:
+
+```bash
+uv tool install --force "git+https://github.com/TRuHa83/TFG_DAM.git#subdirectory=dotfiles-manager"
+```
+
+---
+
+### 3. Instalación Local / Modo Desarrollo
+Si deseas examinar el código, realizar modificaciones o utilizar el instalador interactivo de forma local:
+
+```bash
+# 1. Clonar el repositorio completo
+git clone https://github.com/TRuHa83/TFG_DAM.git
 cd TFG_DAM/dotfiles-manager
 
-# 2. Instalar dependencias con uv
+# 2. Ejecutar el asistente de instalación local interactivo
+chmod +x install.sh
+./install.sh
+```
+
+Si eres desarrollador y prefieres trabajar en un entorno virtual aislado sin registrar la herramienta de forma global en tu sistema:
+
+```bash
+# Sincronizar dependencias en el entorno virtual
 uv sync
 
-# 3. Ejecutar
+# Ejecutar en modo desarrollo
 uv run dotmng
+```
+
+---
+
+### Desinstalación Limpia
+Si necesitas desinstalar completamente la aplicación y remover todos los accesos directos e iconos generados, ejecuta el comando de desinstalación integrado:
+
+```bash
+dotmng uninstall
 ```
 
 ---
@@ -54,36 +109,43 @@ uv run dotmng
 
 ### Interfaz gráfica (GUI)
 
+Si se instaló globalmente en el sistema:
+```bash
+dotmng
+```
+
+Si se ejecuta desde el código fuente clonado localmente:
 ```bash
 uv run dotmng
 ```
 
-En el primer arranque se abrirá un diálogo de configuración inicial
-(`FirstRunDialog`) donde se establece la conexión con el servidor.
+En el primer arranque se abrirá un diálogo de configuración inicial (`FirstRunDialog`) donde se establece la conexión con el servidor.
 
 ### Interfaz de línea de comandos (CLI)
 
+Puedes utilizar `dotmng` directamente (o anteponer `uv run` si estás en el directorio de desarrollo local):
+
 ```bash
 # Auditar el $HOME sin guardar cambios
-uv run dotmng check
+dotmng check
 
 # Actualizar el inventario local
-uv run dotmng update
+dotmng update
 
 # Listar aplicaciones conocidas en el inventario
-uv run dotmng apps list
+dotmng apps list
 
 # Vincular una ruta manualmente a una aplicación
-uv run dotmng apps bind <ruta> <app_id>
+dotmng apps bind <ruta> <app_id>
 
 # Gestionar dotfiles desconocidos
-uv run dotmng unknown list
+dotmng unknown list
 
 # Utilidades del sistema
-uv run dotmng utils --help
+dotmng utils --help
 
 # Ayuda general
-uv run dotmng --help
+dotmng --help
 ```
 
 ---

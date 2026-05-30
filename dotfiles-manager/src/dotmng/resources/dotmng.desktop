@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.1.0
+Type=Application
+Name=Dotfiles Manager
+GenericName=Gestor de dotfiles
+Comment=Gestiona y sincroniza tus dotfiles y aplicaciones
+Exec=dotmng
+Icon=dotmng
+Terminal=false
+Categories=Utility;System;FileManager;
+Keywords=dotfiles;config;home;sync;
+StartupNotify=true

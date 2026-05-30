@@ -77,3 +77,85 @@ def test_set_system_state_hashes_exception_handling(temp_db):
 
             # Asegura que el error ha quedado registrado en tus logs
             mock_log_error.assert_called_once()
+
+
+def test_save_classified_data_empty_subcategory(temp_db):
+    """Prueba que si la subcategoría está vacía se asocia con la categoría padre (Utilities en vez de None)."""
+    from dotmng.modules.database.models import KnownAppsReference, CategoriesApps
+
+    data = {
+        "agents": {
+            "category": "Utilities",
+            "subcategory": "",
+            "app_name": "AgentsApp",
+            "files_info_json": [{"path": ".agents", "type": "folder"}],
+            "packages_json": []
+        }
+    }
+
+    # Guardar los datos clasificados con subcategoría vacía
+    temp_db.save_classified_data(data)
+
+    # Verificar que se insertó correctamente y la categoría asociada es la principal "Utilities"
+    session = temp_db.SessionLocal()
+    app_ref = session.query(KnownAppsReference).filter_by(app_id="agents").first()
+    
+    assert app_ref is not None
+    assert app_ref.app_name == "AgentsApp"
+    
+    # Obtener la categoría del registro
+    category_obj = session.query(CategoriesApps).filter_by(id_cat=app_ref.category_id).first()
+    assert category_obj is not None
+    assert category_obj.category == "Utilities"
+    assert category_obj.parent_id is None  # Es una categoría raíz
+    session.close()
+
+
+def test_save_classified_data_ignored_or_unknown(temp_db):
+    """Prueba que las aplicaciones marcadas como 'Unknown' o 'ignored': true se omiten y no se persisten en la base de datos."""
+    from dotmng.modules.database.models import KnownAppsReference
+
+    data = {
+        "unknown_app": {
+            "category": "System",
+            "subcategory": "Utilities",
+            "app_name": "Unknown",
+            "files_info_json": [{"path": ".unknown", "type": "folder"}],
+            "packages_json": []
+        },
+        "ignored_app": {
+            "category": "Development",
+            "subcategory": "IDE",
+            "app_name": "MyIDE",
+            "ignored": True,
+            "files_info_json": [{"path": ".myide", "type": "folder"}],
+            "packages_json": []
+        },
+        "valid_app": {
+            "category": "Development",
+            "subcategory": "Compiler",
+            "app_name": "GCC",
+            "files_info_json": [{"path": ".gcc", "type": "folder"}],
+            "packages_json": []
+        }
+    }
+
+    # Guardar los datos clasificados
+    temp_db.save_classified_data(data)
+
+    # Verificar en la base de datos qué se guardó
+    session = temp_db.SessionLocal()
+    
+    # GCC (válido) debe estar guardado
+    valid_ref = session.query(KnownAppsReference).filter_by(app_id="valid_app").first()
+    assert valid_ref is not None
+    assert valid_ref.app_name == "GCC"
+
+    # unknown_app e ignored_app NO deben existir en la base de datos
+    unknown_ref = session.query(KnownAppsReference).filter_by(app_id="unknown_app").first()
+    assert unknown_ref is None
+
+    ignored_ref = session.query(KnownAppsReference).filter_by(app_id="ignored_app").first()
+    assert ignored_ref is None
+
+    session.close()
