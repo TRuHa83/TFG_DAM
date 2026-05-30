@@ -5,7 +5,7 @@ Para garantizar la fiabilidad del backend y la integridad de las respuestas entr
 Se validan de forma aislada los componentes de lógica pura:
 
 * **Mapeo de Entidades a DTOs:** Verificación de que no se filtran datos sensibles y que los campos coinciden.
-* **Lógica de Negocio:** Validación de que los estados de las tareas (`QUEUE`, `PROCESSING`, `COMPLETE`) transicionan correctamente ante diferentes escenarios.
+* **Lógica de Negocio:** Validación de que los estados de las tareas (`QUEUE`, `PROCESSING`, `COMPLETE`) transicionan correctamente ante diferentes escenarios, y verificación del flujo de descubrimiento síncrono (incluyendo la resolución de aplicaciones desconocidas y el manejo de fallos del servicio).
 
 ### Pruebas de Integración con MockMvc
 

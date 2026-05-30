@@ -4,9 +4,9 @@ La calidad del software se garantiza mediante una estrategia de pruebas multiniv
 
 Se validan de forma aislada las funciones más críticas:
 
-* Lógica de filtrado de archivos (RegEx).
+* Lógica de filtrado de archivos (RegEx) y priorización.
 * Correcto funcionamiento del motor de hashes.
-* Validación de la integridad de los modelos de base de datos local.
+* Validación de la integridad de los modelos de base de datos local y su correcta persistencia (ej. asignación de categorías padre cuando las subcategorías están vacías, y omisión de aplicaciones ignoradas o desconocidas).
 
 ### Pruebas de Integración
 
