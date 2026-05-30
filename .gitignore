@@ -288,7 +288,3 @@ cython_debug/
 .ai
 .git
 .venv
-
-# TEMPORALES
-dotfiles-manager/src/*
-dotfiles_server/src/*
