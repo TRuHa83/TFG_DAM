@@ -3,8 +3,9 @@ Para asegurar la robustez en un entorno tan crítico como el directorio $HOME, e
 ### Niveles de Trazas (Logging)
 
 El sistema genera logs en diferentes niveles:
+*   **DEBUG:** Información detallada de rutinas, consultas a base de datos y cambios de estado interno, utilizada para depuración sin sobrecargar el registro principal.
 *   **INFO:** Registro de operaciones exitosas (ej: "Escaneo finalizado en 1.2s").
-*   **WARNING:** Alertas de estado (ej: "Archivo omitido por falta de permisos").
+*   **WARNING:** Alertas de estado o de conexión (ej: "Archivo omitido por falta de permisos").
 *   **ERROR:** Fallos críticos (ej: "Conexión perdida con el servidor", "Error al escribir en SQLite").
 
 ### Gestión de Excepciones Comunes

@@ -17,7 +17,9 @@ Dada la dependencia de servicios externos (Google), el servidor gestiona especí
 
 ### Logging del Sistema
 
-Utiliza **SLF4J** con **Logback** para generar trazas en consola y archivos, registrando cada petición recibida y el estado detallado de los procesos de subida, creación de Batch Jobs y parsing de los resultados de Gemini.
+Utiliza **SLF4J** con **Logback** para generar trazas en consola y archivos, registrando cada petición recibida y el estado detallado de los procesos de subida, creación de Batch Jobs y parsing de los resultados de Gemini. El sistema ha sido optimizado para evitar la saturación de los registros:
+* **Sanitización de Datos:** Se sanitizan los payloads enviados y recibidos de Gemini, eliminando fragmentos de gran tamaño antes de registrarlos.
+* **Niveles de Trazas:** Se utiliza el nivel `DEBUG` para peticiones rutinarias y estados temporales (como `PROCESSING`), reservando el nivel `INFO` únicamente para cuando una tarea alcanza un estado final (`COMPLETE`, `ERROR`) o cuando hay un cambio real en el estado del proceso.
 
 *Ejemplo de flujo de logs durante una inferencia asíncrona exitosa:*
 
