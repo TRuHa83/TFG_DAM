@@ -12,9 +12,9 @@ El motor de detección es el corazón técnico del cliente. Utiliza un patrón d
 Cada vez que se inicia un escaneo (comando `check` o `update`), los archivos atraviesan las siguientes etapas:
 
 1. **Descubrimiento:** El sistema itera sobre el $HOME buscando archivos y directorios ocultos (aquellos que comienzan por punto o residen en `~/.config`).
-2. **Validación de Estado:** Se consulta `system_state_hashes` para ver si el directorio ha cambiado desde el último escaneo.
-3. **Heurística XDG:** Se aplican reglas basadas en el estándar XDG para identificar aplicaciones comunes.
-4. **Filtrado de Ignorados:** Se eliminan de la lista aquellos archivos que coinciden con patrones de basura (ej: `*.log`, `*.tmp`, `cache/`).
+2. **Filtrado de Ignorados:** Se aplica la capa de ignorados de forma temprana para eliminar de la lista aquellos archivos que coinciden con patrones de basura o reglas de exclusión (ej: `*.log`, `*.tmp`, `cache/`), evitando gastar recursos innecesarios.
+3. **Validación de Estado:** Se calcula el hash de los archivos restantes y se consulta `system_state_hashes` para ver si el directorio o archivo ha cambiado desde el último escaneo.
+4. **Heurística XDG:** Se aplican reglas basadas en el estándar XDG para identificar aplicaciones comunes.
 5. **Clasificación:** Se asigna una aplicación y categoría a cada ruta validada.
 
 ### Optimización mediante Hashes
