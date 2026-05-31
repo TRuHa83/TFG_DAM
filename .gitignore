@@ -288,3 +288,4 @@ cython_debug/
 .ai
 .git
 .venv
+.claude
