@@ -2,7 +2,7 @@
   <h1>Dotfiles-Manager</h1>
   <p><strong>Sistema Distribuido de Gestión y Clasificación de Entornos Linux</strong></p>
   <p><em>Trabajo de Fin de Grado — DAM · Curso 2024/2026</em></p>
-  [:material-github: Web del Proyecto](http://10.0.10.10:30008/truha/TFG_DAM){ .md-button }
+  [:material-github: Web del Proyecto](https://github.com/TRuHa83/TFG_DAM){ .md-button }
 </div>
 
 ---
